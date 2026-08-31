@@ -535,9 +535,9 @@ elif page == "🤖 Model Intelligence":
         st.caption("What generally matters most to the model across the entire dataset?")
         feat_imp = predictor.metadata.get("feature_importance", [])
         if feat_imp:
-            df_imp = pd.DataFrame(feat_imp).sort_values("importance", ascending=True).tail(10)
-            df_imp["Human_Name"] = df_imp["feature"].map(lambda x: HUMAN_FEATURE_NAMES.get(x, x))
-            fig = px.bar(df_imp, x="importance", y="Human_Name", orientation='h', color_discrete_sequence=[THEME_COLORS['primary']])
+            df_imp = pd.DataFrame(feat_imp).sort_values("Importance", ascending=True).tail(10)
+            df_imp["Human_Name"] = df_imp["Feature"].map(lambda x: HUMAN_FEATURE_NAMES.get(x, x))
+            fig = px.bar(df_imp, x="Importance", y="Human_Name", orientation='h', color_discrete_sequence=[THEME_COLORS['primary']])
             fig.update_layout(plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)", margin=dict(l=0, r=0, t=0, b=0))
             st.plotly_chart(fig, use_container_width=True)
             
