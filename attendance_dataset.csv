@@ -1,0 +1,1001 @@
+Date,Day,Lecture_Number,Start_Time,Subject,Faculty_ID,Semester,Branch,Section,Classroom,Total_Enrolled,Students_Present,Attendance_Pct,Prev_Lecture_Pct,Gap_Hours,Session_Type,Test_Week,Assignment_Due,Holiday_Near
+01-07-2026,Wednesday,1,09:00 AM,Machine Learning,F_105,3,MCA,A,Lab 2,60,35,58.33,56.36,24,Practical,No,No,Yes
+01-07-2026,Wednesday,2,10:00 AM,Web Development,F_106,3,MCA,B,Lab 1,60,58,96.67,100.0,0,Practical,No,Yes,No
+01-07-2026,Wednesday,3,11:15 AM,Cloud Computing,F_104,3,MCA,A,Room 303,60,48,80.0,71.44,0,Theory,No,Yes,No
+01-07-2026,Wednesday,4,12:15 PM,Data Mining,F_103,5,MCA,A,Lab 1,60,53,88.33,92.12,0,Practical,No,Yes,No
+01-07-2026,Wednesday,5,02:00 PM,Cloud Computing,F_102,5,MCA,B,Lab 1,60,38,63.33,64.89,0,Practical,Yes,No,Yes
+01-07-2026,Wednesday,6,03:00 PM,Machine Learning,F_102,5,MCA,B,Room 202,60,39,65.0,60.82,0,Theory,No,Yes,No
+01-07-2026,Wednesday,1,09:00 AM,Machine Learning,F_106,3,MCA,B,Lab 1,60,45,75.0,72.85,24,Practical,Yes,No,No
+01-07-2026,Wednesday,2,10:00 AM,DBMS,F_101,5,MCA,B,Lab 1,60,55,91.67,90.57,0,Practical,No,No,No
+02-07-2026,Thursday,3,11:15 AM,Python,F_104,5,MCA,B,Room 303,60,53,88.33,89.02,0,Theory,No,No,No
+02-07-2026,Thursday,4,12:15 PM,DBMS,F_101,5,MCA,A,Room 201,60,38,63.33,58.55,0,Theory,No,No,Yes
+02-07-2026,Thursday,5,02:00 PM,Web Development,F_104,5,MCA,B,Room 303,60,52,86.67,89.61,0,Theory,No,No,No
+02-07-2026,Thursday,6,03:00 PM,Data Mining,F_103,3,MCA,A,Room 202,60,25,41.67,45.84,0,Theory,Yes,Yes,Yes
+02-07-2026,Thursday,1,09:00 AM,Machine Learning,F_106,3,MCA,A,Lab 2,60,55,91.67,94.96,24,Practical,No,No,No
+02-07-2026,Thursday,2,10:00 AM,Machine Learning,F_102,5,MCA,A,Room 201,60,46,76.67,75.83,0,Theory,Yes,No,No
+02-07-2026,Thursday,3,11:15 AM,DBMS,F_104,3,MCA,A,Room 201,60,37,61.67,57.59,0,Theory,No,No,Yes
+02-07-2026,Thursday,4,12:15 PM,Data Mining,F_103,3,MCA,B,Lab 2,60,53,88.33,86.05,0,Practical,No,No,No
+03-07-2026,Friday,5,02:00 PM,Python,F_104,3,MCA,B,Room 201,60,48,80.0,81.83,0,Theory,No,No,No
+03-07-2026,Friday,6,03:00 PM,Python,F_103,3,MCA,B,Room 202,60,50,83.33,87.59,0,Theory,No,Yes,No
+03-07-2026,Friday,1,09:00 AM,Cloud Computing,F_104,5,MCA,B,Lab 1,60,42,70.0,75.61,24,Practical,Yes,No,No
+03-07-2026,Friday,2,10:00 AM,DBMS,F_106,5,MCA,A,Room 201,60,49,81.67,85.1,0,Theory,No,No,No
+03-07-2026,Friday,3,11:15 AM,Machine Learning,F_103,5,MCA,A,Room 303,60,52,86.67,76.79,0,Theory,No,Yes,No
+03-07-2026,Friday,4,12:15 PM,Python,F_103,5,MCA,A,Room 201,60,49,81.67,79.58,0,Theory,No,No,No
+03-07-2026,Friday,5,02:00 PM,Python,F_104,5,MCA,A,Room 202,60,50,83.33,84.05,0,Theory,No,No,No
+03-07-2026,Friday,6,03:00 PM,Python,F_103,3,MCA,B,Room 303,60,48,80.0,84.41,0,Theory,No,No,No
+04-07-2026,Saturday,1,09:00 AM,Data Mining,F_103,5,MCA,B,Room 201,60,48,80.0,81.9,24,Theory,No,Yes,No
+04-07-2026,Saturday,2,10:00 AM,Cloud Computing,F_101,5,MCA,A,Lab 1,60,55,91.67,93.32,0,Practical,No,No,No
+04-07-2026,Saturday,3,11:15 AM,Python,F_101,5,MCA,B,Room 303,60,47,78.33,79.69,0,Theory,No,No,No
+04-07-2026,Saturday,4,12:15 PM,Data Mining,F_103,3,MCA,B,Lab 2,60,54,90.0,86.57,0,Practical,No,No,No
+04-07-2026,Saturday,5,02:00 PM,Web Development,F_104,3,MCA,B,Room 201,60,42,70.0,68.6,0,Theory,Yes,No,No
+04-07-2026,Saturday,6,03:00 PM,Machine Learning,F_101,3,MCA,B,Lab 2,60,46,76.67,79.78,0,Practical,No,No,No
+04-07-2026,Saturday,1,09:00 AM,Cloud Computing,F_101,5,MCA,A,Room 202,60,40,66.67,67.28,24,Theory,No,No,No
+04-07-2026,Saturday,2,10:00 AM,Data Mining,F_102,3,MCA,A,Room 202,60,45,75.0,80.53,0,Theory,No,No,No
+05-07-2026,Monday,3,11:15 AM,Cloud Computing,F_102,3,MCA,B,Room 303,60,37,61.67,61.16,0,Theory,No,No,Yes
+05-07-2026,Monday,4,12:15 PM,Web Development,F_104,5,MCA,B,Room 303,60,46,76.67,76.99,0,Theory,No,No,No
+05-07-2026,Monday,5,02:00 PM,Machine Learning,F_102,5,MCA,A,Room 303,60,42,70.0,64.92,0,Theory,Yes,No,No
+05-07-2026,Monday,6,03:00 PM,Machine Learning,F_106,3,MCA,B,Lab 1,60,43,71.67,63.71,0,Practical,No,No,No
+05-07-2026,Monday,1,09:00 AM,DBMS,F_102,3,MCA,B,Lab 2,60,35,58.33,56.96,24,Practical,Yes,No,No
+05-07-2026,Monday,2,10:00 AM,Data Mining,F_101,5,MCA,A,Lab 2,60,57,95.0,93.15,0,Practical,No,No,No
+05-07-2026,Monday,3,11:15 AM,Web Development,F_104,5,MCA,B,Room 303,60,49,81.67,84.77,0,Theory,No,Yes,No
+05-07-2026,Monday,4,12:15 PM,Machine Learning,F_102,5,MCA,B,Lab 2,60,57,95.0,89.28,0,Practical,No,Yes,No
+06-07-2026,Monday,5,02:00 PM,Cloud Computing,F_104,5,MCA,B,Room 202,60,45,75.0,76.85,0,Theory,No,No,No
+06-07-2026,Monday,6,03:00 PM,DBMS,F_101,5,MCA,B,Room 303,60,43,71.67,70.59,0,Theory,No,No,No
+06-07-2026,Monday,1,09:00 AM,Web Development,F_105,5,MCA,A,Room 201,60,41,68.33,69.16,24,Theory,No,No,No
+06-07-2026,Monday,2,10:00 AM,Cloud Computing,F_102,5,MCA,B,Room 202,60,49,81.67,80.93,0,Theory,No,No,No
+06-07-2026,Monday,3,11:15 AM,Machine Learning,F_101,3,MCA,A,Room 201,60,52,86.67,88.78,0,Theory,No,No,No
+06-07-2026,Monday,4,12:15 PM,Machine Learning,F_102,3,MCA,A,Lab 2,60,50,83.33,77.96,0,Practical,No,No,No
+06-07-2026,Monday,5,02:00 PM,Python,F_106,5,MCA,B,Room 201,60,47,78.33,75.88,0,Theory,No,No,No
+06-07-2026,Monday,6,03:00 PM,Data Mining,F_104,3,MCA,B,Lab 2,60,39,65.0,66.0,0,Practical,Yes,No,No
+07-07-2026,Tuesday,1,09:00 AM,Cloud Computing,F_102,5,MCA,A,Room 202,60,48,80.0,85.43,24,Theory,No,No,No
+07-07-2026,Tuesday,2,10:00 AM,Cloud Computing,F_106,3,MCA,B,Lab 2,60,55,91.67,86.97,0,Practical,No,No,No
+07-07-2026,Tuesday,3,11:15 AM,Data Mining,F_103,5,MCA,B,Lab 2,60,53,88.33,87.48,0,Practical,No,No,No
+07-07-2026,Tuesday,4,12:15 PM,Cloud Computing,F_104,5,MCA,A,Room 303,60,49,81.67,75.7,0,Theory,No,No,No
+07-07-2026,Tuesday,5,02:00 PM,Data Mining,F_102,5,MCA,B,Lab 2,60,53,88.33,82.65,0,Practical,No,No,No
+07-07-2026,Tuesday,6,03:00 PM,Machine Learning,F_101,3,MCA,B,Room 201,60,37,61.67,65.6,0,Theory,No,No,Yes
+07-07-2026,Tuesday,1,09:00 AM,Web Development,F_104,3,MCA,B,Room 303,60,44,73.33,69.46,24,Theory,No,Yes,No
+07-07-2026,Tuesday,2,10:00 AM,Python,F_105,5,MCA,B,Room 303,60,57,95.0,91.77,0,Theory,No,Yes,No
+08-07-2026,Wednesday,3,11:15 AM,DBMS,F_104,5,MCA,B,Room 202,60,50,83.33,76.69,0,Theory,No,No,No
+08-07-2026,Wednesday,4,12:15 PM,Python,F_101,3,MCA,A,Lab 1,60,58,96.67,89.75,0,Practical,No,No,No
+08-07-2026,Wednesday,5,02:00 PM,Python,F_102,5,MCA,B,Room 202,60,50,83.33,89.44,0,Theory,No,Yes,No
+08-07-2026,Wednesday,6,03:00 PM,Python,F_103,3,MCA,B,Room 201,60,38,63.33,59.72,0,Theory,No,No,No
+08-07-2026,Wednesday,1,09:00 AM,Python,F_105,5,MCA,A,Lab 1,60,54,90.0,91.25,24,Practical,No,No,No
+08-07-2026,Wednesday,2,10:00 AM,Cloud Computing,F_102,5,MCA,A,Room 201,60,48,80.0,77.32,0,Theory,No,No,No
+08-07-2026,Wednesday,3,11:15 AM,Python,F_101,5,MCA,B,Room 202,60,55,91.67,92.13,0,Theory,No,Yes,No
+08-07-2026,Wednesday,4,12:15 PM,Web Development,F_102,5,MCA,A,Lab 1,60,57,95.0,100.0,0,Practical,No,No,No
+09-07-2026,Thursday,5,02:00 PM,DBMS,F_103,3,MCA,A,Lab 1,60,52,86.67,87.14,0,Practical,No,No,No
+09-07-2026,Thursday,6,03:00 PM,DBMS,F_104,3,MCA,B,Room 201,60,41,68.33,68.11,0,Theory,No,No,No
+09-07-2026,Thursday,1,09:00 AM,Cloud Computing,F_102,5,MCA,A,Room 202,60,47,78.33,74.57,24,Theory,No,No,No
+09-07-2026,Thursday,2,10:00 AM,Machine Learning,F_101,3,MCA,B,Room 303,60,52,86.67,84.56,0,Theory,No,No,No
+09-07-2026,Thursday,3,11:15 AM,DBMS,F_104,5,MCA,A,Lab 2,60,51,85.0,80.36,0,Practical,No,No,No
+09-07-2026,Thursday,4,12:15 PM,DBMS,F_101,3,MCA,A,Room 303,60,52,86.67,89.7,0,Theory,No,Yes,No
+09-07-2026,Thursday,5,02:00 PM,Cloud Computing,F_104,3,MCA,A,Room 202,60,52,86.67,83.53,0,Theory,No,No,No
+09-07-2026,Thursday,6,03:00 PM,Data Mining,F_103,3,MCA,B,Lab 2,60,51,85.0,83.04,0,Practical,No,No,No
+10-07-2026,Friday,1,09:00 AM,Machine Learning,F_102,3,MCA,A,Room 201,60,46,76.67,80.31,24,Theory,No,No,No
+10-07-2026,Friday,2,10:00 AM,Machine Learning,F_102,3,MCA,A,Lab 2,60,58,96.67,100.0,0,Practical,No,No,No
+10-07-2026,Friday,3,11:15 AM,Machine Learning,F_103,5,MCA,A,Lab 2,60,51,85.0,87.25,0,Practical,No,No,No
+10-07-2026,Friday,4,12:15 PM,Data Mining,F_105,5,MCA,B,Lab 1,60,55,91.67,95.3,0,Practical,No,Yes,No
+10-07-2026,Friday,5,02:00 PM,Web Development,F_104,3,MCA,B,Room 201,60,51,85.0,92.13,0,Theory,No,No,No
+10-07-2026,Friday,6,03:00 PM,DBMS,F_103,3,MCA,B,Lab 2,60,45,75.0,75.19,0,Practical,No,No,No
+10-07-2026,Friday,1,09:00 AM,Python,F_102,5,MCA,B,Lab 2,60,45,75.0,79.97,24,Practical,No,No,No
+10-07-2026,Friday,2,10:00 AM,DBMS,F_105,3,MCA,B,Lab 1,60,45,75.0,70.9,0,Practical,No,No,Yes
+11-07-2026,Saturday,3,11:15 AM,Data Mining,F_103,5,MCA,A,Room 201,60,46,76.67,71.7,0,Theory,No,No,No
+11-07-2026,Saturday,4,12:15 PM,Python,F_106,5,MCA,B,Lab 2,60,44,73.33,72.05,0,Practical,Yes,No,No
+11-07-2026,Saturday,5,02:00 PM,Cloud Computing,F_103,3,MCA,B,Room 202,60,46,76.67,84.3,0,Theory,No,No,No
+11-07-2026,Saturday,6,03:00 PM,Data Mining,F_103,3,MCA,B,Room 201,60,42,70.0,73.29,0,Theory,No,No,No
+11-07-2026,Saturday,1,09:00 AM,Data Mining,F_105,5,MCA,B,Room 303,60,45,75.0,79.36,24,Theory,No,No,No
+11-07-2026,Saturday,2,10:00 AM,Machine Learning,F_105,3,MCA,B,Room 303,60,50,83.33,79.91,0,Theory,No,Yes,No
+11-07-2026,Saturday,3,11:15 AM,Data Mining,F_104,5,MCA,B,Room 202,60,41,68.33,71.03,0,Theory,No,No,No
+11-07-2026,Saturday,4,12:15 PM,Cloud Computing,F_104,5,MCA,A,Lab 2,60,56,93.33,100.0,0,Practical,No,No,No
+12-07-2026,Monday,5,02:00 PM,DBMS,F_103,3,MCA,A,Lab 1,60,49,81.67,72.37,0,Practical,No,No,No
+12-07-2026,Monday,6,03:00 PM,Data Mining,F_103,5,MCA,B,Lab 2,60,42,70.0,76.26,0,Practical,Yes,Yes,No
+12-07-2026,Monday,1,09:00 AM,Machine Learning,F_104,5,MCA,B,Lab 2,60,53,88.33,93.71,24,Practical,No,No,No
+12-07-2026,Monday,2,10:00 AM,Data Mining,F_103,3,MCA,B,Room 201,60,48,80.0,84.38,0,Theory,No,No,No
+12-07-2026,Monday,3,11:15 AM,Cloud Computing,F_101,3,MCA,A,Room 202,60,50,83.33,74.05,0,Theory,No,Yes,No
+12-07-2026,Monday,4,12:15 PM,Web Development,F_106,5,MCA,A,Room 202,60,49,81.67,75.55,0,Theory,No,No,No
+12-07-2026,Monday,5,02:00 PM,Machine Learning,F_106,3,MCA,B,Room 201,60,47,78.33,73.9,0,Theory,No,No,No
+12-07-2026,Monday,6,03:00 PM,Machine Learning,F_105,5,MCA,A,Room 201,60,41,68.33,72.85,0,Theory,No,No,No
+13-07-2026,Monday,1,09:00 AM,Data Mining,F_105,3,MCA,A,Lab 2,60,37,61.67,67.69,24,Practical,No,No,Yes
+13-07-2026,Monday,2,10:00 AM,DBMS,F_106,5,MCA,A,Room 202,60,46,76.67,75.78,0,Theory,No,No,No
+13-07-2026,Monday,3,11:15 AM,Web Development,F_102,5,MCA,A,Room 202,60,50,83.33,88.42,0,Theory,No,Yes,No
+13-07-2026,Monday,4,12:15 PM,Python,F_101,3,MCA,A,Room 303,60,50,83.33,84.02,0,Theory,No,No,No
+13-07-2026,Monday,5,02:00 PM,Machine Learning,F_102,3,MCA,B,Room 303,60,42,70.0,66.4,0,Theory,No,No,No
+13-07-2026,Monday,6,03:00 PM,DBMS,F_102,3,MCA,A,Lab 2,60,42,70.0,69.26,0,Practical,Yes,Yes,No
+13-07-2026,Monday,1,09:00 AM,Cloud Computing,F_104,3,MCA,B,Room 202,60,46,76.67,73.99,24,Theory,No,Yes,No
+13-07-2026,Monday,2,10:00 AM,Python,F_102,3,MCA,B,Room 303,60,47,78.33,82.74,0,Theory,No,No,No
+14-07-2026,Tuesday,3,11:15 AM,Data Mining,F_101,5,MCA,A,Room 201,60,49,81.67,80.0,0,Theory,No,No,No
+14-07-2026,Tuesday,4,12:15 PM,Web Development,F_106,5,MCA,B,Room 202,60,51,85.0,90.25,0,Theory,No,No,No
+14-07-2026,Tuesday,5,02:00 PM,DBMS,F_104,3,MCA,B,Room 202,60,51,85.0,88.93,0,Theory,No,No,No
+14-07-2026,Tuesday,6,03:00 PM,Machine Learning,F_105,3,MCA,A,Room 202,60,44,73.33,73.43,0,Theory,No,No,No
+14-07-2026,Tuesday,1,09:00 AM,Machine Learning,F_106,3,MCA,A,Room 303,60,29,48.33,53.16,24,Theory,Yes,No,Yes
+14-07-2026,Tuesday,2,10:00 AM,Machine Learning,F_101,3,MCA,A,Room 303,60,50,83.33,78.85,0,Theory,No,No,No
+14-07-2026,Tuesday,3,11:15 AM,DBMS,F_104,3,MCA,B,Room 303,60,45,75.0,78.95,0,Theory,No,Yes,No
+14-07-2026,Tuesday,4,12:15 PM,DBMS,F_102,3,MCA,A,Room 201,60,48,80.0,89.21,0,Theory,No,No,No
+15-07-2026,Wednesday,5,02:00 PM,Web Development,F_103,5,MCA,A,Lab 1,60,53,88.33,87.34,0,Practical,No,No,No
+15-07-2026,Wednesday,6,03:00 PM,Web Development,F_101,3,MCA,A,Room 202,60,41,68.33,71.09,0,Theory,No,No,Yes
+15-07-2026,Wednesday,1,09:00 AM,Cloud Computing,F_106,5,MCA,B,Room 201,60,46,76.67,75.14,24,Theory,No,No,No
+15-07-2026,Wednesday,2,10:00 AM,DBMS,F_101,3,MCA,B,Lab 2,60,52,86.67,89.13,0,Practical,No,No,No
+15-07-2026,Wednesday,3,11:15 AM,DBMS,F_103,3,MCA,A,Room 202,60,57,95.0,96.36,0,Theory,No,Yes,No
+15-07-2026,Wednesday,4,12:15 PM,Data Mining,F_103,5,MCA,B,Lab 2,60,47,78.33,78.87,0,Practical,Yes,No,No
+15-07-2026,Wednesday,5,02:00 PM,Python,F_104,3,MCA,B,Room 201,60,50,83.33,87.31,0,Theory,No,No,No
+15-07-2026,Wednesday,6,03:00 PM,Web Development,F_102,5,MCA,B,Room 303,60,49,81.67,78.94,0,Theory,No,No,No
+16-07-2026,Thursday,1,09:00 AM,Cloud Computing,F_106,3,MCA,B,Room 201,60,45,75.0,72.34,24,Theory,No,No,No
+16-07-2026,Thursday,2,10:00 AM,Machine Learning,F_105,3,MCA,B,Room 201,60,40,66.67,63.6,0,Theory,Yes,No,No
+16-07-2026,Thursday,3,11:15 AM,Python,F_101,3,MCA,B,Room 201,60,45,75.0,68.87,0,Theory,Yes,No,No
+16-07-2026,Thursday,4,12:15 PM,Data Mining,F_103,5,MCA,A,Room 202,60,51,85.0,86.97,0,Theory,No,No,No
+16-07-2026,Thursday,5,02:00 PM,Cloud Computing,F_103,3,MCA,B,Room 202,60,36,60.0,64.78,0,Theory,Yes,No,Yes
+16-07-2026,Thursday,6,03:00 PM,Python,F_101,3,MCA,B,Room 202,60,46,76.67,76.66,0,Theory,No,No,No
+16-07-2026,Thursday,1,09:00 AM,Web Development,F_103,5,MCA,A,Lab 2,60,48,80.0,78.45,24,Practical,No,No,No
+16-07-2026,Thursday,2,10:00 AM,Python,F_103,3,MCA,B,Lab 1,60,45,75.0,78.9,0,Practical,Yes,No,No
+17-07-2026,Friday,3,11:15 AM,Machine Learning,F_106,5,MCA,A,Lab 2,60,48,80.0,84.12,0,Practical,Yes,No,No
+17-07-2026,Friday,4,12:15 PM,Web Development,F_102,3,MCA,B,Room 202,60,54,90.0,90.25,0,Theory,No,No,No
+17-07-2026,Friday,5,02:00 PM,Machine Learning,F_101,3,MCA,A,Room 201,60,51,85.0,82.48,0,Theory,No,No,No
+17-07-2026,Friday,6,03:00 PM,Machine Learning,F_105,3,MCA,A,Room 202,60,35,58.33,60.89,0,Theory,No,No,Yes
+17-07-2026,Friday,1,09:00 AM,DBMS,F_104,5,MCA,B,Lab 2,60,50,83.33,83.52,24,Practical,No,Yes,No
+17-07-2026,Friday,2,10:00 AM,Python,F_102,5,MCA,B,Lab 2,60,56,93.33,93.52,0,Practical,No,Yes,No
+17-07-2026,Friday,3,11:15 AM,Machine Learning,F_104,3,MCA,B,Lab 2,60,47,78.33,76.71,0,Practical,Yes,No,No
+17-07-2026,Friday,4,12:15 PM,Python,F_104,5,MCA,A,Room 202,60,40,66.67,74.31,0,Theory,No,Yes,Yes
+18-07-2026,Saturday,5,02:00 PM,Web Development,F_103,5,MCA,A,Lab 1,60,49,81.67,81.41,0,Practical,Yes,Yes,No
+18-07-2026,Saturday,6,03:00 PM,DBMS,F_102,5,MCA,B,Room 202,60,44,73.33,71.32,0,Theory,No,No,No
+18-07-2026,Saturday,1,09:00 AM,Cloud Computing,F_103,5,MCA,B,Room 202,60,37,61.67,59.4,24,Theory,No,No,No
+18-07-2026,Saturday,2,10:00 AM,DBMS,F_104,5,MCA,A,Room 202,60,50,83.33,81.96,0,Theory,No,Yes,No
+18-07-2026,Saturday,3,11:15 AM,Web Development,F_104,5,MCA,A,Room 201,60,39,65.0,65.09,0,Theory,Yes,Yes,No
+18-07-2026,Saturday,4,12:15 PM,Cloud Computing,F_104,3,MCA,B,Lab 1,60,47,78.33,80.75,0,Practical,No,Yes,No
+18-07-2026,Saturday,5,02:00 PM,Python,F_106,5,MCA,A,Lab 1,60,43,71.67,75.65,0,Practical,Yes,No,No
+18-07-2026,Saturday,6,03:00 PM,Cloud Computing,F_101,5,MCA,A,Room 202,60,45,75.0,80.1,0,Theory,No,No,No
+19-07-2026,Monday,1,09:00 AM,Python,F_101,5,MCA,B,Room 201,60,35,58.33,53.7,24,Theory,Yes,No,No
+19-07-2026,Monday,2,10:00 AM,Data Mining,F_104,5,MCA,A,Room 202,60,42,70.0,70.37,0,Theory,No,No,Yes
+19-07-2026,Monday,3,11:15 AM,Data Mining,F_101,3,MCA,B,Room 202,60,50,83.33,85.82,0,Theory,No,Yes,No
+19-07-2026,Monday,4,12:15 PM,DBMS,F_102,3,MCA,B,Room 201,60,53,88.33,93.86,0,Theory,No,Yes,No
+19-07-2026,Monday,5,02:00 PM,Python,F_102,5,MCA,B,Room 202,60,54,90.0,89.18,0,Theory,No,No,No
+19-07-2026,Monday,6,03:00 PM,Machine Learning,F_106,5,MCA,B,Room 202,60,48,80.0,78.16,0,Theory,No,Yes,No
+19-07-2026,Monday,1,09:00 AM,Machine Learning,F_104,3,MCA,A,Lab 2,60,49,81.67,83.17,24,Practical,No,No,No
+19-07-2026,Monday,2,10:00 AM,Cloud Computing,F_103,5,MCA,B,Room 202,60,45,75.0,74.95,0,Theory,No,No,No
+20-07-2026,Monday,3,11:15 AM,Web Development,F_103,3,MCA,A,Room 201,60,51,85.0,83.9,0,Theory,No,Yes,No
+20-07-2026,Monday,4,12:15 PM,Cloud Computing,F_104,5,MCA,B,Lab 1,60,50,83.33,83.64,0,Practical,No,No,No
+20-07-2026,Monday,5,02:00 PM,DBMS,F_104,5,MCA,A,Room 202,60,45,75.0,69.55,0,Theory,No,No,No
+20-07-2026,Monday,6,03:00 PM,Web Development,F_105,5,MCA,B,Lab 2,60,48,80.0,78.83,0,Practical,No,Yes,No
+20-07-2026,Monday,1,09:00 AM,Cloud Computing,F_101,5,MCA,B,Lab 1,60,45,75.0,76.1,24,Practical,No,No,No
+20-07-2026,Monday,2,10:00 AM,Python,F_103,3,MCA,A,Lab 1,60,50,83.33,84.72,0,Practical,No,No,No
+20-07-2026,Monday,3,11:15 AM,Cloud Computing,F_103,5,MCA,A,Room 202,60,54,90.0,84.96,0,Theory,No,No,No
+20-07-2026,Monday,4,12:15 PM,Machine Learning,F_101,3,MCA,B,Lab 1,60,56,93.33,94.04,0,Practical,No,No,No
+21-07-2026,Tuesday,5,02:00 PM,Machine Learning,F_104,3,MCA,A,Lab 1,60,54,90.0,88.2,0,Practical,No,Yes,No
+21-07-2026,Tuesday,6,03:00 PM,DBMS,F_105,3,MCA,A,Room 303,60,44,73.33,73.37,0,Theory,No,No,No
+21-07-2026,Tuesday,1,09:00 AM,DBMS,F_104,3,MCA,B,Room 303,60,38,63.33,67.67,24,Theory,Yes,No,No
+21-07-2026,Tuesday,2,10:00 AM,Web Development,F_102,3,MCA,B,Lab 1,60,48,80.0,80.48,0,Practical,Yes,Yes,No
+21-07-2026,Tuesday,3,11:15 AM,DBMS,F_105,3,MCA,A,Lab 2,60,57,95.0,96.98,0,Practical,No,No,No
+21-07-2026,Tuesday,4,12:15 PM,DBMS,F_103,5,MCA,B,Room 202,60,49,81.67,82.79,0,Theory,No,No,No
+21-07-2026,Tuesday,5,02:00 PM,Python,F_106,5,MCA,A,Room 201,60,48,80.0,81.19,0,Theory,No,No,No
+21-07-2026,Tuesday,6,03:00 PM,Machine Learning,F_102,5,MCA,B,Room 201,60,45,75.0,72.97,0,Theory,No,No,No
+22-07-2026,Wednesday,1,09:00 AM,Web Development,F_104,5,MCA,A,Lab 1,60,49,81.67,87.17,24,Practical,No,No,No
+22-07-2026,Wednesday,2,10:00 AM,Web Development,F_101,5,MCA,B,Room 201,60,44,73.33,77.62,0,Theory,No,No,No
+22-07-2026,Wednesday,3,11:15 AM,Cloud Computing,F_101,3,MCA,A,Room 201,60,52,86.67,82.47,0,Theory,No,Yes,No
+22-07-2026,Wednesday,4,12:15 PM,DBMS,F_106,3,MCA,A,Lab 2,60,51,85.0,78.42,0,Practical,No,No,No
+22-07-2026,Wednesday,5,02:00 PM,Cloud Computing,F_104,5,MCA,A,Room 303,60,53,88.33,89.45,0,Theory,No,No,No
+22-07-2026,Wednesday,6,03:00 PM,Python,F_104,3,MCA,A,Lab 1,60,45,75.0,74.61,0,Practical,No,No,No
+22-07-2026,Wednesday,1,09:00 AM,Machine Learning,F_106,3,MCA,A,Lab 1,60,47,78.33,82.09,24,Practical,No,No,No
+22-07-2026,Wednesday,2,10:00 AM,Machine Learning,F_102,3,MCA,B,Room 303,60,42,70.0,66.42,0,Theory,Yes,No,No
+23-07-2026,Thursday,3,11:15 AM,Python,F_102,3,MCA,B,Lab 1,60,56,93.33,84.22,0,Practical,No,Yes,No
+23-07-2026,Thursday,4,12:15 PM,Web Development,F_105,3,MCA,B,Lab 2,60,50,83.33,90.33,0,Practical,No,No,No
+23-07-2026,Thursday,5,02:00 PM,Cloud Computing,F_102,5,MCA,B,Room 201,60,50,83.33,88.32,0,Theory,No,No,No
+23-07-2026,Thursday,6,03:00 PM,DBMS,F_101,5,MCA,A,Lab 1,60,44,73.33,71.89,0,Practical,Yes,No,No
+23-07-2026,Thursday,1,09:00 AM,Python,F_105,3,MCA,B,Lab 2,60,48,80.0,74.52,24,Practical,No,No,No
+23-07-2026,Thursday,2,10:00 AM,Cloud Computing,F_101,5,MCA,A,Room 202,60,45,75.0,67.1,0,Theory,No,No,No
+23-07-2026,Thursday,3,11:15 AM,Python,F_101,3,MCA,A,Lab 1,60,55,91.67,92.68,0,Practical,No,No,No
+23-07-2026,Thursday,4,12:15 PM,Machine Learning,F_105,3,MCA,B,Room 303,60,47,78.33,86.65,0,Theory,No,No,No
+24-07-2026,Friday,5,02:00 PM,Machine Learning,F_102,5,MCA,A,Lab 1,60,56,93.33,100.0,0,Practical,No,No,No
+24-07-2026,Friday,6,03:00 PM,Cloud Computing,F_102,3,MCA,B,Room 202,60,45,75.0,81.91,0,Theory,No,No,No
+24-07-2026,Friday,1,09:00 AM,Data Mining,F_104,5,MCA,B,Lab 2,60,47,78.33,78.66,24,Practical,No,No,No
+24-07-2026,Friday,2,10:00 AM,Python,F_104,3,MCA,B,Lab 1,60,52,86.67,89.83,0,Practical,No,No,No
+24-07-2026,Friday,3,11:15 AM,Data Mining,F_105,5,MCA,B,Room 202,60,47,78.33,78.43,0,Theory,No,No,No
+24-07-2026,Friday,4,12:15 PM,Cloud Computing,F_106,5,MCA,A,Room 202,60,51,85.0,78.56,0,Theory,No,No,No
+24-07-2026,Friday,5,02:00 PM,Web Development,F_104,5,MCA,A,Room 202,60,51,85.0,84.99,0,Theory,No,No,No
+24-07-2026,Friday,6,03:00 PM,Cloud Computing,F_104,5,MCA,B,Room 201,60,40,66.67,69.07,0,Theory,Yes,No,No
+25-07-2026,Saturday,1,09:00 AM,Machine Learning,F_106,3,MCA,A,Lab 2,60,40,66.67,68.86,24,Practical,Yes,Yes,No
+25-07-2026,Saturday,2,10:00 AM,DBMS,F_101,5,MCA,A,Lab 2,60,56,93.33,95.56,0,Practical,No,No,No
+25-07-2026,Saturday,3,11:15 AM,Cloud Computing,F_104,3,MCA,A,Room 201,60,50,83.33,69.78,0,Theory,No,No,No
+25-07-2026,Saturday,4,12:15 PM,Machine Learning,F_105,5,MCA,B,Lab 1,60,53,88.33,85.16,0,Practical,No,No,No
+25-07-2026,Saturday,5,02:00 PM,Cloud Computing,F_103,5,MCA,B,Lab 1,60,50,83.33,80.92,0,Practical,No,No,No
+25-07-2026,Saturday,6,03:00 PM,Data Mining,F_103,5,MCA,A,Room 201,60,32,53.33,56.75,0,Theory,No,Yes,Yes
+25-07-2026,Saturday,1,09:00 AM,Machine Learning,F_101,5,MCA,B,Room 201,60,46,76.67,78.37,24,Theory,No,No,No
+25-07-2026,Saturday,2,10:00 AM,DBMS,F_105,5,MCA,A,Lab 2,60,50,83.33,78.68,0,Practical,No,No,No
+26-07-2026,Monday,3,11:15 AM,Cloud Computing,F_106,3,MCA,B,Room 303,60,45,75.0,77.32,0,Theory,No,No,No
+26-07-2026,Monday,4,12:15 PM,Cloud Computing,F_101,3,MCA,A,Room 202,60,47,78.33,80.65,0,Theory,No,No,No
+26-07-2026,Monday,5,02:00 PM,Web Development,F_101,5,MCA,A,Lab 2,60,50,83.33,79.79,0,Practical,No,Yes,No
+26-07-2026,Monday,6,03:00 PM,Machine Learning,F_102,5,MCA,A,Room 201,60,44,73.33,70.41,0,Theory,No,No,No
+26-07-2026,Monday,1,09:00 AM,Python,F_101,5,MCA,B,Lab 2,60,49,81.67,83.7,24,Practical,No,No,No
+26-07-2026,Monday,2,10:00 AM,DBMS,F_103,5,MCA,B,Room 201,60,49,81.67,78.96,0,Theory,No,Yes,No
+26-07-2026,Monday,3,11:15 AM,Python,F_105,5,MCA,A,Room 201,60,40,66.67,67.41,0,Theory,No,No,No
+26-07-2026,Monday,4,12:15 PM,Data Mining,F_104,3,MCA,B,Room 303,60,48,80.0,77.17,0,Theory,No,Yes,No
+27-07-2026,Monday,5,02:00 PM,DBMS,F_106,3,MCA,B,Lab 1,60,51,85.0,84.53,0,Practical,No,No,No
+27-07-2026,Monday,6,03:00 PM,Python,F_102,3,MCA,B,Room 202,60,43,71.67,67.61,0,Theory,No,Yes,No
+27-07-2026,Monday,1,09:00 AM,Machine Learning,F_102,3,MCA,B,Room 201,60,37,61.67,53.88,24,Theory,No,No,No
+27-07-2026,Monday,2,10:00 AM,Python,F_102,5,MCA,B,Lab 1,60,40,66.67,70.32,0,Practical,Yes,Yes,No
+27-07-2026,Monday,3,11:15 AM,Data Mining,F_101,5,MCA,A,Room 202,60,49,81.67,88.07,0,Theory,No,No,No
+27-07-2026,Monday,4,12:15 PM,Machine Learning,F_103,5,MCA,B,Room 303,60,48,80.0,77.27,0,Theory,No,No,No
+27-07-2026,Monday,5,02:00 PM,Machine Learning,F_103,5,MCA,A,Room 303,60,50,83.33,86.74,0,Theory,No,No,No
+27-07-2026,Monday,6,03:00 PM,Web Development,F_106,3,MCA,A,Lab 2,60,36,60.0,59.07,0,Practical,Yes,No,No
+28-07-2026,Tuesday,1,09:00 AM,DBMS,F_101,5,MCA,A,Room 303,60,44,73.33,75.68,24,Theory,No,Yes,No
+28-07-2026,Tuesday,2,10:00 AM,DBMS,F_105,5,MCA,B,Room 303,60,50,83.33,83.39,0,Theory,No,No,No
+28-07-2026,Tuesday,3,11:15 AM,DBMS,F_102,5,MCA,B,Room 201,60,47,78.33,81.47,0,Theory,Yes,No,No
+28-07-2026,Tuesday,4,12:15 PM,Data Mining,F_103,3,MCA,B,Lab 1,60,53,88.33,86.9,0,Practical,No,No,No
+28-07-2026,Tuesday,5,02:00 PM,Data Mining,F_105,5,MCA,B,Lab 2,60,43,71.67,65.02,0,Practical,Yes,Yes,No
+28-07-2026,Tuesday,6,03:00 PM,Machine Learning,F_105,5,MCA,A,Lab 2,60,55,91.67,95.5,0,Practical,No,No,No
+28-07-2026,Tuesday,1,09:00 AM,DBMS,F_103,3,MCA,B,Lab 1,60,53,88.33,91.72,24,Practical,No,No,No
+28-07-2026,Tuesday,2,10:00 AM,DBMS,F_106,3,MCA,A,Lab 1,60,53,88.33,80.86,0,Practical,No,No,No
+29-07-2026,Wednesday,3,11:15 AM,DBMS,F_104,3,MCA,A,Lab 1,60,52,86.67,94.09,0,Practical,No,No,No
+29-07-2026,Wednesday,4,12:15 PM,Machine Learning,F_104,5,MCA,A,Room 303,60,51,85.0,79.49,0,Theory,No,No,No
+29-07-2026,Wednesday,5,02:00 PM,DBMS,F_102,3,MCA,A,Room 303,60,38,63.33,64.01,0,Theory,Yes,No,No
+29-07-2026,Wednesday,6,03:00 PM,Cloud Computing,F_103,5,MCA,A,Room 202,60,45,75.0,80.56,0,Theory,No,No,No
+29-07-2026,Wednesday,1,09:00 AM,Cloud Computing,F_104,5,MCA,B,Lab 1,60,42,70.0,66.0,24,Practical,Yes,No,No
+29-07-2026,Wednesday,2,10:00 AM,Machine Learning,F_101,5,MCA,A,Lab 1,60,50,83.33,80.56,0,Practical,Yes,Yes,No
+29-07-2026,Wednesday,3,11:15 AM,DBMS,F_106,3,MCA,B,Room 201,60,43,71.67,75.21,0,Theory,No,Yes,No
+29-07-2026,Wednesday,4,12:15 PM,Data Mining,F_102,5,MCA,B,Room 303,60,50,83.33,80.91,0,Theory,No,No,No
+30-07-2026,Thursday,5,02:00 PM,Data Mining,F_101,3,MCA,B,Lab 2,60,51,85.0,94.66,0,Practical,No,No,No
+30-07-2026,Thursday,6,03:00 PM,Python,F_105,5,MCA,B,Room 201,60,43,71.67,71.01,0,Theory,No,Yes,No
+30-07-2026,Thursday,1,09:00 AM,Data Mining,F_101,3,MCA,B,Lab 2,60,51,85.0,90.72,24,Practical,No,No,No
+30-07-2026,Thursday,2,10:00 AM,DBMS,F_106,5,MCA,B,Room 202,60,52,86.67,90.29,0,Theory,No,Yes,No
+30-07-2026,Thursday,3,11:15 AM,DBMS,F_103,3,MCA,A,Lab 1,60,46,76.67,76.43,0,Practical,Yes,No,No
+30-07-2026,Thursday,4,12:15 PM,Python,F_105,5,MCA,B,Lab 1,60,54,90.0,92.05,0,Practical,No,No,No
+30-07-2026,Thursday,5,02:00 PM,Python,F_102,5,MCA,B,Room 201,60,44,73.33,76.86,0,Theory,Yes,Yes,No
+30-07-2026,Thursday,6,03:00 PM,Machine Learning,F_103,5,MCA,A,Lab 1,60,37,61.67,60.62,0,Practical,No,No,Yes
+31-07-2026,Friday,1,09:00 AM,Machine Learning,F_102,5,MCA,B,Lab 1,60,49,81.67,86.79,24,Practical,No,No,No
+31-07-2026,Friday,2,10:00 AM,Data Mining,F_102,5,MCA,B,Lab 1,60,57,95.0,93.91,0,Practical,No,Yes,No
+31-07-2026,Friday,3,11:15 AM,Web Development,F_106,3,MCA,B,Room 201,60,42,70.0,73.78,0,Theory,Yes,No,No
+31-07-2026,Friday,4,12:15 PM,Data Mining,F_106,5,MCA,B,Room 303,60,50,83.33,85.14,0,Theory,No,No,No
+31-07-2026,Friday,5,02:00 PM,Cloud Computing,F_105,5,MCA,A,Room 202,60,54,90.0,100.0,0,Theory,No,No,No
+31-07-2026,Friday,6,03:00 PM,Python,F_104,5,MCA,B,Lab 2,60,51,85.0,87.93,0,Practical,No,No,No
+31-07-2026,Friday,1,09:00 AM,Python,F_105,5,MCA,B,Room 303,60,44,73.33,79.89,24,Theory,No,No,No
+31-07-2026,Friday,2,10:00 AM,DBMS,F_101,3,MCA,A,Room 202,60,53,88.33,86.6,0,Theory,No,No,No
+01-08-2026,Saturday,3,11:15 AM,Web Development,F_106,3,MCA,A,Room 303,60,38,63.33,65.35,0,Theory,Yes,No,No
+01-08-2026,Saturday,4,12:15 PM,Machine Learning,F_104,3,MCA,B,Room 303,60,51,85.0,79.73,0,Theory,No,No,No
+01-08-2026,Saturday,5,02:00 PM,Data Mining,F_104,5,MCA,A,Room 201,60,48,80.0,82.6,0,Theory,No,No,No
+01-08-2026,Saturday,6,03:00 PM,Web Development,F_103,5,MCA,B,Lab 1,60,47,78.33,83.98,0,Practical,No,Yes,No
+01-08-2026,Saturday,1,09:00 AM,Python,F_101,5,MCA,B,Room 202,60,45,75.0,76.98,24,Theory,No,Yes,No
+01-08-2026,Saturday,2,10:00 AM,Cloud Computing,F_106,3,MCA,A,Room 303,60,43,71.67,70.62,0,Theory,No,No,No
+01-08-2026,Saturday,3,11:15 AM,Cloud Computing,F_105,5,MCA,B,Room 201,60,50,83.33,76.86,0,Theory,No,Yes,No
+01-08-2026,Saturday,4,12:15 PM,Web Development,F_101,3,MCA,B,Room 201,60,43,71.67,78.51,0,Theory,Yes,No,No
+02-08-2026,Monday,5,02:00 PM,Python,F_105,5,MCA,A,Lab 1,60,49,81.67,81.81,0,Practical,No,No,No
+02-08-2026,Monday,6,03:00 PM,Machine Learning,F_105,3,MCA,B,Room 201,60,32,53.33,54.29,0,Theory,No,No,Yes
+02-08-2026,Monday,1,09:00 AM,Data Mining,F_104,5,MCA,A,Room 201,60,42,70.0,72.54,24,Theory,No,Yes,No
+02-08-2026,Monday,2,10:00 AM,Python,F_105,3,MCA,B,Lab 1,60,46,76.67,77.24,0,Practical,Yes,No,No
+02-08-2026,Monday,3,11:15 AM,DBMS,F_103,3,MCA,A,Room 201,60,50,83.33,84.15,0,Theory,No,No,No
+02-08-2026,Monday,4,12:15 PM,Web Development,F_104,5,MCA,A,Room 201,60,43,71.67,74.71,0,Theory,No,No,No
+02-08-2026,Monday,5,02:00 PM,Python,F_105,3,MCA,B,Room 201,60,30,50.0,46.99,0,Theory,Yes,No,Yes
+02-08-2026,Monday,6,03:00 PM,Cloud Computing,F_105,3,MCA,B,Room 202,60,43,71.67,68.66,0,Theory,No,No,No
+03-08-2026,Monday,1,09:00 AM,Cloud Computing,F_103,3,MCA,A,Room 201,60,29,48.33,47.98,24,Theory,Yes,No,Yes
+03-08-2026,Monday,2,10:00 AM,Cloud Computing,F_101,5,MCA,B,Room 303,60,43,71.67,75.25,0,Theory,No,No,No
+03-08-2026,Monday,3,11:15 AM,Cloud Computing,F_102,3,MCA,B,Room 202,60,41,68.33,70.47,0,Theory,No,No,Yes
+03-08-2026,Monday,4,12:15 PM,Python,F_104,5,MCA,B,Room 202,60,48,80.0,76.73,0,Theory,No,No,No
+03-08-2026,Monday,5,02:00 PM,Machine Learning,F_101,3,MCA,B,Room 202,60,51,85.0,90.31,0,Theory,No,No,No
+03-08-2026,Monday,6,03:00 PM,Web Development,F_103,3,MCA,B,Room 202,60,37,61.67,57.37,0,Theory,Yes,Yes,No
+03-08-2026,Monday,1,09:00 AM,Cloud Computing,F_102,3,MCA,B,Room 303,60,29,48.33,45.75,24,Theory,No,Yes,Yes
+03-08-2026,Monday,2,10:00 AM,Python,F_105,3,MCA,B,Lab 2,60,47,78.33,83.48,0,Practical,Yes,No,No
+04-08-2026,Tuesday,3,11:15 AM,Machine Learning,F_105,5,MCA,A,Room 202,60,51,85.0,89.2,0,Theory,No,Yes,No
+04-08-2026,Tuesday,4,12:15 PM,Machine Learning,F_102,5,MCA,A,Room 303,60,53,88.33,81.34,0,Theory,No,No,No
+04-08-2026,Tuesday,5,02:00 PM,DBMS,F_103,3,MCA,B,Lab 1,60,56,93.33,89.21,0,Practical,No,No,No
+04-08-2026,Tuesday,6,03:00 PM,Cloud Computing,F_101,3,MCA,A,Lab 1,60,51,85.0,90.31,0,Practical,No,No,No
+04-08-2026,Tuesday,1,09:00 AM,Python,F_106,5,MCA,A,Room 202,60,46,76.67,78.34,24,Theory,No,No,No
+04-08-2026,Tuesday,2,10:00 AM,Cloud Computing,F_104,5,MCA,A,Room 303,60,41,68.33,74.72,0,Theory,No,Yes,Yes
+04-08-2026,Tuesday,3,11:15 AM,Data Mining,F_102,3,MCA,B,Lab 2,60,55,91.67,91.61,0,Practical,No,No,No
+04-08-2026,Tuesday,4,12:15 PM,Python,F_101,3,MCA,A,Room 303,60,52,86.67,78.51,0,Theory,No,No,No
+05-08-2026,Wednesday,5,02:00 PM,Cloud Computing,F_101,3,MCA,A,Room 202,60,54,90.0,88.13,0,Theory,No,No,No
+05-08-2026,Wednesday,6,03:00 PM,Cloud Computing,F_103,5,MCA,A,Lab 2,60,44,73.33,76.32,0,Practical,No,No,No
+05-08-2026,Wednesday,1,09:00 AM,Machine Learning,F_105,3,MCA,A,Room 202,60,47,78.33,81.93,24,Theory,No,No,No
+05-08-2026,Wednesday,2,10:00 AM,Python,F_102,3,MCA,A,Lab 2,60,52,86.67,92.92,0,Practical,Yes,No,No
+05-08-2026,Wednesday,3,11:15 AM,Data Mining,F_105,3,MCA,B,Lab 2,60,45,75.0,82.87,0,Practical,No,No,Yes
+05-08-2026,Wednesday,4,12:15 PM,DBMS,F_104,5,MCA,A,Room 303,60,51,85.0,89.18,0,Theory,No,No,No
+05-08-2026,Wednesday,5,02:00 PM,DBMS,F_104,5,MCA,A,Room 201,60,50,83.33,86.03,0,Theory,No,No,No
+05-08-2026,Wednesday,6,03:00 PM,Python,F_103,3,MCA,B,Room 303,60,47,78.33,78.69,0,Theory,No,No,No
+06-08-2026,Thursday,1,09:00 AM,Python,F_104,3,MCA,A,Room 201,60,36,60.0,64.01,24,Theory,No,No,Yes
+06-08-2026,Thursday,2,10:00 AM,Cloud Computing,F_106,3,MCA,A,Room 202,60,48,80.0,81.63,0,Theory,No,No,No
+06-08-2026,Thursday,3,11:15 AM,Data Mining,F_105,5,MCA,B,Room 202,60,50,83.33,81.9,0,Theory,No,No,No
+06-08-2026,Thursday,4,12:15 PM,Cloud Computing,F_101,3,MCA,A,Lab 2,60,56,93.33,95.13,0,Practical,No,No,No
+06-08-2026,Thursday,5,02:00 PM,DBMS,F_101,5,MCA,B,Lab 1,60,55,91.67,91.13,0,Practical,No,Yes,No
+06-08-2026,Thursday,6,03:00 PM,Cloud Computing,F_102,3,MCA,A,Room 303,60,41,68.33,68.34,0,Theory,No,No,Yes
+06-08-2026,Thursday,1,09:00 AM,Data Mining,F_104,5,MCA,B,Room 202,60,48,80.0,77.48,24,Theory,No,No,No
+06-08-2026,Thursday,2,10:00 AM,Data Mining,F_106,3,MCA,A,Lab 2,60,53,88.33,82.8,0,Practical,No,No,No
+07-08-2026,Friday,3,11:15 AM,Python,F_106,3,MCA,A,Room 202,60,38,63.33,66.46,0,Theory,No,No,Yes
+07-08-2026,Friday,4,12:15 PM,Machine Learning,F_106,5,MCA,A,Lab 1,60,42,70.0,69.89,0,Practical,Yes,No,No
+07-08-2026,Friday,5,02:00 PM,DBMS,F_102,3,MCA,A,Room 201,60,40,66.67,66.73,0,Theory,No,No,Yes
+07-08-2026,Friday,6,03:00 PM,Data Mining,F_106,3,MCA,A,Room 202,60,45,75.0,75.6,0,Theory,No,No,No
+07-08-2026,Friday,1,09:00 AM,Python,F_103,5,MCA,B,Lab 1,60,49,81.67,84.69,24,Practical,No,No,No
+07-08-2026,Friday,2,10:00 AM,Machine Learning,F_103,3,MCA,A,Room 202,60,45,75.0,78.61,0,Theory,Yes,No,No
+07-08-2026,Friday,3,11:15 AM,Cloud Computing,F_105,3,MCA,A,Lab 2,60,52,86.67,90.9,0,Practical,No,No,No
+07-08-2026,Friday,4,12:15 PM,Cloud Computing,F_104,3,MCA,A,Lab 1,60,58,96.67,95.44,0,Practical,No,Yes,No
+08-08-2026,Saturday,5,02:00 PM,Web Development,F_102,5,MCA,B,Room 303,60,51,85.0,83.72,0,Theory,No,Yes,No
+08-08-2026,Saturday,6,03:00 PM,DBMS,F_101,3,MCA,B,Room 303,60,45,75.0,74.34,0,Theory,No,No,No
+08-08-2026,Saturday,1,09:00 AM,Machine Learning,F_102,3,MCA,B,Lab 1,60,37,61.67,62.29,24,Practical,Yes,No,No
+08-08-2026,Saturday,2,10:00 AM,Web Development,F_103,3,MCA,A,Room 201,60,36,60.0,55.46,0,Theory,Yes,No,No
+08-08-2026,Saturday,3,11:15 AM,Data Mining,F_101,5,MCA,B,Room 202,60,40,66.67,68.44,0,Theory,Yes,No,No
+08-08-2026,Saturday,4,12:15 PM,Cloud Computing,F_103,3,MCA,B,Room 202,60,50,83.33,86.2,0,Theory,No,No,No
+08-08-2026,Saturday,5,02:00 PM,Machine Learning,F_102,5,MCA,A,Lab 2,60,44,73.33,68.18,0,Practical,Yes,No,No
+08-08-2026,Saturday,6,03:00 PM,Cloud Computing,F_101,3,MCA,A,Room 202,60,48,80.0,83.15,0,Theory,No,No,No
+09-08-2026,Monday,1,09:00 AM,Cloud Computing,F_104,3,MCA,A,Room 201,60,40,66.67,64.01,24,Theory,No,No,No
+09-08-2026,Monday,2,10:00 AM,Web Development,F_104,5,MCA,A,Lab 2,60,51,85.0,91.65,0,Practical,No,No,No
+09-08-2026,Monday,3,11:15 AM,DBMS,F_104,5,MCA,B,Room 201,60,50,83.33,91.26,0,Theory,No,No,No
+09-08-2026,Monday,4,12:15 PM,Data Mining,F_101,3,MCA,A,Room 202,60,49,81.67,87.32,0,Theory,No,Yes,No
+09-08-2026,Monday,5,02:00 PM,Web Development,F_105,3,MCA,B,Lab 1,60,54,90.0,89.05,0,Practical,No,No,No
+09-08-2026,Monday,6,03:00 PM,Data Mining,F_104,3,MCA,A,Room 201,60,38,63.33,63.27,0,Theory,No,No,No
+09-08-2026,Monday,1,09:00 AM,Data Mining,F_101,5,MCA,B,Room 303,60,43,71.67,73.32,24,Theory,No,No,No
+09-08-2026,Monday,2,10:00 AM,Data Mining,F_106,5,MCA,B,Room 202,60,47,78.33,82.82,0,Theory,No,No,No
+10-08-2026,Monday,3,11:15 AM,Cloud Computing,F_103,5,MCA,A,Room 201,60,48,80.0,81.33,0,Theory,No,No,No
+10-08-2026,Monday,4,12:15 PM,Web Development,F_105,3,MCA,B,Room 303,60,36,60.0,65.27,0,Theory,No,No,Yes
+10-08-2026,Monday,5,02:00 PM,Python,F_103,3,MCA,A,Room 202,60,45,75.0,79.19,0,Theory,No,No,No
+10-08-2026,Monday,6,03:00 PM,Data Mining,F_101,3,MCA,A,Room 201,60,42,70.0,70.0,0,Theory,No,No,No
+10-08-2026,Monday,1,09:00 AM,DBMS,F_104,3,MCA,B,Lab 1,60,50,83.33,81.52,24,Practical,No,No,No
+10-08-2026,Monday,2,10:00 AM,Web Development,F_106,3,MCA,A,Room 201,60,49,81.67,75.82,0,Theory,No,No,Yes
+10-08-2026,Monday,3,11:15 AM,Python,F_103,5,MCA,B,Lab 2,60,47,78.33,72.57,0,Practical,Yes,Yes,No
+10-08-2026,Monday,4,12:15 PM,Cloud Computing,F_104,3,MCA,B,Lab 2,60,52,86.67,82.85,0,Practical,No,No,No
+11-08-2026,Tuesday,5,02:00 PM,Web Development,F_101,3,MCA,A,Room 202,60,49,81.67,75.82,0,Theory,No,Yes,No
+11-08-2026,Tuesday,6,03:00 PM,Web Development,F_103,3,MCA,A,Lab 1,60,49,81.67,85.36,0,Practical,No,No,No
+11-08-2026,Tuesday,1,09:00 AM,Machine Learning,F_102,5,MCA,A,Room 202,60,48,80.0,78.32,24,Theory,No,No,No
+11-08-2026,Tuesday,2,10:00 AM,Machine Learning,F_106,3,MCA,A,Lab 1,60,53,88.33,93.18,0,Practical,No,No,No
+11-08-2026,Tuesday,3,11:15 AM,Machine Learning,F_103,5,MCA,A,Room 201,60,53,88.33,78.1,0,Theory,No,No,No
+11-08-2026,Tuesday,4,12:15 PM,Cloud Computing,F_101,5,MCA,B,Lab 2,60,48,80.0,75.4,0,Practical,No,No,Yes
+11-08-2026,Tuesday,5,02:00 PM,Python,F_105,3,MCA,A,Room 202,60,49,81.67,83.52,0,Theory,No,No,No
+11-08-2026,Tuesday,6,03:00 PM,Data Mining,F_103,3,MCA,B,Lab 1,60,55,91.67,95.59,0,Practical,No,No,No
+12-08-2026,Wednesday,1,09:00 AM,Web Development,F_102,5,MCA,B,Room 303,60,45,75.0,84.2,24,Theory,No,No,No
+12-08-2026,Wednesday,2,10:00 AM,Python,F_104,5,MCA,B,Room 201,60,41,68.33,70.49,0,Theory,Yes,No,No
+12-08-2026,Wednesday,3,11:15 AM,Python,F_101,3,MCA,B,Room 202,60,51,85.0,86.99,0,Theory,No,No,No
+12-08-2026,Wednesday,4,12:15 PM,Cloud Computing,F_106,3,MCA,A,Room 202,60,52,86.67,89.79,0,Theory,No,Yes,No
+12-08-2026,Wednesday,5,02:00 PM,Machine Learning,F_105,3,MCA,B,Room 201,60,53,88.33,87.45,0,Theory,No,No,No
+12-08-2026,Wednesday,6,03:00 PM,Python,F_103,3,MCA,B,Room 303,60,34,56.67,55.24,0,Theory,Yes,No,No
+12-08-2026,Wednesday,1,09:00 AM,Web Development,F_105,3,MCA,B,Room 201,60,45,75.0,67.21,24,Theory,No,No,No
+12-08-2026,Wednesday,2,10:00 AM,Cloud Computing,F_106,3,MCA,A,Lab 1,60,58,96.67,100.0,0,Practical,No,No,No
+13-08-2026,Thursday,3,11:15 AM,DBMS,F_106,3,MCA,A,Lab 2,60,43,71.67,74.4,0,Practical,Yes,No,No
+13-08-2026,Thursday,4,12:15 PM,Machine Learning,F_101,3,MCA,B,Lab 2,60,58,96.67,93.2,0,Practical,No,No,No
+13-08-2026,Thursday,5,02:00 PM,Data Mining,F_105,5,MCA,B,Room 303,60,49,81.67,82.52,0,Theory,No,Yes,No
+13-08-2026,Thursday,6,03:00 PM,Data Mining,F_104,3,MCA,A,Lab 1,60,54,90.0,88.02,0,Practical,No,No,No
+13-08-2026,Thursday,1,09:00 AM,Machine Learning,F_105,5,MCA,B,Room 202,60,47,78.33,78.48,24,Theory,No,Yes,No
+13-08-2026,Thursday,2,10:00 AM,Python,F_105,5,MCA,B,Lab 1,60,52,86.67,84.02,0,Practical,No,No,No
+13-08-2026,Thursday,3,11:15 AM,Python,F_103,5,MCA,B,Lab 1,60,51,85.0,86.38,0,Practical,No,No,No
+13-08-2026,Thursday,4,12:15 PM,Data Mining,F_104,3,MCA,A,Lab 1,60,58,96.67,100.0,0,Practical,No,No,No
+14-08-2026,Friday,5,02:00 PM,Data Mining,F_101,3,MCA,B,Room 303,60,50,83.33,84.44,0,Theory,No,No,No
+14-08-2026,Friday,6,03:00 PM,Data Mining,F_104,5,MCA,B,Room 201,60,39,65.0,67.89,0,Theory,Yes,No,No
+14-08-2026,Friday,1,09:00 AM,Web Development,F_101,5,MCA,B,Room 201,60,46,76.67,75.97,24,Theory,No,Yes,No
+14-08-2026,Friday,2,10:00 AM,Web Development,F_104,3,MCA,A,Room 201,60,56,93.33,98.86,0,Theory,No,No,No
+14-08-2026,Friday,3,11:15 AM,Python,F_101,5,MCA,B,Lab 1,60,54,90.0,89.03,0,Practical,No,No,No
+14-08-2026,Friday,4,12:15 PM,Data Mining,F_105,3,MCA,B,Room 202,60,48,80.0,83.99,0,Theory,Yes,No,No
+14-08-2026,Friday,5,02:00 PM,DBMS,F_106,5,MCA,A,Room 202,60,53,88.33,85.56,0,Theory,No,No,No
+14-08-2026,Friday,6,03:00 PM,Web Development,F_102,5,MCA,A,Room 303,60,46,76.67,79.74,0,Theory,No,Yes,No
+15-08-2026,Saturday,1,09:00 AM,Python,F_101,5,MCA,B,Room 201,60,49,81.67,78.67,24,Theory,No,No,No
+15-08-2026,Saturday,2,10:00 AM,Web Development,F_103,5,MCA,B,Room 202,60,46,76.67,82.26,0,Theory,No,No,No
+15-08-2026,Saturday,3,11:15 AM,Data Mining,F_103,5,MCA,A,Lab 2,60,45,75.0,74.93,0,Practical,No,No,Yes
+15-08-2026,Saturday,4,12:15 PM,Python,F_103,5,MCA,B,Room 202,60,52,86.67,87.01,0,Theory,No,No,No
+15-08-2026,Saturday,5,02:00 PM,Machine Learning,F_105,5,MCA,A,Room 303,60,44,73.33,68.86,0,Theory,No,No,No
+15-08-2026,Saturday,6,03:00 PM,Machine Learning,F_103,5,MCA,B,Room 201,60,41,68.33,72.35,0,Theory,No,No,No
+15-08-2026,Saturday,1,09:00 AM,Cloud Computing,F_104,5,MCA,B,Room 201,60,42,70.0,66.59,24,Theory,No,No,No
+15-08-2026,Saturday,2,10:00 AM,Web Development,F_105,3,MCA,A,Room 201,60,49,81.67,84.1,0,Theory,No,No,No
+16-08-2026,Monday,3,11:15 AM,Python,F_106,3,MCA,A,Lab 2,60,43,71.67,70.0,0,Practical,No,No,No
+16-08-2026,Monday,4,12:15 PM,Cloud Computing,F_102,3,MCA,B,Lab 1,60,42,70.0,71.7,0,Practical,No,Yes,Yes
+16-08-2026,Monday,5,02:00 PM,DBMS,F_104,3,MCA,B,Room 202,60,47,78.33,75.96,0,Theory,No,No,No
+16-08-2026,Monday,6,03:00 PM,Web Development,F_106,3,MCA,B,Lab 1,60,49,81.67,83.14,0,Practical,No,No,No
+16-08-2026,Monday,1,09:00 AM,Web Development,F_102,5,MCA,A,Room 202,60,44,73.33,77.03,24,Theory,No,No,No
+16-08-2026,Monday,2,10:00 AM,Cloud Computing,F_101,3,MCA,B,Lab 2,60,50,83.33,78.19,0,Practical,No,Yes,No
+16-08-2026,Monday,3,11:15 AM,Python,F_103,3,MCA,B,Room 201,60,49,81.67,85.13,0,Theory,No,No,No
+16-08-2026,Monday,4,12:15 PM,Web Development,F_105,3,MCA,A,Room 202,60,51,85.0,85.53,0,Theory,No,Yes,No
+17-08-2026,Monday,5,02:00 PM,Python,F_106,5,MCA,A,Room 303,60,44,73.33,73.51,0,Theory,Yes,No,No
+17-08-2026,Monday,6,03:00 PM,Python,F_105,3,MCA,A,Room 303,60,35,58.33,58.56,0,Theory,Yes,No,No
+17-08-2026,Monday,1,09:00 AM,Data Mining,F_106,5,MCA,A,Room 201,60,43,71.67,73.09,24,Theory,No,No,No
+17-08-2026,Monday,2,10:00 AM,Cloud Computing,F_105,5,MCA,A,Lab 1,60,50,83.33,78.57,0,Practical,No,No,No
+17-08-2026,Monday,3,11:15 AM,Web Development,F_106,5,MCA,A,Lab 1,60,51,85.0,93.44,0,Practical,No,No,No
+17-08-2026,Monday,4,12:15 PM,Machine Learning,F_104,5,MCA,A,Room 201,60,41,68.33,69.55,0,Theory,No,No,No
+17-08-2026,Monday,5,02:00 PM,DBMS,F_104,3,MCA,A,Lab 2,60,48,80.0,85.23,0,Practical,No,No,No
+17-08-2026,Monday,6,03:00 PM,Data Mining,F_105,5,MCA,A,Room 303,60,47,78.33,79.36,0,Theory,No,No,No
+18-08-2026,Tuesday,1,09:00 AM,Machine Learning,F_102,3,MCA,A,Room 303,60,43,71.67,68.92,24,Theory,No,No,No
+18-08-2026,Tuesday,2,10:00 AM,Data Mining,F_106,5,MCA,B,Lab 1,60,54,90.0,85.67,0,Practical,No,No,No
+18-08-2026,Tuesday,3,11:15 AM,DBMS,F_106,5,MCA,A,Room 201,60,47,78.33,74.75,0,Theory,No,No,No
+18-08-2026,Tuesday,4,12:15 PM,Machine Learning,F_105,5,MCA,B,Lab 2,60,48,80.0,82.11,0,Practical,No,No,Yes
+18-08-2026,Tuesday,5,02:00 PM,Data Mining,F_104,5,MCA,A,Lab 1,60,45,75.0,76.97,0,Practical,No,No,Yes
+18-08-2026,Tuesday,6,03:00 PM,Cloud Computing,F_104,5,MCA,B,Room 202,60,51,85.0,85.42,0,Theory,No,No,No
+18-08-2026,Tuesday,1,09:00 AM,Cloud Computing,F_106,5,MCA,B,Room 303,60,53,88.33,83.62,24,Theory,No,No,No
+18-08-2026,Tuesday,2,10:00 AM,Cloud Computing,F_105,3,MCA,A,Lab 1,60,52,86.67,91.12,0,Practical,No,No,No
+19-08-2026,Wednesday,3,11:15 AM,Web Development,F_102,3,MCA,A,Lab 2,60,58,96.67,94.7,0,Practical,No,No,No
+19-08-2026,Wednesday,4,12:15 PM,Web Development,F_101,5,MCA,B,Room 303,60,55,91.67,97.07,0,Theory,No,No,No
+19-08-2026,Wednesday,5,02:00 PM,Cloud Computing,F_103,3,MCA,B,Room 202,60,49,81.67,82.16,0,Theory,No,No,No
+19-08-2026,Wednesday,6,03:00 PM,Web Development,F_105,5,MCA,A,Room 202,60,39,65.0,63.05,0,Theory,Yes,No,No
+19-08-2026,Wednesday,1,09:00 AM,Python,F_101,5,MCA,B,Room 303,60,42,70.0,78.95,24,Theory,No,No,No
+19-08-2026,Wednesday,2,10:00 AM,Data Mining,F_106,5,MCA,B,Room 202,60,52,86.67,88.52,0,Theory,No,No,No
+19-08-2026,Wednesday,3,11:15 AM,Data Mining,F_106,3,MCA,B,Room 202,60,52,86.67,85.85,0,Theory,No,Yes,No
+19-08-2026,Wednesday,4,12:15 PM,DBMS,F_103,5,MCA,B,Room 303,60,44,73.33,70.3,0,Theory,Yes,Yes,No
+20-08-2026,Thursday,5,02:00 PM,Machine Learning,F_106,5,MCA,A,Lab 2,60,55,91.67,92.44,0,Practical,No,No,No
+20-08-2026,Thursday,6,03:00 PM,Python,F_103,3,MCA,B,Lab 2,60,53,88.33,87.85,0,Practical,No,No,No
+20-08-2026,Thursday,1,09:00 AM,Data Mining,F_106,5,MCA,B,Lab 2,60,48,80.0,79.29,24,Practical,No,No,No
+20-08-2026,Thursday,2,10:00 AM,Machine Learning,F_102,5,MCA,A,Lab 1,60,42,70.0,59.85,0,Practical,Yes,No,Yes
+20-08-2026,Thursday,3,11:15 AM,Cloud Computing,F_106,3,MCA,B,Lab 1,60,52,86.67,83.63,0,Practical,No,No,No
+20-08-2026,Thursday,4,12:15 PM,Machine Learning,F_102,3,MCA,B,Room 201,60,53,88.33,94.33,0,Theory,No,No,No
+20-08-2026,Thursday,5,02:00 PM,Data Mining,F_105,5,MCA,B,Room 202,60,50,83.33,76.23,0,Theory,No,Yes,No
+20-08-2026,Thursday,6,03:00 PM,Python,F_101,3,MCA,A,Room 202,60,51,85.0,83.72,0,Theory,No,Yes,No
+21-08-2026,Friday,1,09:00 AM,DBMS,F_103,5,MCA,B,Room 201,60,45,75.0,78.38,24,Theory,No,No,No
+21-08-2026,Friday,2,10:00 AM,Web Development,F_105,5,MCA,A,Room 201,60,53,88.33,86.86,0,Theory,No,No,No
+21-08-2026,Friday,3,11:15 AM,DBMS,F_104,3,MCA,A,Lab 2,60,55,91.67,98.58,0,Practical,No,No,No
+21-08-2026,Friday,4,12:15 PM,Data Mining,F_106,5,MCA,B,Room 201,60,50,83.33,84.25,0,Theory,No,No,No
+21-08-2026,Friday,5,02:00 PM,Web Development,F_104,3,MCA,A,Room 202,60,44,73.33,77.06,0,Theory,No,No,No
+21-08-2026,Friday,6,03:00 PM,Data Mining,F_106,5,MCA,A,Room 202,60,47,78.33,80.2,0,Theory,No,Yes,No
+21-08-2026,Friday,1,09:00 AM,Data Mining,F_104,3,MCA,A,Room 201,60,50,83.33,85.44,24,Theory,No,No,No
+21-08-2026,Friday,2,10:00 AM,Cloud Computing,F_102,5,MCA,A,Lab 1,60,51,85.0,86.0,0,Practical,No,No,No
+22-08-2026,Saturday,3,11:15 AM,DBMS,F_102,3,MCA,A,Room 303,60,52,86.67,85.85,0,Theory,No,No,No
+22-08-2026,Saturday,4,12:15 PM,DBMS,F_106,5,MCA,A,Room 201,60,47,78.33,85.74,0,Theory,No,No,No
+22-08-2026,Saturday,5,02:00 PM,Web Development,F_105,5,MCA,A,Room 201,60,49,81.67,97.37,0,Theory,No,No,No
+22-08-2026,Saturday,6,03:00 PM,Machine Learning,F_106,3,MCA,A,Lab 1,60,45,75.0,77.77,0,Practical,No,No,No
+22-08-2026,Saturday,1,09:00 AM,Machine Learning,F_101,3,MCA,B,Room 201,60,46,76.67,74.72,24,Theory,No,No,No
+22-08-2026,Saturday,2,10:00 AM,Data Mining,F_103,3,MCA,A,Room 303,60,48,80.0,80.86,0,Theory,No,No,No
+22-08-2026,Saturday,3,11:15 AM,Data Mining,F_106,5,MCA,B,Lab 2,60,41,68.33,61.76,0,Practical,No,No,Yes
+22-08-2026,Saturday,4,12:15 PM,Python,F_105,3,MCA,B,Room 303,60,46,76.67,73.0,0,Theory,No,No,No
+23-08-2026,Monday,5,02:00 PM,Data Mining,F_105,3,MCA,B,Lab 1,60,58,96.67,94.73,0,Practical,No,No,No
+23-08-2026,Monday,6,03:00 PM,Python,F_101,5,MCA,A,Lab 1,60,47,78.33,75.13,0,Practical,No,No,No
+23-08-2026,Monday,1,09:00 AM,Python,F_102,5,MCA,B,Room 201,60,39,65.0,66.19,24,Theory,No,Yes,No
+23-08-2026,Monday,2,10:00 AM,Data Mining,F_105,3,MCA,A,Room 202,60,39,65.0,67.9,0,Theory,No,Yes,Yes
+23-08-2026,Monday,3,11:15 AM,DBMS,F_103,3,MCA,B,Lab 2,60,48,80.0,79.54,0,Practical,Yes,No,No
+23-08-2026,Monday,4,12:15 PM,Machine Learning,F_102,3,MCA,B,Room 202,60,44,73.33,77.03,0,Theory,No,No,No
+23-08-2026,Monday,5,02:00 PM,Python,F_102,5,MCA,A,Room 202,60,47,78.33,73.12,0,Theory,No,No,No
+23-08-2026,Monday,6,03:00 PM,Machine Learning,F_106,3,MCA,A,Room 202,60,45,75.0,75.42,0,Theory,No,No,No
+24-08-2026,Monday,1,09:00 AM,Machine Learning,F_104,3,MCA,B,Lab 2,60,46,76.67,80.11,24,Practical,No,No,No
+24-08-2026,Monday,2,10:00 AM,Python,F_104,3,MCA,B,Room 303,60,44,73.33,72.94,0,Theory,No,Yes,No
+24-08-2026,Monday,3,11:15 AM,Cloud Computing,F_106,3,MCA,A,Room 201,60,50,83.33,84.6,0,Theory,No,No,No
+24-08-2026,Monday,4,12:15 PM,Machine Learning,F_104,3,MCA,B,Lab 2,60,46,76.67,73.23,0,Practical,No,No,No
+24-08-2026,Monday,5,02:00 PM,Machine Learning,F_101,5,MCA,A,Lab 2,60,55,91.67,89.79,0,Practical,No,No,No
+24-08-2026,Monday,6,03:00 PM,Python,F_106,5,MCA,A,Lab 2,60,34,56.67,57.46,0,Practical,No,Yes,Yes
+24-08-2026,Monday,1,09:00 AM,Data Mining,F_101,5,MCA,B,Lab 2,60,48,80.0,81.85,24,Practical,No,No,No
+24-08-2026,Monday,2,10:00 AM,Web Development,F_105,3,MCA,A,Lab 2,60,51,85.0,81.96,0,Practical,No,Yes,No
+25-08-2026,Tuesday,3,11:15 AM,DBMS,F_102,3,MCA,A,Room 202,60,51,85.0,86.79,0,Theory,No,Yes,No
+25-08-2026,Tuesday,4,12:15 PM,Data Mining,F_106,3,MCA,A,Lab 1,60,46,76.67,77.57,0,Practical,Yes,No,No
+25-08-2026,Tuesday,5,02:00 PM,Web Development,F_104,5,MCA,A,Room 202,60,46,76.67,73.83,0,Theory,No,No,No
+25-08-2026,Tuesday,6,03:00 PM,Python,F_103,5,MCA,B,Lab 2,60,48,80.0,76.23,0,Practical,No,No,No
+25-08-2026,Tuesday,1,09:00 AM,Web Development,F_104,5,MCA,B,Lab 1,60,45,75.0,76.29,24,Practical,No,Yes,No
+25-08-2026,Tuesday,2,10:00 AM,Web Development,F_101,3,MCA,A,Room 202,60,55,91.67,97.39,0,Theory,No,No,No
+25-08-2026,Tuesday,3,11:15 AM,Web Development,F_106,5,MCA,B,Room 202,60,46,76.67,76.13,0,Theory,Yes,No,No
+25-08-2026,Tuesday,4,12:15 PM,Cloud Computing,F_106,5,MCA,B,Room 202,60,42,70.0,70.08,0,Theory,No,Yes,No
+26-08-2026,Wednesday,5,02:00 PM,DBMS,F_101,3,MCA,B,Lab 1,60,56,93.33,96.65,0,Practical,No,No,No
+26-08-2026,Wednesday,6,03:00 PM,Machine Learning,F_104,3,MCA,A,Room 303,60,45,75.0,77.32,0,Theory,No,No,No
+26-08-2026,Wednesday,1,09:00 AM,Web Development,F_105,3,MCA,B,Room 303,60,40,66.67,64.17,24,Theory,No,Yes,No
+26-08-2026,Wednesday,2,10:00 AM,Python,F_102,3,MCA,A,Lab 2,60,54,90.0,88.65,0,Practical,No,No,No
+26-08-2026,Wednesday,3,11:15 AM,Python,F_102,5,MCA,B,Room 201,60,49,81.67,80.77,0,Theory,No,No,No
+26-08-2026,Wednesday,4,12:15 PM,Web Development,F_103,3,MCA,A,Lab 2,60,54,90.0,89.9,0,Practical,No,No,No
+26-08-2026,Wednesday,5,02:00 PM,Web Development,F_105,3,MCA,B,Room 201,60,36,60.0,65.98,0,Theory,No,No,Yes
+26-08-2026,Wednesday,6,03:00 PM,Data Mining,F_102,5,MCA,A,Room 303,60,48,80.0,71.49,0,Theory,No,No,No
+27-08-2026,Thursday,1,09:00 AM,Machine Learning,F_104,3,MCA,B,Room 303,60,45,75.0,71.41,24,Theory,No,No,No
+27-08-2026,Thursday,2,10:00 AM,Cloud Computing,F_104,3,MCA,B,Room 202,60,50,83.33,90.4,0,Theory,No,No,No
+27-08-2026,Thursday,3,11:15 AM,Data Mining,F_104,3,MCA,A,Room 202,60,56,93.33,94.7,0,Theory,No,No,No
+27-08-2026,Thursday,4,12:15 PM,Machine Learning,F_102,5,MCA,B,Room 202,60,40,66.67,69.1,0,Theory,Yes,Yes,No
+27-08-2026,Thursday,5,02:00 PM,Data Mining,F_106,3,MCA,B,Lab 1,60,50,83.33,81.32,0,Practical,No,No,No
+27-08-2026,Thursday,6,03:00 PM,Python,F_104,3,MCA,B,Lab 1,60,40,66.67,66.95,0,Practical,Yes,Yes,No
+27-08-2026,Thursday,1,09:00 AM,Machine Learning,F_105,5,MCA,B,Lab 2,60,53,88.33,95.65,24,Practical,No,Yes,No
+27-08-2026,Thursday,2,10:00 AM,Cloud Computing,F_103,3,MCA,A,Room 202,60,51,85.0,93.41,0,Theory,No,No,No
+28-08-2026,Friday,3,11:15 AM,Data Mining,F_105,3,MCA,A,Room 201,60,38,63.33,63.97,0,Theory,Yes,Yes,No
+28-08-2026,Friday,4,12:15 PM,Python,F_101,3,MCA,B,Room 201,60,51,85.0,94.99,0,Theory,No,No,No
+28-08-2026,Friday,5,02:00 PM,Web Development,F_102,3,MCA,B,Room 202,60,53,88.33,95.08,0,Theory,No,No,No
+28-08-2026,Friday,6,03:00 PM,DBMS,F_101,5,MCA,B,Lab 1,60,43,71.67,70.18,0,Practical,Yes,No,No
+28-08-2026,Friday,1,09:00 AM,DBMS,F_101,3,MCA,B,Room 201,60,45,75.0,73.9,24,Theory,No,No,No
+28-08-2026,Friday,2,10:00 AM,DBMS,F_103,3,MCA,A,Room 202,60,54,90.0,91.91,0,Theory,No,No,No
+28-08-2026,Friday,3,11:15 AM,Machine Learning,F_104,5,MCA,A,Room 303,60,51,85.0,85.31,0,Theory,No,Yes,No
+28-08-2026,Friday,4,12:15 PM,Cloud Computing,F_104,3,MCA,B,Lab 1,60,46,76.67,73.48,0,Practical,No,No,Yes
+29-08-2026,Saturday,5,02:00 PM,Data Mining,F_102,5,MCA,B,Lab 1,60,54,90.0,92.81,0,Practical,No,No,No
+29-08-2026,Saturday,6,03:00 PM,Cloud Computing,F_104,5,MCA,A,Room 201,60,45,75.0,71.76,0,Theory,No,No,No
+29-08-2026,Saturday,1,09:00 AM,Web Development,F_105,5,MCA,A,Room 303,60,46,76.67,71.69,24,Theory,No,Yes,No
+29-08-2026,Saturday,2,10:00 AM,Data Mining,F_105,3,MCA,B,Lab 1,60,54,90.0,88.74,0,Practical,No,No,No
+29-08-2026,Saturday,3,11:15 AM,Web Development,F_106,3,MCA,A,Room 201,60,44,73.33,74.24,0,Theory,Yes,No,No
+29-08-2026,Saturday,4,12:15 PM,Data Mining,F_102,3,MCA,A,Lab 1,60,49,81.67,80.93,0,Practical,No,No,No
+29-08-2026,Saturday,5,02:00 PM,Web Development,F_104,5,MCA,A,Room 201,60,51,85.0,84.86,0,Theory,No,No,No
+29-08-2026,Saturday,6,03:00 PM,Cloud Computing,F_103,3,MCA,A,Lab 1,60,43,71.67,74.95,0,Practical,Yes,No,No
+30-08-2026,Monday,1,09:00 AM,Machine Learning,F_103,5,MCA,A,Room 303,60,32,53.33,46.38,24,Theory,No,Yes,Yes
+30-08-2026,Monday,2,10:00 AM,Cloud Computing,F_105,5,MCA,A,Room 303,60,45,75.0,70.77,0,Theory,No,No,No
+30-08-2026,Monday,3,11:15 AM,Cloud Computing,F_104,3,MCA,B,Room 303,60,49,81.67,80.95,0,Theory,No,No,No
+30-08-2026,Monday,4,12:15 PM,DBMS,F_103,3,MCA,B,Lab 1,60,53,88.33,93.48,0,Practical,No,No,No
+30-08-2026,Monday,5,02:00 PM,Data Mining,F_103,3,MCA,A,Lab 1,60,54,90.0,89.03,0,Practical,No,No,No
+30-08-2026,Monday,6,03:00 PM,Data Mining,F_105,5,MCA,B,Room 201,60,43,71.67,73.07,0,Theory,No,No,No
+30-08-2026,Monday,1,09:00 AM,Python,F_106,5,MCA,A,Lab 1,60,48,80.0,80.31,24,Practical,No,No,No
+30-08-2026,Monday,2,10:00 AM,DBMS,F_101,5,MCA,A,Room 303,60,28,46.67,46.66,0,Theory,Yes,Yes,Yes
+31-08-2026,Monday,3,11:15 AM,Data Mining,F_106,5,MCA,A,Lab 2,60,49,81.67,77.2,0,Practical,Yes,No,No
+31-08-2026,Monday,4,12:15 PM,Data Mining,F_104,5,MCA,B,Room 201,60,47,78.33,73.55,0,Theory,No,No,No
+31-08-2026,Monday,5,02:00 PM,Cloud Computing,F_102,5,MCA,A,Lab 1,60,52,86.67,85.0,0,Practical,No,Yes,No
+31-08-2026,Monday,6,03:00 PM,Data Mining,F_102,5,MCA,A,Room 202,60,43,71.67,77.23,0,Theory,No,No,No
+31-08-2026,Monday,1,09:00 AM,Web Development,F_103,3,MCA,B,Room 201,60,42,70.0,65.4,24,Theory,No,No,No
+31-08-2026,Monday,2,10:00 AM,Machine Learning,F_105,3,MCA,A,Room 202,60,51,85.0,82.39,0,Theory,No,No,No
+31-08-2026,Monday,3,11:15 AM,Machine Learning,F_106,5,MCA,B,Room 202,60,49,81.67,78.42,0,Theory,No,No,No
+31-08-2026,Monday,4,12:15 PM,Data Mining,F_103,3,MCA,B,Lab 2,60,46,76.67,81.8,0,Practical,Yes,No,No
+01-09-2026,Tuesday,5,02:00 PM,Python,F_106,3,MCA,B,Lab 2,60,51,85.0,91.12,0,Practical,No,Yes,No
+01-09-2026,Tuesday,6,03:00 PM,Data Mining,F_102,3,MCA,A,Room 303,60,44,73.33,75.21,0,Theory,No,No,No
+01-09-2026,Tuesday,1,09:00 AM,Web Development,F_104,3,MCA,B,Lab 1,60,51,85.0,89.41,24,Practical,No,No,No
+01-09-2026,Tuesday,2,10:00 AM,Python,F_101,3,MCA,A,Room 303,60,52,86.67,81.56,0,Theory,No,No,No
+01-09-2026,Tuesday,3,11:15 AM,Python,F_102,3,MCA,B,Lab 2,60,57,95.0,90.44,0,Practical,No,No,No
+01-09-2026,Tuesday,4,12:15 PM,Cloud Computing,F_103,3,MCA,A,Room 303,60,54,90.0,88.67,0,Theory,No,No,No
+01-09-2026,Tuesday,5,02:00 PM,Cloud Computing,F_103,3,MCA,B,Room 202,60,35,58.33,55.39,0,Theory,Yes,No,Yes
+01-09-2026,Tuesday,6,03:00 PM,Cloud Computing,F_103,5,MCA,A,Lab 1,60,52,86.67,88.77,0,Practical,No,Yes,No
+02-09-2026,Wednesday,1,09:00 AM,Data Mining,F_101,3,MCA,B,Room 201,60,48,80.0,79.68,24,Theory,No,No,No
+02-09-2026,Wednesday,2,10:00 AM,Python,F_101,5,MCA,B,Room 201,60,53,88.33,83.51,0,Theory,No,Yes,No
+02-09-2026,Wednesday,3,11:15 AM,Python,F_104,3,MCA,B,Room 303,60,49,81.67,81.9,0,Theory,No,No,No
+02-09-2026,Wednesday,4,12:15 PM,Python,F_102,5,MCA,A,Room 202,60,46,76.67,74.41,0,Theory,No,No,No
+02-09-2026,Wednesday,5,02:00 PM,Python,F_104,5,MCA,B,Room 202,60,48,80.0,74.75,0,Theory,No,No,No
+02-09-2026,Wednesday,6,03:00 PM,Web Development,F_103,3,MCA,A,Lab 2,60,57,95.0,94.28,0,Practical,No,No,No
+02-09-2026,Wednesday,1,09:00 AM,Web Development,F_106,3,MCA,B,Room 303,60,49,81.67,82.8,24,Theory,No,No,No
+02-09-2026,Wednesday,2,10:00 AM,Web Development,F_104,3,MCA,B,Room 201,60,56,93.33,91.52,0,Theory,No,No,No
+03-09-2026,Thursday,3,11:15 AM,Data Mining,F_104,5,MCA,B,Lab 1,60,58,96.67,92.0,0,Practical,No,No,No
+03-09-2026,Thursday,4,12:15 PM,Web Development,F_103,3,MCA,B,Lab 2,60,58,96.67,91.24,0,Practical,No,No,No
+03-09-2026,Thursday,5,02:00 PM,Cloud Computing,F_104,5,MCA,B,Room 303,60,51,85.0,84.57,0,Theory,No,No,No
+03-09-2026,Thursday,6,03:00 PM,Web Development,F_101,3,MCA,A,Room 201,60,42,70.0,69.86,0,Theory,No,No,No
+03-09-2026,Thursday,1,09:00 AM,Cloud Computing,F_106,3,MCA,B,Room 201,60,48,80.0,79.31,24,Theory,No,Yes,No
+03-09-2026,Thursday,2,10:00 AM,Cloud Computing,F_106,5,MCA,A,Room 303,60,48,80.0,79.75,0,Theory,No,No,No
+03-09-2026,Thursday,3,11:15 AM,DBMS,F_101,5,MCA,A,Lab 2,60,52,86.67,86.61,0,Practical,No,No,No
+03-09-2026,Thursday,4,12:15 PM,DBMS,F_101,5,MCA,B,Lab 2,60,55,91.67,94.98,0,Practical,No,No,No
+04-09-2026,Friday,5,02:00 PM,Web Development,F_101,5,MCA,B,Lab 1,60,58,96.67,100.0,0,Practical,No,No,No
+04-09-2026,Friday,6,03:00 PM,Data Mining,F_101,5,MCA,A,Room 202,60,41,68.33,74.25,0,Theory,No,No,No
+04-09-2026,Friday,1,09:00 AM,Python,F_105,3,MCA,B,Lab 1,60,53,88.33,93.37,24,Practical,No,No,No
+04-09-2026,Friday,2,10:00 AM,DBMS,F_102,3,MCA,A,Lab 1,60,56,93.33,92.42,0,Practical,No,No,No
+04-09-2026,Friday,3,11:15 AM,Cloud Computing,F_103,3,MCA,A,Lab 2,60,50,83.33,82.36,0,Practical,Yes,No,No
+04-09-2026,Friday,4,12:15 PM,Python,F_104,3,MCA,B,Lab 1,60,54,90.0,91.58,0,Practical,No,No,No
+04-09-2026,Friday,5,02:00 PM,Web Development,F_105,3,MCA,A,Room 201,60,47,78.33,74.14,0,Theory,No,No,Yes
+04-09-2026,Friday,6,03:00 PM,Data Mining,F_103,5,MCA,A,Room 202,60,48,80.0,80.18,0,Theory,No,No,No
+05-09-2026,Saturday,1,09:00 AM,Python,F_104,3,MCA,A,Lab 1,60,47,78.33,80.16,24,Practical,No,No,No
+05-09-2026,Saturday,2,10:00 AM,Web Development,F_101,3,MCA,B,Room 303,60,46,76.67,79.54,0,Theory,No,No,No
+05-09-2026,Saturday,3,11:15 AM,Cloud Computing,F_103,5,MCA,B,Lab 1,60,41,68.33,73.25,0,Practical,Yes,No,No
+05-09-2026,Saturday,4,12:15 PM,Python,F_106,5,MCA,A,Room 202,60,36,60.0,59.56,0,Theory,No,No,Yes
+05-09-2026,Saturday,5,02:00 PM,Data Mining,F_106,3,MCA,B,Room 303,60,49,81.67,78.78,0,Theory,No,No,No
+05-09-2026,Saturday,6,03:00 PM,Data Mining,F_104,3,MCA,A,Room 303,60,46,76.67,76.34,0,Theory,No,Yes,No
+05-09-2026,Saturday,1,09:00 AM,Machine Learning,F_101,3,MCA,A,Room 202,60,50,83.33,84.39,24,Theory,No,Yes,No
+05-09-2026,Saturday,2,10:00 AM,Web Development,F_105,5,MCA,B,Room 303,60,51,85.0,89.23,0,Theory,No,Yes,No
+06-09-2026,Monday,3,11:15 AM,Python,F_104,5,MCA,B,Room 202,60,39,65.0,65.75,0,Theory,No,No,Yes
+06-09-2026,Monday,4,12:15 PM,Machine Learning,F_103,5,MCA,A,Lab 2,60,53,88.33,88.49,0,Practical,No,No,No
+06-09-2026,Monday,5,02:00 PM,Data Mining,F_104,5,MCA,A,Lab 2,60,58,96.67,100.0,0,Practical,No,No,No
+06-09-2026,Monday,6,03:00 PM,Data Mining,F_106,5,MCA,A,Room 202,60,31,51.67,44.52,0,Theory,Yes,No,No
+06-09-2026,Monday,1,09:00 AM,Cloud Computing,F_106,3,MCA,A,Room 202,60,45,75.0,71.69,24,Theory,No,No,No
+06-09-2026,Monday,2,10:00 AM,Cloud Computing,F_102,5,MCA,B,Room 201,60,46,76.67,76.03,0,Theory,No,No,No
+06-09-2026,Monday,3,11:15 AM,Python,F_105,5,MCA,A,Room 202,60,38,63.33,65.42,0,Theory,Yes,No,No
+06-09-2026,Monday,4,12:15 PM,Data Mining,F_103,5,MCA,A,Room 202,60,44,73.33,70.15,0,Theory,No,No,No
+07-09-2026,Monday,5,02:00 PM,Web Development,F_103,3,MCA,B,Room 201,60,38,63.33,61.51,0,Theory,No,Yes,Yes
+07-09-2026,Monday,6,03:00 PM,DBMS,F_106,3,MCA,A,Lab 2,60,49,81.67,86.15,0,Practical,No,No,No
+07-09-2026,Monday,1,09:00 AM,Data Mining,F_102,5,MCA,B,Lab 1,60,44,73.33,76.62,24,Practical,No,No,No
+07-09-2026,Monday,2,10:00 AM,Python,F_104,5,MCA,A,Lab 1,60,50,83.33,86.75,0,Practical,No,No,No
+07-09-2026,Monday,3,11:15 AM,DBMS,F_103,5,MCA,A,Lab 1,60,49,81.67,78.63,0,Practical,No,Yes,No
+07-09-2026,Monday,4,12:15 PM,Web Development,F_106,3,MCA,A,Lab 1,60,52,86.67,90.33,0,Practical,No,No,No
+07-09-2026,Monday,5,02:00 PM,Python,F_102,5,MCA,A,Room 202,60,49,81.67,79.47,0,Theory,No,No,No
+07-09-2026,Monday,6,03:00 PM,Data Mining,F_103,5,MCA,A,Room 303,60,48,80.0,79.33,0,Theory,No,Yes,No
+08-09-2026,Tuesday,1,09:00 AM,Machine Learning,F_103,3,MCA,B,Room 202,60,45,75.0,75.85,24,Theory,No,No,No
+08-09-2026,Tuesday,2,10:00 AM,Machine Learning,F_102,5,MCA,A,Lab 1,60,52,86.67,89.13,0,Practical,No,No,No
+08-09-2026,Tuesday,3,11:15 AM,Python,F_105,5,MCA,B,Room 201,60,50,83.33,80.36,0,Theory,No,Yes,No
+08-09-2026,Tuesday,4,12:15 PM,Cloud Computing,F_101,3,MCA,A,Room 202,60,53,88.33,92.57,0,Theory,No,No,No
+08-09-2026,Tuesday,5,02:00 PM,Web Development,F_101,3,MCA,A,Room 202,60,54,90.0,87.74,0,Theory,No,Yes,No
+08-09-2026,Tuesday,6,03:00 PM,DBMS,F_103,3,MCA,A,Lab 2,60,44,73.33,76.78,0,Practical,Yes,No,No
+08-09-2026,Tuesday,1,09:00 AM,DBMS,F_103,3,MCA,A,Room 201,60,49,81.67,83.34,24,Theory,No,No,No
+08-09-2026,Tuesday,2,10:00 AM,Data Mining,F_104,3,MCA,B,Lab 1,60,50,83.33,77.84,0,Practical,Yes,Yes,No
+09-09-2026,Wednesday,3,11:15 AM,Python,F_106,3,MCA,B,Room 201,60,51,85.0,75.62,0,Theory,No,No,No
+09-09-2026,Wednesday,4,12:15 PM,Cloud Computing,F_101,3,MCA,B,Room 202,60,49,81.67,76.14,0,Theory,No,Yes,No
+09-09-2026,Wednesday,5,02:00 PM,Cloud Computing,F_106,5,MCA,A,Room 201,60,53,88.33,85.98,0,Theory,No,No,No
+09-09-2026,Wednesday,6,03:00 PM,Machine Learning,F_101,3,MCA,A,Room 202,60,49,81.67,82.16,0,Theory,No,No,No
+09-09-2026,Wednesday,1,09:00 AM,DBMS,F_105,3,MCA,B,Room 202,60,50,83.33,80.72,24,Theory,No,No,No
+09-09-2026,Wednesday,2,10:00 AM,Machine Learning,F_102,3,MCA,B,Room 303,60,45,75.0,73.76,0,Theory,Yes,No,No
+09-09-2026,Wednesday,3,11:15 AM,DBMS,F_104,5,MCA,A,Room 202,60,44,73.33,72.68,0,Theory,No,No,No
+09-09-2026,Wednesday,4,12:15 PM,DBMS,F_103,3,MCA,B,Room 201,60,52,86.67,88.47,0,Theory,No,No,No
+10-09-2026,Thursday,5,02:00 PM,Machine Learning,F_104,3,MCA,B,Lab 1,60,54,90.0,87.72,0,Practical,No,No,No
+10-09-2026,Thursday,6,03:00 PM,DBMS,F_105,3,MCA,B,Lab 1,60,48,80.0,76.28,0,Practical,No,No,No
+10-09-2026,Thursday,1,09:00 AM,DBMS,F_101,3,MCA,B,Room 303,60,43,71.67,61.32,24,Theory,No,No,No
+10-09-2026,Thursday,2,10:00 AM,Machine Learning,F_102,5,MCA,A,Lab 2,60,46,76.67,78.36,0,Practical,No,No,No
+10-09-2026,Thursday,3,11:15 AM,DBMS,F_102,3,MCA,A,Lab 2,60,56,93.33,90.45,0,Practical,No,No,No
+10-09-2026,Thursday,4,12:15 PM,Web Development,F_104,5,MCA,B,Lab 1,60,53,88.33,100.0,0,Practical,No,No,No
+10-09-2026,Thursday,5,02:00 PM,Machine Learning,F_106,5,MCA,B,Lab 1,60,58,96.67,96.32,0,Practical,No,No,No
+10-09-2026,Thursday,6,03:00 PM,Data Mining,F_104,3,MCA,A,Room 303,60,41,68.33,66.16,0,Theory,Yes,No,No
+11-09-2026,Friday,1,09:00 AM,Cloud Computing,F_105,3,MCA,A,Room 303,60,39,65.0,57.49,24,Theory,No,No,Yes
+11-09-2026,Friday,2,10:00 AM,DBMS,F_105,3,MCA,A,Room 202,60,49,81.67,78.85,0,Theory,No,No,No
+11-09-2026,Friday,3,11:15 AM,Web Development,F_101,5,MCA,A,Lab 1,60,55,91.67,95.23,0,Practical,No,No,No
+11-09-2026,Friday,4,12:15 PM,Web Development,F_102,5,MCA,A,Room 202,60,55,91.67,98.23,0,Theory,No,Yes,No
+11-09-2026,Friday,5,02:00 PM,Python,F_102,5,MCA,B,Room 303,60,46,76.67,73.71,0,Theory,Yes,No,No
+11-09-2026,Friday,6,03:00 PM,DBMS,F_104,3,MCA,B,Room 202,60,40,66.67,66.78,0,Theory,No,No,No
+11-09-2026,Friday,1,09:00 AM,Data Mining,F_106,5,MCA,A,Lab 1,60,41,68.33,66.31,24,Practical,No,No,Yes
+11-09-2026,Friday,2,10:00 AM,Data Mining,F_103,5,MCA,B,Lab 2,60,47,78.33,75.81,0,Practical,No,No,No
+12-09-2026,Saturday,3,11:15 AM,Machine Learning,F_101,5,MCA,B,Lab 1,60,49,81.67,82.46,0,Practical,No,Yes,No
+12-09-2026,Saturday,4,12:15 PM,DBMS,F_101,5,MCA,B,Lab 2,60,50,83.33,82.29,0,Practical,No,No,No
+12-09-2026,Saturday,5,02:00 PM,Cloud Computing,F_102,5,MCA,A,Room 303,60,45,75.0,73.73,0,Theory,No,No,No
+12-09-2026,Saturday,6,03:00 PM,Machine Learning,F_105,5,MCA,A,Lab 1,60,41,68.33,68.89,0,Practical,No,No,No
+12-09-2026,Saturday,1,09:00 AM,Python,F_104,5,MCA,A,Room 202,60,40,66.67,62.05,24,Theory,No,No,No
+12-09-2026,Saturday,2,10:00 AM,DBMS,F_105,3,MCA,B,Room 202,60,45,75.0,70.08,0,Theory,No,No,No
+12-09-2026,Saturday,3,11:15 AM,DBMS,F_103,5,MCA,B,Lab 1,60,53,88.33,91.47,0,Practical,No,No,No
+12-09-2026,Saturday,4,12:15 PM,Cloud Computing,F_102,5,MCA,B,Lab 1,60,47,78.33,77.38,0,Practical,Yes,No,No
+13-09-2026,Monday,5,02:00 PM,Cloud Computing,F_103,5,MCA,B,Lab 2,60,58,96.67,95.53,0,Practical,No,No,No
+13-09-2026,Monday,6,03:00 PM,Machine Learning,F_103,3,MCA,A,Lab 1,60,46,76.67,77.12,0,Practical,No,No,No
+13-09-2026,Monday,1,09:00 AM,Cloud Computing,F_105,5,MCA,A,Lab 2,60,46,76.67,78.24,24,Practical,No,No,No
+13-09-2026,Monday,2,10:00 AM,Machine Learning,F_105,5,MCA,A,Lab 1,60,52,86.67,83.23,0,Practical,No,No,No
+13-09-2026,Monday,3,11:15 AM,Data Mining,F_104,5,MCA,B,Room 303,60,41,68.33,70.0,0,Theory,Yes,No,No
+13-09-2026,Monday,4,12:15 PM,Data Mining,F_103,5,MCA,B,Lab 1,60,49,81.67,75.18,0,Practical,No,No,No
+13-09-2026,Monday,5,02:00 PM,Data Mining,F_103,5,MCA,B,Lab 1,60,47,78.33,76.23,0,Practical,No,Yes,No
+13-09-2026,Monday,6,03:00 PM,Cloud Computing,F_103,3,MCA,A,Lab 2,60,50,83.33,80.22,0,Practical,No,No,No
+14-09-2026,Monday,1,09:00 AM,Machine Learning,F_105,3,MCA,A,Lab 2,60,45,75.0,71.12,24,Practical,No,No,No
+14-09-2026,Monday,2,10:00 AM,Python,F_102,3,MCA,B,Room 303,60,41,68.33,63.95,0,Theory,Yes,No,No
+14-09-2026,Monday,3,11:15 AM,Data Mining,F_106,5,MCA,A,Room 303,60,42,70.0,75.09,0,Theory,No,No,Yes
+14-09-2026,Monday,4,12:15 PM,Web Development,F_103,5,MCA,A,Room 201,60,47,78.33,82.75,0,Theory,No,No,No
+14-09-2026,Monday,5,02:00 PM,Data Mining,F_104,5,MCA,B,Room 303,60,45,75.0,74.86,0,Theory,No,Yes,No
+14-09-2026,Monday,6,03:00 PM,Cloud Computing,F_104,3,MCA,B,Room 202,60,34,56.67,58.59,0,Theory,No,No,Yes
+14-09-2026,Monday,1,09:00 AM,Python,F_102,3,MCA,A,Room 303,60,46,76.67,73.82,24,Theory,No,Yes,No
+14-09-2026,Monday,2,10:00 AM,Cloud Computing,F_104,3,MCA,A,Lab 1,60,44,73.33,72.51,0,Practical,Yes,No,No
+15-09-2026,Tuesday,3,11:15 AM,Python,F_105,3,MCA,A,Room 202,60,48,80.0,83.93,0,Theory,No,No,No
+15-09-2026,Tuesday,4,12:15 PM,Cloud Computing,F_106,3,MCA,A,Room 201,60,45,75.0,74.47,0,Theory,Yes,Yes,No
+15-09-2026,Tuesday,5,02:00 PM,Web Development,F_103,5,MCA,B,Room 201,60,43,71.67,65.0,0,Theory,Yes,No,No
+15-09-2026,Tuesday,6,03:00 PM,Python,F_101,3,MCA,B,Room 303,60,37,61.67,63.95,0,Theory,No,No,No
+15-09-2026,Tuesday,1,09:00 AM,Data Mining,F_101,5,MCA,A,Lab 2,60,50,83.33,80.82,24,Practical,No,No,No
+15-09-2026,Tuesday,2,10:00 AM,Python,F_103,3,MCA,A,Lab 2,60,54,90.0,87.85,0,Practical,No,No,No
+15-09-2026,Tuesday,3,11:15 AM,Data Mining,F_103,3,MCA,A,Room 201,60,50,83.33,83.43,0,Theory,No,Yes,No
+15-09-2026,Tuesday,4,12:15 PM,DBMS,F_106,5,MCA,A,Room 201,60,52,86.67,85.44,0,Theory,No,No,No
+16-09-2026,Wednesday,5,02:00 PM,Cloud Computing,F_104,5,MCA,A,Lab 2,60,37,61.67,60.48,0,Practical,Yes,No,Yes
+16-09-2026,Wednesday,6,03:00 PM,Cloud Computing,F_102,5,MCA,A,Room 303,60,45,75.0,70.48,0,Theory,No,No,No
+16-09-2026,Wednesday,1,09:00 AM,Machine Learning,F_101,3,MCA,B,Lab 1,60,48,80.0,82.79,24,Practical,No,No,No
+16-09-2026,Wednesday,2,10:00 AM,Python,F_105,3,MCA,B,Room 303,60,45,75.0,74.77,0,Theory,Yes,No,No
+16-09-2026,Wednesday,3,11:15 AM,Web Development,F_104,5,MCA,A,Room 201,60,48,80.0,85.7,0,Theory,No,No,No
+16-09-2026,Wednesday,4,12:15 PM,DBMS,F_104,5,MCA,A,Room 201,60,53,88.33,87.16,0,Theory,No,No,No
+16-09-2026,Wednesday,5,02:00 PM,Machine Learning,F_101,5,MCA,B,Room 202,60,50,83.33,81.24,0,Theory,No,No,No
+16-09-2026,Wednesday,6,03:00 PM,Python,F_101,3,MCA,B,Room 202,60,45,75.0,76.46,0,Theory,No,Yes,No
+17-09-2026,Thursday,1,09:00 AM,DBMS,F_106,5,MCA,B,Room 201,60,43,71.67,72.48,24,Theory,No,No,No
+17-09-2026,Thursday,2,10:00 AM,DBMS,F_106,5,MCA,B,Lab 2,60,50,83.33,82.5,0,Practical,No,No,No
+17-09-2026,Thursday,3,11:15 AM,Data Mining,F_106,5,MCA,A,Room 303,60,45,75.0,73.59,0,Theory,Yes,No,No
+17-09-2026,Thursday,4,12:15 PM,DBMS,F_101,5,MCA,B,Room 303,60,47,78.33,71.94,0,Theory,No,No,No
+17-09-2026,Thursday,5,02:00 PM,Machine Learning,F_103,3,MCA,A,Lab 1,60,55,91.67,84.69,0,Practical,No,Yes,No
+17-09-2026,Thursday,6,03:00 PM,Cloud Computing,F_104,5,MCA,B,Lab 2,60,50,83.33,81.98,0,Practical,No,No,No
+17-09-2026,Thursday,1,09:00 AM,Python,F_105,5,MCA,B,Lab 1,60,53,88.33,98.33,24,Practical,No,No,No
+17-09-2026,Thursday,2,10:00 AM,DBMS,F_101,3,MCA,B,Lab 2,60,45,75.0,77.2,0,Practical,Yes,No,No
+18-09-2026,Friday,3,11:15 AM,DBMS,F_102,5,MCA,B,Room 303,60,40,66.67,64.43,0,Theory,Yes,No,No
+18-09-2026,Friday,4,12:15 PM,Machine Learning,F_101,5,MCA,B,Room 201,60,49,81.67,78.21,0,Theory,No,No,No
+18-09-2026,Friday,5,02:00 PM,Data Mining,F_106,5,MCA,B,Lab 1,60,53,88.33,92.26,0,Practical,Yes,No,No
+18-09-2026,Friday,6,03:00 PM,Data Mining,F_102,3,MCA,A,Room 202,60,47,78.33,71.1,0,Theory,No,Yes,No
+18-09-2026,Friday,1,09:00 AM,DBMS,F_103,5,MCA,B,Room 202,60,55,91.67,85.81,24,Theory,No,Yes,No
+18-09-2026,Friday,2,10:00 AM,Cloud Computing,F_101,5,MCA,A,Lab 2,60,53,88.33,89.12,0,Practical,No,No,No
+18-09-2026,Friday,3,11:15 AM,DBMS,F_105,3,MCA,B,Room 202,60,52,86.67,74.49,0,Theory,No,Yes,No
+18-09-2026,Friday,4,12:15 PM,Web Development,F_101,5,MCA,A,Lab 2,60,56,93.33,98.6,0,Practical,No,No,No
+19-09-2026,Saturday,5,02:00 PM,Web Development,F_101,5,MCA,B,Room 303,60,49,81.67,85.96,0,Theory,No,No,No
+19-09-2026,Saturday,6,03:00 PM,Python,F_103,3,MCA,A,Lab 1,60,47,78.33,76.79,0,Practical,No,No,No
+19-09-2026,Saturday,1,09:00 AM,DBMS,F_106,5,MCA,A,Room 202,60,36,60.0,62.44,24,Theory,Yes,No,No
+19-09-2026,Saturday,2,10:00 AM,Machine Learning,F_104,5,MCA,A,Room 201,60,51,85.0,87.12,0,Theory,No,No,No
+19-09-2026,Saturday,3,11:15 AM,Cloud Computing,F_105,5,MCA,B,Lab 1,60,46,76.67,73.8,0,Practical,Yes,No,No
+19-09-2026,Saturday,4,12:15 PM,Cloud Computing,F_103,3,MCA,B,Room 303,60,48,80.0,73.69,0,Theory,No,No,No
+19-09-2026,Saturday,5,02:00 PM,Data Mining,F_105,5,MCA,A,Lab 2,60,46,76.67,73.62,0,Practical,No,Yes,No
+19-09-2026,Saturday,6,03:00 PM,Python,F_106,5,MCA,B,Lab 2,60,49,81.67,81.16,0,Practical,No,No,No
+20-09-2026,Monday,1,09:00 AM,Python,F_105,5,MCA,B,Lab 1,60,34,56.67,58.03,24,Practical,Yes,No,No
+20-09-2026,Monday,2,10:00 AM,Web Development,F_105,5,MCA,A,Room 303,60,50,83.33,84.61,0,Theory,No,No,No
+20-09-2026,Monday,3,11:15 AM,DBMS,F_104,3,MCA,A,Room 202,60,41,68.33,69.88,0,Theory,Yes,No,No
+20-09-2026,Monday,4,12:15 PM,Machine Learning,F_101,5,MCA,A,Room 303,60,48,80.0,77.79,0,Theory,No,No,No
+20-09-2026,Monday,5,02:00 PM,DBMS,F_104,5,MCA,A,Lab 1,60,52,86.67,86.35,0,Practical,No,No,No
+20-09-2026,Monday,6,03:00 PM,Machine Learning,F_105,5,MCA,A,Room 303,60,45,75.0,74.95,0,Theory,No,Yes,No
+20-09-2026,Monday,1,09:00 AM,Python,F_102,3,MCA,B,Lab 1,60,48,80.0,78.87,24,Practical,No,No,No
+20-09-2026,Monday,2,10:00 AM,Python,F_102,3,MCA,A,Room 202,60,45,75.0,69.59,0,Theory,No,No,No
+21-09-2026,Monday,3,11:15 AM,Web Development,F_103,5,MCA,A,Room 201,60,47,78.33,80.29,0,Theory,No,Yes,No
+21-09-2026,Monday,4,12:15 PM,Machine Learning,F_104,3,MCA,A,Lab 1,60,47,78.33,76.91,0,Practical,No,No,Yes
+21-09-2026,Monday,5,02:00 PM,Web Development,F_106,5,MCA,A,Lab 2,60,56,93.33,88.29,0,Practical,No,Yes,No
+21-09-2026,Monday,6,03:00 PM,Data Mining,F_102,3,MCA,B,Lab 1,60,41,68.33,67.89,0,Practical,No,No,Yes
+21-09-2026,Monday,1,09:00 AM,Web Development,F_101,3,MCA,B,Room 201,60,39,65.0,68.18,24,Theory,No,No,No
+21-09-2026,Monday,2,10:00 AM,Machine Learning,F_102,3,MCA,A,Room 303,60,43,71.67,71.44,0,Theory,No,No,No
+21-09-2026,Monday,3,11:15 AM,Machine Learning,F_103,3,MCA,A,Room 202,60,49,81.67,84.01,0,Theory,No,No,No
+21-09-2026,Monday,4,12:15 PM,Python,F_104,5,MCA,B,Room 201,60,43,71.67,67.31,0,Theory,No,Yes,No
+22-09-2026,Tuesday,5,02:00 PM,DBMS,F_105,3,MCA,A,Lab 1,60,57,95.0,90.13,0,Practical,No,Yes,No
+22-09-2026,Tuesday,6,03:00 PM,Web Development,F_102,5,MCA,B,Lab 2,60,49,81.67,78.67,0,Practical,No,No,No
+22-09-2026,Tuesday,1,09:00 AM,Python,F_104,5,MCA,A,Lab 1,60,48,80.0,79.28,24,Practical,No,No,No
+22-09-2026,Tuesday,2,10:00 AM,Python,F_106,3,MCA,B,Room 202,60,50,83.33,80.68,0,Theory,No,No,No
+22-09-2026,Tuesday,3,11:15 AM,Data Mining,F_103,5,MCA,B,Room 201,60,52,86.67,83.02,0,Theory,No,No,No
+22-09-2026,Tuesday,4,12:15 PM,Machine Learning,F_102,5,MCA,B,Lab 2,60,52,86.67,88.86,0,Practical,No,No,No
+22-09-2026,Tuesday,5,02:00 PM,Python,F_102,3,MCA,B,Room 303,60,55,91.67,90.41,0,Theory,No,No,No
+22-09-2026,Tuesday,6,03:00 PM,DBMS,F_101,5,MCA,B,Room 201,60,47,78.33,74.17,0,Theory,No,No,No
+23-09-2026,Wednesday,1,09:00 AM,Machine Learning,F_106,5,MCA,B,Lab 2,60,50,83.33,75.25,24,Practical,No,No,No
+23-09-2026,Wednesday,2,10:00 AM,Python,F_101,3,MCA,B,Room 201,60,42,70.0,70.56,0,Theory,No,No,Yes
+23-09-2026,Wednesday,3,11:15 AM,DBMS,F_103,5,MCA,A,Room 202,60,48,80.0,78.35,0,Theory,Yes,No,No
+23-09-2026,Wednesday,4,12:15 PM,DBMS,F_104,5,MCA,A,Room 202,60,52,86.67,85.09,0,Theory,No,No,No
+23-09-2026,Wednesday,5,02:00 PM,Python,F_103,3,MCA,A,Room 303,60,51,85.0,92.61,0,Theory,No,Yes,No
+23-09-2026,Wednesday,6,03:00 PM,Python,F_101,5,MCA,B,Room 201,60,41,68.33,71.04,0,Theory,No,No,Yes
+23-09-2026,Wednesday,1,09:00 AM,Machine Learning,F_102,3,MCA,A,Lab 2,60,52,86.67,86.58,24,Practical,No,No,No
+23-09-2026,Wednesday,2,10:00 AM,Data Mining,F_106,3,MCA,A,Room 202,60,50,83.33,82.89,0,Theory,No,No,No
+24-09-2026,Thursday,3,11:15 AM,Machine Learning,F_102,3,MCA,A,Room 202,60,47,78.33,82.16,0,Theory,No,No,No
+24-09-2026,Thursday,4,12:15 PM,Python,F_103,3,MCA,B,Room 201,60,53,88.33,91.26,0,Theory,No,No,No
+24-09-2026,Thursday,5,02:00 PM,Web Development,F_104,3,MCA,A,Room 202,60,30,50.0,48.16,0,Theory,Yes,No,Yes
+24-09-2026,Thursday,6,03:00 PM,Data Mining,F_104,3,MCA,A,Room 202,60,41,68.33,66.4,0,Theory,No,No,No
+24-09-2026,Thursday,1,09:00 AM,Web Development,F_102,3,MCA,B,Room 303,60,45,75.0,76.08,24,Theory,No,Yes,No
+24-09-2026,Thursday,2,10:00 AM,Web Development,F_102,5,MCA,B,Room 201,60,44,73.33,76.57,0,Theory,Yes,Yes,No
+24-09-2026,Thursday,3,11:15 AM,Cloud Computing,F_101,3,MCA,A,Room 303,60,53,88.33,88.18,0,Theory,No,No,No
+24-09-2026,Thursday,4,12:15 PM,Web Development,F_102,5,MCA,A,Lab 1,60,49,81.67,86.01,0,Practical,No,No,No
+25-09-2026,Friday,5,02:00 PM,Python,F_106,5,MCA,A,Room 303,60,51,85.0,83.91,0,Theory,No,Yes,No
+25-09-2026,Friday,6,03:00 PM,Web Development,F_102,3,MCA,A,Lab 2,60,52,86.67,88.97,0,Practical,No,No,No
+25-09-2026,Friday,1,09:00 AM,Machine Learning,F_102,3,MCA,B,Room 201,60,43,71.67,73.56,24,Theory,No,No,No
+25-09-2026,Friday,2,10:00 AM,Cloud Computing,F_103,5,MCA,B,Room 201,60,39,65.0,67.28,0,Theory,Yes,No,No
+25-09-2026,Friday,3,11:15 AM,Python,F_106,3,MCA,B,Lab 2,60,55,91.67,96.11,0,Practical,No,No,No
+25-09-2026,Friday,4,12:15 PM,Machine Learning,F_104,5,MCA,B,Lab 1,60,56,93.33,91.85,0,Practical,No,No,No
+25-09-2026,Friday,5,02:00 PM,Python,F_102,3,MCA,B,Room 202,60,52,86.67,81.61,0,Theory,No,No,No
+25-09-2026,Friday,6,03:00 PM,Data Mining,F_101,5,MCA,B,Room 202,60,38,63.33,59.21,0,Theory,Yes,No,No
+26-09-2026,Saturday,1,09:00 AM,DBMS,F_102,3,MCA,A,Lab 2,60,40,66.67,69.62,24,Practical,Yes,No,No
+26-09-2026,Saturday,2,10:00 AM,Python,F_102,5,MCA,A,Lab 1,60,50,83.33,87.63,0,Practical,No,No,No
+26-09-2026,Saturday,3,11:15 AM,Python,F_102,3,MCA,A,Lab 2,60,54,90.0,99.57,0,Practical,No,No,No
+26-09-2026,Saturday,4,12:15 PM,Python,F_104,5,MCA,B,Lab 2,60,40,66.67,65.63,0,Practical,Yes,No,No
+26-09-2026,Saturday,5,02:00 PM,Web Development,F_102,5,MCA,B,Lab 1,60,49,81.67,79.33,0,Practical,No,No,No
+26-09-2026,Saturday,6,03:00 PM,Data Mining,F_103,5,MCA,A,Room 202,60,30,50.0,49.63,0,Theory,Yes,No,No
+26-09-2026,Saturday,1,09:00 AM,Python,F_105,5,MCA,A,Room 202,60,40,66.67,68.91,24,Theory,No,No,No
+26-09-2026,Saturday,2,10:00 AM,DBMS,F_103,3,MCA,A,Room 202,60,52,86.67,88.9,0,Theory,No,No,No
+27-09-2026,Monday,3,11:15 AM,Web Development,F_104,5,MCA,B,Room 202,60,43,71.67,72.21,0,Theory,No,No,No
+27-09-2026,Monday,4,12:15 PM,Machine Learning,F_103,3,MCA,A,Room 303,60,45,75.0,73.14,0,Theory,No,No,No
+27-09-2026,Monday,5,02:00 PM,Web Development,F_105,3,MCA,A,Lab 2,60,42,70.0,66.47,0,Practical,No,Yes,Yes
+27-09-2026,Monday,6,03:00 PM,DBMS,F_106,3,MCA,A,Room 202,60,41,68.33,69.69,0,Theory,No,No,No
+27-09-2026,Monday,1,09:00 AM,DBMS,F_106,5,MCA,B,Room 202,60,41,68.33,68.56,24,Theory,No,No,No
+27-09-2026,Monday,2,10:00 AM,Data Mining,F_104,3,MCA,A,Room 201,60,47,78.33,79.4,0,Theory,No,No,No
+27-09-2026,Monday,3,11:15 AM,Machine Learning,F_102,3,MCA,A,Lab 2,60,50,83.33,83.93,0,Practical,No,No,No
+27-09-2026,Monday,4,12:15 PM,Web Development,F_102,5,MCA,B,Room 303,60,48,80.0,87.18,0,Theory,No,No,No
+28-09-2026,Monday,5,02:00 PM,Data Mining,F_104,5,MCA,B,Room 201,60,30,50.0,49.06,0,Theory,Yes,No,Yes
+28-09-2026,Monday,6,03:00 PM,Data Mining,F_102,5,MCA,A,Room 303,60,43,71.67,75.56,0,Theory,No,Yes,No
+28-09-2026,Monday,1,09:00 AM,DBMS,F_103,5,MCA,A,Room 202,60,43,71.67,69.04,24,Theory,No,No,No
+28-09-2026,Monday,2,10:00 AM,Cloud Computing,F_105,5,MCA,B,Room 303,60,56,93.33,96.64,0,Theory,No,Yes,No
+28-09-2026,Monday,3,11:15 AM,DBMS,F_101,3,MCA,B,Lab 1,60,42,70.0,67.63,0,Practical,No,No,Yes
+28-09-2026,Monday,4,12:15 PM,Python,F_106,5,MCA,A,Room 303,60,46,76.67,72.65,0,Theory,No,No,No
+28-09-2026,Monday,5,02:00 PM,Web Development,F_105,3,MCA,B,Room 202,60,44,73.33,74.79,0,Theory,No,No,No
+28-09-2026,Monday,6,03:00 PM,DBMS,F_101,5,MCA,B,Lab 1,60,45,75.0,73.65,0,Practical,No,No,No
+29-09-2026,Tuesday,1,09:00 AM,Machine Learning,F_103,3,MCA,A,Lab 1,60,50,83.33,88.25,24,Practical,No,No,No
+29-09-2026,Tuesday,2,10:00 AM,Data Mining,F_106,3,MCA,A,Lab 1,60,55,91.67,88.76,0,Practical,No,No,No
+29-09-2026,Tuesday,3,11:15 AM,DBMS,F_104,3,MCA,B,Lab 2,60,58,96.67,97.42,0,Practical,No,No,No
+29-09-2026,Tuesday,4,12:15 PM,Web Development,F_101,3,MCA,B,Room 201,60,48,80.0,80.29,0,Theory,No,Yes,No
+29-09-2026,Tuesday,5,02:00 PM,Python,F_103,5,MCA,A,Lab 2,60,58,96.67,100.0,0,Practical,No,No,No
+29-09-2026,Tuesday,6,03:00 PM,DBMS,F_106,5,MCA,A,Room 303,60,45,75.0,75.01,0,Theory,No,Yes,No
+29-09-2026,Tuesday,1,09:00 AM,DBMS,F_104,3,MCA,A,Room 201,60,47,78.33,77.74,24,Theory,No,No,No
+29-09-2026,Tuesday,2,10:00 AM,Cloud Computing,F_105,3,MCA,B,Lab 2,60,46,76.67,75.82,0,Practical,Yes,No,No
+30-09-2026,Wednesday,3,11:15 AM,Data Mining,F_102,3,MCA,A,Room 201,60,44,73.33,85.78,0,Theory,No,No,Yes
+30-09-2026,Wednesday,4,12:15 PM,DBMS,F_106,3,MCA,B,Room 201,60,53,88.33,83.23,0,Theory,No,No,No
+30-09-2026,Wednesday,5,02:00 PM,Data Mining,F_103,3,MCA,B,Lab 1,60,52,86.67,89.6,0,Practical,Yes,No,No
+30-09-2026,Wednesday,6,03:00 PM,Web Development,F_104,3,MCA,B,Room 303,60,39,65.0,73.17,0,Theory,No,No,No
+30-09-2026,Wednesday,1,09:00 AM,Cloud Computing,F_105,3,MCA,A,Lab 1,60,46,76.67,79.57,24,Practical,No,No,No
+30-09-2026,Wednesday,2,10:00 AM,Machine Learning,F_103,3,MCA,A,Room 201,60,53,88.33,90.48,0,Theory,No,No,No
+30-09-2026,Wednesday,3,11:15 AM,DBMS,F_103,5,MCA,A,Lab 2,60,58,96.67,93.92,0,Practical,No,Yes,No
+30-09-2026,Wednesday,4,12:15 PM,Web Development,F_106,3,MCA,A,Lab 2,60,57,95.0,100.0,0,Practical,No,No,No
+01-10-2026,Thursday,5,02:00 PM,Python,F_102,5,MCA,B,Room 303,60,53,88.33,89.73,0,Theory,No,No,No
+01-10-2026,Thursday,6,03:00 PM,Cloud Computing,F_102,5,MCA,B,Room 201,60,32,53.33,50.46,0,Theory,No,No,Yes
+01-10-2026,Thursday,1,09:00 AM,Machine Learning,F_102,3,MCA,B,Lab 1,60,44,73.33,68.33,24,Practical,No,No,No
+01-10-2026,Thursday,2,10:00 AM,Python,F_102,3,MCA,B,Room 202,60,48,80.0,80.78,0,Theory,No,Yes,No
+01-10-2026,Thursday,3,11:15 AM,Cloud Computing,F_102,5,MCA,B,Room 201,60,55,91.67,92.01,0,Theory,No,No,No
+01-10-2026,Thursday,4,12:15 PM,Web Development,F_104,3,MCA,A,Room 201,60,48,80.0,83.41,0,Theory,No,No,No
+01-10-2026,Thursday,5,02:00 PM,Machine Learning,F_103,5,MCA,A,Lab 2,60,55,91.67,88.82,0,Practical,No,No,No
+01-10-2026,Thursday,6,03:00 PM,DBMS,F_102,3,MCA,B,Room 201,60,39,65.0,64.0,0,Theory,Yes,No,No
+02-10-2026,Friday,1,09:00 AM,Web Development,F_106,5,MCA,B,Room 201,60,48,80.0,77.6,24,Theory,No,No,No
+02-10-2026,Friday,2,10:00 AM,DBMS,F_105,5,MCA,A,Room 303,60,50,83.33,77.43,0,Theory,No,No,No
+02-10-2026,Friday,3,11:15 AM,Data Mining,F_103,3,MCA,B,Room 202,60,53,88.33,92.03,0,Theory,No,No,No
+02-10-2026,Friday,4,12:15 PM,Web Development,F_102,3,MCA,A,Room 303,60,54,90.0,89.89,0,Theory,No,Yes,No
+02-10-2026,Friday,5,02:00 PM,Python,F_101,5,MCA,A,Room 202,60,53,88.33,87.78,0,Theory,No,No,No
+02-10-2026,Friday,6,03:00 PM,Python,F_102,3,MCA,A,Room 201,60,33,55.0,58.79,0,Theory,No,No,Yes
+02-10-2026,Friday,1,09:00 AM,Machine Learning,F_101,3,MCA,A,Room 303,60,47,78.33,80.14,24,Theory,No,Yes,No
+02-10-2026,Friday,2,10:00 AM,Cloud Computing,F_106,3,MCA,A,Room 202,60,49,81.67,90.72,0,Theory,No,No,No
+03-10-2026,Saturday,3,11:15 AM,Cloud Computing,F_105,3,MCA,A,Lab 2,60,45,75.0,79.79,0,Practical,Yes,No,No
+03-10-2026,Saturday,4,12:15 PM,Data Mining,F_103,5,MCA,B,Lab 2,60,50,83.33,83.33,0,Practical,No,No,No
+03-10-2026,Saturday,5,02:00 PM,DBMS,F_103,5,MCA,B,Room 201,60,44,73.33,76.38,0,Theory,No,No,No
+03-10-2026,Saturday,6,03:00 PM,DBMS,F_104,3,MCA,A,Room 201,60,36,60.0,63.89,0,Theory,No,No,Yes
+03-10-2026,Saturday,1,09:00 AM,Web Development,F_101,3,MCA,B,Lab 2,60,42,70.0,76.63,24,Practical,No,No,No
+03-10-2026,Saturday,2,10:00 AM,Data Mining,F_105,5,MCA,B,Lab 1,60,45,75.0,81.48,0,Practical,Yes,No,No
+03-10-2026,Saturday,3,11:15 AM,Python,F_106,5,MCA,B,Room 201,60,38,63.33,57.75,0,Theory,Yes,No,No
+03-10-2026,Saturday,4,12:15 PM,Web Development,F_101,3,MCA,A,Room 202,60,45,75.0,65.18,0,Theory,No,Yes,No
+04-10-2026,Monday,5,02:00 PM,Python,F_105,5,MCA,A,Room 303,60,46,76.67,86.19,0,Theory,No,Yes,No
+04-10-2026,Monday,6,03:00 PM,Web Development,F_106,5,MCA,B,Lab 1,60,42,70.0,74.92,0,Practical,No,No,No
+04-10-2026,Monday,1,09:00 AM,Web Development,F_101,3,MCA,B,Room 202,60,41,68.33,70.67,24,Theory,No,No,No
+04-10-2026,Monday,2,10:00 AM,Web Development,F_102,3,MCA,A,Lab 2,60,43,71.67,66.87,0,Practical,Yes,Yes,No
+04-10-2026,Monday,3,11:15 AM,DBMS,F_103,5,MCA,B,Lab 2,60,51,85.0,82.71,0,Practical,No,No,No
+04-10-2026,Monday,4,12:15 PM,DBMS,F_103,5,MCA,B,Room 201,60,45,75.0,71.45,0,Theory,No,No,Yes
+04-10-2026,Monday,5,02:00 PM,Cloud Computing,F_101,5,MCA,B,Room 202,60,47,78.33,80.37,0,Theory,No,No,No
+04-10-2026,Monday,6,03:00 PM,Cloud Computing,F_104,5,MCA,B,Room 201,60,40,66.67,64.52,0,Theory,No,Yes,No
+05-10-2026,Monday,1,09:00 AM,Machine Learning,F_102,3,MCA,B,Room 202,60,41,68.33,73.21,24,Theory,No,No,No
+05-10-2026,Monday,2,10:00 AM,Cloud Computing,F_105,5,MCA,B,Lab 1,60,55,91.67,89.48,0,Practical,No,Yes,No
+05-10-2026,Monday,3,11:15 AM,Cloud Computing,F_103,5,MCA,B,Lab 2,60,53,88.33,90.43,0,Practical,No,No,No
+05-10-2026,Monday,4,12:15 PM,Web Development,F_103,3,MCA,A,Room 201,60,38,63.33,63.65,0,Theory,Yes,No,No
+05-10-2026,Monday,5,02:00 PM,Web Development,F_102,5,MCA,B,Room 202,60,44,73.33,78.78,0,Theory,No,No,No
+05-10-2026,Monday,6,03:00 PM,DBMS,F_102,5,MCA,A,Lab 1,60,45,75.0,78.33,0,Practical,No,No,No
+05-10-2026,Monday,1,09:00 AM,Web Development,F_104,5,MCA,B,Lab 2,60,41,68.33,69.36,24,Practical,Yes,No,No
+05-10-2026,Monday,2,10:00 AM,Python,F_106,3,MCA,B,Lab 2,60,56,93.33,94.8,0,Practical,No,No,No
+06-10-2026,Tuesday,3,11:15 AM,Cloud Computing,F_105,3,MCA,B,Lab 1,60,49,81.67,77.93,0,Practical,Yes,Yes,No
+06-10-2026,Tuesday,4,12:15 PM,Cloud Computing,F_101,3,MCA,B,Lab 2,60,55,91.67,87.81,0,Practical,No,No,No
+06-10-2026,Tuesday,5,02:00 PM,Python,F_105,5,MCA,A,Room 202,60,46,76.67,73.88,0,Theory,No,Yes,No
+06-10-2026,Tuesday,6,03:00 PM,Data Mining,F_101,3,MCA,A,Lab 1,60,48,80.0,78.01,0,Practical,No,No,No
+06-10-2026,Tuesday,1,09:00 AM,Data Mining,F_105,3,MCA,B,Room 201,60,41,68.33,71.08,24,Theory,No,No,No
+06-10-2026,Tuesday,2,10:00 AM,Machine Learning,F_105,5,MCA,B,Lab 1,60,55,91.67,91.57,0,Practical,No,No,No
+06-10-2026,Tuesday,3,11:15 AM,DBMS,F_102,3,MCA,A,Lab 2,60,56,93.33,94.75,0,Practical,No,No,No
+06-10-2026,Tuesday,4,12:15 PM,DBMS,F_105,5,MCA,B,Lab 1,60,53,88.33,87.16,0,Practical,No,No,No
+07-10-2026,Wednesday,5,02:00 PM,Python,F_102,3,MCA,B,Room 303,60,52,86.67,88.77,0,Theory,No,No,No
+07-10-2026,Wednesday,6,03:00 PM,Python,F_102,5,MCA,A,Lab 2,60,38,63.33,63.06,0,Practical,No,No,Yes
+07-10-2026,Wednesday,1,09:00 AM,Machine Learning,F_104,5,MCA,B,Room 201,60,43,71.67,74.75,24,Theory,No,No,No
+07-10-2026,Wednesday,2,10:00 AM,Data Mining,F_102,5,MCA,B,Lab 1,60,50,83.33,79.33,0,Practical,No,No,No
+07-10-2026,Wednesday,3,11:15 AM,DBMS,F_106,3,MCA,B,Room 303,60,49,81.67,76.47,0,Theory,No,No,No
+07-10-2026,Wednesday,4,12:15 PM,Machine Learning,F_105,3,MCA,B,Lab 1,60,58,96.67,90.76,0,Practical,No,No,No
+07-10-2026,Wednesday,5,02:00 PM,Data Mining,F_101,5,MCA,A,Room 202,60,48,80.0,77.5,0,Theory,No,No,No
+07-10-2026,Wednesday,6,03:00 PM,Cloud Computing,F_101,5,MCA,B,Room 201,60,32,53.33,57.93,0,Theory,No,No,Yes
+08-10-2026,Thursday,1,09:00 AM,Web Development,F_101,5,MCA,B,Room 202,60,45,75.0,67.1,24,Theory,No,No,No
+08-10-2026,Thursday,2,10:00 AM,DBMS,F_103,5,MCA,B,Lab 1,60,57,95.0,94.64,0,Practical,No,Yes,No
+08-10-2026,Thursday,3,11:15 AM,DBMS,F_104,3,MCA,B,Room 202,60,51,85.0,90.64,0,Theory,No,Yes,No
+08-10-2026,Thursday,4,12:15 PM,Python,F_105,3,MCA,B,Lab 1,60,51,85.0,81.61,0,Practical,No,No,No
+08-10-2026,Thursday,5,02:00 PM,Data Mining,F_103,3,MCA,B,Lab 2,60,44,73.33,79.42,0,Practical,Yes,Yes,No
+08-10-2026,Thursday,6,03:00 PM,Machine Learning,F_104,3,MCA,B,Lab 1,60,50,83.33,87.46,0,Practical,No,Yes,No
+08-10-2026,Thursday,1,09:00 AM,Cloud Computing,F_101,5,MCA,B,Room 201,60,45,75.0,71.56,24,Theory,No,No,No
+08-10-2026,Thursday,2,10:00 AM,Web Development,F_103,3,MCA,A,Lab 2,60,58,96.67,94.34,0,Practical,No,No,No
+09-10-2026,Friday,3,11:15 AM,Python,F_106,3,MCA,B,Lab 1,60,49,81.67,78.63,0,Practical,Yes,No,No
+09-10-2026,Friday,4,12:15 PM,DBMS,F_101,5,MCA,A,Lab 1,60,53,88.33,90.13,0,Practical,Yes,No,No
+09-10-2026,Friday,5,02:00 PM,Data Mining,F_103,3,MCA,A,Room 201,60,56,93.33,90.49,0,Theory,No,No,No
+09-10-2026,Friday,6,03:00 PM,Data Mining,F_101,3,MCA,B,Lab 1,60,41,68.33,71.46,0,Practical,Yes,No,No
+09-10-2026,Friday,1,09:00 AM,Cloud Computing,F_106,3,MCA,B,Room 201,60,42,70.0,65.43,24,Theory,No,No,No
+09-10-2026,Friday,2,10:00 AM,Python,F_105,3,MCA,A,Room 201,60,49,81.67,86.15,0,Theory,No,No,No
+09-10-2026,Friday,3,11:15 AM,Web Development,F_106,5,MCA,B,Lab 1,60,58,96.67,90.59,0,Practical,No,No,No
+09-10-2026,Friday,4,12:15 PM,Web Development,F_101,3,MCA,A,Room 201,60,54,90.0,88.17,0,Theory,No,No,No
+10-10-2026,Saturday,5,02:00 PM,Machine Learning,F_106,5,MCA,A,Room 303,60,43,71.67,68.27,0,Theory,Yes,Yes,No
+10-10-2026,Saturday,6,03:00 PM,DBMS,F_103,3,MCA,A,Lab 2,60,38,63.33,66.45,0,Practical,Yes,No,No
+10-10-2026,Saturday,1,09:00 AM,Data Mining,F_101,3,MCA,B,Room 303,60,49,81.67,83.55,24,Theory,No,No,No
+10-10-2026,Saturday,2,10:00 AM,Machine Learning,F_105,3,MCA,A,Room 201,60,47,78.33,72.53,0,Theory,No,No,No
+10-10-2026,Saturday,3,11:15 AM,Cloud Computing,F_105,3,MCA,A,Room 303,60,46,76.67,79.66,0,Theory,No,No,No
+10-10-2026,Saturday,4,12:15 PM,Python,F_102,5,MCA,A,Room 202,60,42,70.0,67.55,0,Theory,No,No,No
+10-10-2026,Saturday,5,02:00 PM,DBMS,F_102,3,MCA,B,Room 303,60,38,63.33,63.43,0,Theory,No,Yes,Yes
+10-10-2026,Saturday,6,03:00 PM,Machine Learning,F_105,5,MCA,B,Lab 1,60,40,66.67,67.48,0,Practical,Yes,No,No
+11-10-2026,Monday,1,09:00 AM,Machine Learning,F_101,3,MCA,A,Lab 1,60,43,71.67,75.2,24,Practical,No,No,No
+11-10-2026,Monday,2,10:00 AM,Data Mining,F_104,3,MCA,B,Lab 1,60,58,96.67,95.96,0,Practical,No,Yes,No
+11-10-2026,Monday,3,11:15 AM,DBMS,F_105,3,MCA,B,Lab 2,60,54,90.0,90.15,0,Practical,No,No,No
+11-10-2026,Monday,4,12:15 PM,Machine Learning,F_101,3,MCA,B,Lab 2,60,55,91.67,92.04,0,Practical,No,No,No
+11-10-2026,Monday,5,02:00 PM,DBMS,F_102,5,MCA,A,Room 201,60,48,80.0,83.42,0,Theory,No,Yes,No
+11-10-2026,Monday,6,03:00 PM,Data Mining,F_106,5,MCA,A,Room 201,60,45,75.0,79.72,0,Theory,No,No,No
+11-10-2026,Monday,1,09:00 AM,Cloud Computing,F_104,5,MCA,B,Room 201,60,49,81.67,77.64,24,Theory,No,No,No
+11-10-2026,Monday,2,10:00 AM,Machine Learning,F_103,3,MCA,B,Lab 2,60,43,71.67,77.11,0,Practical,No,No,No
+12-10-2026,Monday,3,11:15 AM,Machine Learning,F_101,3,MCA,B,Room 202,60,46,76.67,72.13,0,Theory,Yes,No,No
+12-10-2026,Monday,4,12:15 PM,Cloud Computing,F_103,5,MCA,B,Lab 1,60,55,91.67,89.48,0,Practical,No,No,No
+12-10-2026,Monday,5,02:00 PM,DBMS,F_103,5,MCA,B,Lab 2,60,47,78.33,78.36,0,Practical,No,No,No
+12-10-2026,Monday,6,03:00 PM,Machine Learning,F_105,3,MCA,A,Lab 2,60,46,76.67,75.6,0,Practical,No,No,No
+12-10-2026,Monday,1,09:00 AM,Data Mining,F_102,5,MCA,A,Room 303,60,43,71.67,77.05,24,Theory,No,No,No
+12-10-2026,Monday,2,10:00 AM,Python,F_105,3,MCA,A,Room 202,60,47,78.33,70.82,0,Theory,No,No,No
+12-10-2026,Monday,3,11:15 AM,Web Development,F_104,5,MCA,A,Room 202,60,48,80.0,75.81,0,Theory,No,No,No
+12-10-2026,Monday,4,12:15 PM,Web Development,F_105,3,MCA,A,Lab 1,60,49,81.67,72.45,0,Practical,Yes,No,No
+13-10-2026,Tuesday,5,02:00 PM,DBMS,F_106,5,MCA,B,Lab 2,60,54,90.0,89.9,0,Practical,No,Yes,No
+13-10-2026,Tuesday,6,03:00 PM,Cloud Computing,F_104,5,MCA,A,Room 303,60,47,78.33,81.74,0,Theory,No,No,No
+13-10-2026,Tuesday,1,09:00 AM,DBMS,F_106,5,MCA,B,Lab 1,60,43,71.67,73.26,24,Practical,No,No,Yes
+13-10-2026,Tuesday,2,10:00 AM,DBMS,F_101,5,MCA,B,Lab 2,60,51,85.0,91.5,0,Practical,No,No,No
+13-10-2026,Tuesday,3,11:15 AM,Python,F_104,5,MCA,A,Room 202,60,52,86.67,82.54,0,Theory,No,No,No
+13-10-2026,Tuesday,4,12:15 PM,Cloud Computing,F_106,5,MCA,A,Lab 2,60,51,85.0,80.57,0,Practical,No,No,No
+13-10-2026,Tuesday,5,02:00 PM,Machine Learning,F_102,5,MCA,A,Room 202,60,51,85.0,83.66,0,Theory,No,No,No
+13-10-2026,Tuesday,6,03:00 PM,Python,F_106,3,MCA,B,Lab 2,60,52,86.67,87.79,0,Practical,Yes,No,No
+14-10-2026,Wednesday,1,09:00 AM,Python,F_101,5,MCA,A,Room 201,60,39,65.0,68.02,24,Theory,Yes,No,No
+14-10-2026,Wednesday,2,10:00 AM,Web Development,F_105,5,MCA,B,Room 201,60,46,76.67,73.96,0,Theory,Yes,No,No
+14-10-2026,Wednesday,3,11:15 AM,DBMS,F_105,5,MCA,B,Room 201,60,39,65.0,72.9,0,Theory,No,No,Yes
+14-10-2026,Wednesday,4,12:15 PM,Python,F_106,5,MCA,A,Room 201,60,53,88.33,93.22,0,Theory,No,No,No
+14-10-2026,Wednesday,5,02:00 PM,Web Development,F_104,5,MCA,A,Room 201,60,45,75.0,75.14,0,Theory,No,Yes,Yes
+14-10-2026,Wednesday,6,03:00 PM,Python,F_105,3,MCA,B,Room 303,60,45,75.0,76.77,0,Theory,No,No,No
+14-10-2026,Wednesday,1,09:00 AM,Python,F_103,5,MCA,B,Lab 2,60,51,85.0,87.78,24,Practical,No,No,No
+14-10-2026,Wednesday,2,10:00 AM,Python,F_104,5,MCA,A,Lab 2,60,55,91.67,96.33,0,Practical,No,No,No
+15-10-2026,Thursday,3,11:15 AM,Web Development,F_102,5,MCA,B,Room 303,60,49,81.67,77.48,0,Theory,No,No,No
+15-10-2026,Thursday,4,12:15 PM,Cloud Computing,F_103,3,MCA,A,Room 303,60,56,93.33,95.72,0,Theory,No,Yes,No
+15-10-2026,Thursday,5,02:00 PM,Web Development,F_101,5,MCA,B,Room 303,60,45,75.0,76.16,0,Theory,No,No,No
+15-10-2026,Thursday,6,03:00 PM,Web Development,F_103,3,MCA,A,Room 202,60,39,65.0,72.08,0,Theory,No,No,Yes
+15-10-2026,Thursday,1,09:00 AM,Data Mining,F_106,3,MCA,A,Lab 1,60,44,73.33,69.75,24,Practical,No,No,No
+15-10-2026,Thursday,2,10:00 AM,Python,F_105,3,MCA,A,Lab 1,60,55,91.67,89.79,0,Practical,No,No,No
+15-10-2026,Thursday,3,11:15 AM,Cloud Computing,F_104,5,MCA,B,Lab 2,60,49,81.67,84.25,0,Practical,Yes,No,No
+15-10-2026,Thursday,4,12:15 PM,Python,F_103,5,MCA,A,Room 202,60,49,81.67,78.88,0,Theory,No,Yes,No
+16-10-2026,Friday,5,02:00 PM,Python,F_104,3,MCA,A,Room 202,60,52,86.67,89.14,0,Theory,No,No,No
+16-10-2026,Friday,6,03:00 PM,Machine Learning,F_105,3,MCA,A,Lab 2,60,47,78.33,78.31,0,Practical,No,No,No
+16-10-2026,Friday,1,09:00 AM,Machine Learning,F_103,3,MCA,B,Lab 2,60,49,81.67,82.11,24,Practical,No,No,No
+16-10-2026,Friday,2,10:00 AM,Machine Learning,F_101,3,MCA,B,Room 201,60,48,80.0,74.99,0,Theory,No,No,No
+16-10-2026,Friday,3,11:15 AM,Python,F_106,3,MCA,A,Lab 1,60,49,81.67,78.97,0,Practical,No,Yes,No
+16-10-2026,Friday,4,12:15 PM,DBMS,F_101,5,MCA,A,Lab 2,60,55,91.67,93.55,0,Practical,No,No,No
+16-10-2026,Friday,5,02:00 PM,Machine Learning,F_106,3,MCA,A,Lab 1,60,45,75.0,76.94,0,Practical,No,Yes,Yes
+16-10-2026,Friday,6,03:00 PM,Machine Learning,F_104,5,MCA,A,Room 201,60,42,70.0,73.32,0,Theory,No,No,No
+17-10-2026,Saturday,1,09:00 AM,DBMS,F_101,3,MCA,B,Lab 1,60,47,78.33,84.61,24,Practical,No,No,No
+17-10-2026,Saturday,2,10:00 AM,Machine Learning,F_102,5,MCA,A,Room 202,60,48,80.0,80.45,0,Theory,No,No,No
+17-10-2026,Saturday,3,11:15 AM,DBMS,F_106,3,MCA,A,Room 202,60,46,76.67,75.86,0,Theory,No,No,No
+17-10-2026,Saturday,4,12:15 PM,Web Development,F_101,3,MCA,B,Room 303,60,40,66.67,64.84,0,Theory,No,No,Yes
+17-10-2026,Saturday,5,02:00 PM,Cloud Computing,F_101,3,MCA,A,Room 201,60,38,63.33,66.57,0,Theory,Yes,No,No
+17-10-2026,Saturday,6,03:00 PM,Data Mining,F_104,3,MCA,A,Room 303,60,38,63.33,64.17,0,Theory,No,No,No
+17-10-2026,Saturday,1,09:00 AM,Python,F_101,3,MCA,A,Lab 1,60,45,75.0,76.3,24,Practical,No,No,No
+17-10-2026,Saturday,2,10:00 AM,Python,F_105,5,MCA,A,Room 201,60,44,73.33,73.89,0,Theory,No,Yes,No
+18-10-2026,Monday,3,11:15 AM,DBMS,F_106,5,MCA,A,Lab 1,60,49,81.67,88.16,0,Practical,No,No,No
+18-10-2026,Monday,4,12:15 PM,Python,F_101,3,MCA,A,Room 201,60,49,81.67,86.34,0,Theory,No,No,No
+18-10-2026,Monday,5,02:00 PM,Machine Learning,F_106,3,MCA,A,Lab 2,60,55,91.67,86.78,0,Practical,No,No,No
+18-10-2026,Monday,6,03:00 PM,DBMS,F_102,3,MCA,A,Room 201,60,44,73.33,74.53,0,Theory,No,No,No
+18-10-2026,Monday,1,09:00 AM,Python,F_106,3,MCA,A,Room 201,60,32,53.33,53.91,24,Theory,No,No,Yes
+18-10-2026,Monday,2,10:00 AM,Cloud Computing,F_103,3,MCA,A,Lab 2,60,41,68.33,74.24,0,Practical,Yes,No,No
+18-10-2026,Monday,3,11:15 AM,Python,F_101,5,MCA,B,Lab 2,60,51,85.0,85.47,0,Practical,No,No,No
+18-10-2026,Monday,4,12:15 PM,Data Mining,F_102,3,MCA,A,Room 303,60,35,58.33,56.63,0,Theory,Yes,No,No
+19-10-2026,Monday,5,02:00 PM,Cloud Computing,F_106,5,MCA,A,Lab 1,60,56,93.33,94.49,0,Practical,No,No,No
+19-10-2026,Monday,6,03:00 PM,Python,F_101,5,MCA,B,Lab 2,60,47,78.33,76.66,0,Practical,No,No,No
+19-10-2026,Monday,1,09:00 AM,Cloud Computing,F_105,3,MCA,B,Room 201,60,42,70.0,74.7,24,Theory,No,Yes,No
+19-10-2026,Monday,2,10:00 AM,Cloud Computing,F_105,5,MCA,A,Room 303,60,42,70.0,70.81,0,Theory,No,No,No
+19-10-2026,Monday,3,11:15 AM,Python,F_103,3,MCA,A,Lab 1,60,45,75.0,78.3,0,Practical,No,No,Yes
+19-10-2026,Monday,4,12:15 PM,Python,F_104,5,MCA,B,Room 201,60,48,80.0,83.87,0,Theory,No,No,No
+19-10-2026,Monday,5,02:00 PM,Python,F_101,3,MCA,A,Lab 2,60,48,80.0,85.35,0,Practical,No,No,No
+19-10-2026,Monday,6,03:00 PM,Machine Learning,F_104,3,MCA,A,Lab 1,60,36,60.0,52.49,0,Practical,No,Yes,Yes
+20-10-2026,Tuesday,1,09:00 AM,Data Mining,F_106,5,MCA,B,Lab 2,60,41,68.33,68.96,24,Practical,Yes,No,No
+20-10-2026,Tuesday,2,10:00 AM,Machine Learning,F_103,3,MCA,B,Lab 2,60,54,90.0,97.32,0,Practical,No,Yes,No
+20-10-2026,Tuesday,3,11:15 AM,Machine Learning,F_106,5,MCA,A,Room 201,60,49,81.67,82.59,0,Theory,No,Yes,No
+20-10-2026,Tuesday,4,12:15 PM,Machine Learning,F_105,5,MCA,B,Room 303,60,48,80.0,84.26,0,Theory,No,No,No
+20-10-2026,Tuesday,5,02:00 PM,Python,F_104,3,MCA,B,Room 201,60,56,93.33,96.21,0,Theory,No,No,No
+20-10-2026,Tuesday,6,03:00 PM,Python,F_105,5,MCA,B,Room 202,60,41,68.33,65.22,0,Theory,No,No,Yes
+20-10-2026,Tuesday,1,09:00 AM,Python,F_101,5,MCA,B,Room 303,60,35,58.33,61.67,24,Theory,Yes,No,No
+20-10-2026,Tuesday,2,10:00 AM,Cloud Computing,F_102,3,MCA,A,Room 202,60,42,70.0,74.64,0,Theory,No,No,No
+21-10-2026,Wednesday,3,11:15 AM,Machine Learning,F_101,5,MCA,B,Room 303,60,46,76.67,73.98,0,Theory,No,No,No
+21-10-2026,Wednesday,4,12:15 PM,Python,F_104,5,MCA,A,Room 303,60,49,81.67,79.21,0,Theory,No,Yes,No
+21-10-2026,Wednesday,5,02:00 PM,Data Mining,F_101,5,MCA,A,Lab 2,60,56,93.33,91.07,0,Practical,No,No,No
+21-10-2026,Wednesday,6,03:00 PM,Data Mining,F_102,5,MCA,A,Room 303,60,37,61.67,56.43,0,Theory,No,No,No
+21-10-2026,Wednesday,1,09:00 AM,Cloud Computing,F_103,5,MCA,B,Room 201,60,46,76.67,79.11,24,Theory,No,Yes,No
+21-10-2026,Wednesday,2,10:00 AM,DBMS,F_106,3,MCA,A,Lab 1,60,51,85.0,83.42,0,Practical,No,No,No
+21-10-2026,Wednesday,3,11:15 AM,Data Mining,F_105,3,MCA,A,Room 201,60,43,71.67,68.46,0,Theory,No,No,No
+21-10-2026,Wednesday,4,12:15 PM,Web Development,F_102,3,MCA,A,Room 303,60,50,83.33,88.44,0,Theory,No,No,No
+22-10-2026,Thursday,5,02:00 PM,Cloud Computing,F_104,3,MCA,B,Room 202,60,42,70.0,69.4,0,Theory,No,No,No
+22-10-2026,Thursday,6,03:00 PM,Cloud Computing,F_101,3,MCA,A,Room 202,60,41,68.33,63.06,0,Theory,No,Yes,No
+22-10-2026,Thursday,1,09:00 AM,Machine Learning,F_102,5,MCA,B,Lab 1,60,50,83.33,87.23,24,Practical,No,Yes,No
+22-10-2026,Thursday,2,10:00 AM,Data Mining,F_105,5,MCA,B,Lab 1,60,54,90.0,90.94,0,Practical,No,No,No
+22-10-2026,Thursday,3,11:15 AM,Machine Learning,F_103,3,MCA,A,Room 303,60,47,78.33,77.09,0,Theory,No,No,No
+22-10-2026,Thursday,4,12:15 PM,Python,F_103,3,MCA,A,Lab 1,60,55,91.67,92.59,0,Practical,No,No,No
+22-10-2026,Thursday,5,02:00 PM,Cloud Computing,F_104,3,MCA,B,Room 201,60,51,85.0,83.55,0,Theory,No,No,No
+22-10-2026,Thursday,6,03:00 PM,Machine Learning,F_103,5,MCA,B,Room 303,60,39,65.0,60.52,0,Theory,No,Yes,Yes
+23-10-2026,Friday,1,09:00 AM,Cloud Computing,F_103,3,MCA,B,Room 201,60,33,55.0,50.47,24,Theory,No,No,Yes
+23-10-2026,Friday,2,10:00 AM,Web Development,F_101,5,MCA,A,Lab 2,60,56,93.33,98.96,0,Practical,No,Yes,No
+23-10-2026,Friday,3,11:15 AM,Data Mining,F_101,3,MCA,A,Lab 2,60,58,96.67,91.29,0,Practical,No,No,No
+23-10-2026,Friday,4,12:15 PM,Python,F_101,3,MCA,A,Room 201,60,52,86.67,91.12,0,Theory,No,No,No
+23-10-2026,Friday,5,02:00 PM,DBMS,F_104,3,MCA,A,Room 202,60,57,95.0,96.43,0,Theory,No,Yes,No
+23-10-2026,Friday,6,03:00 PM,Machine Learning,F_106,3,MCA,B,Lab 1,60,49,81.67,82.01,0,Practical,No,Yes,No
+23-10-2026,Friday,1,09:00 AM,Cloud Computing,F_106,5,MCA,A,Room 202,60,34,56.67,49.61,24,Theory,No,No,Yes
+23-10-2026,Friday,2,10:00 AM,Python,F_102,3,MCA,A,Lab 2,60,58,96.67,95.41,0,Practical,No,No,No
+24-10-2026,Saturday,3,11:15 AM,Cloud Computing,F_103,3,MCA,B,Lab 2,60,48,80.0,88.27,0,Practical,Yes,No,No
+24-10-2026,Saturday,4,12:15 PM,DBMS,F_102,3,MCA,B,Room 303,60,50,83.33,87.84,0,Theory,No,No,No
+24-10-2026,Saturday,5,02:00 PM,Cloud Computing,F_101,5,MCA,B,Room 201,60,48,80.0,77.45,0,Theory,No,Yes,No
+24-10-2026,Saturday,6,03:00 PM,DBMS,F_101,5,MCA,B,Room 201,60,42,70.0,76.18,0,Theory,No,No,No
+24-10-2026,Saturday,1,09:00 AM,Data Mining,F_102,5,MCA,A,Room 202,60,38,63.33,61.44,24,Theory,No,No,No
+24-10-2026,Saturday,2,10:00 AM,Data Mining,F_102,3,MCA,B,Lab 2,60,38,63.33,69.01,0,Practical,No,No,Yes
+24-10-2026,Saturday,3,11:15 AM,Python,F_105,3,MCA,A,Lab 2,60,45,75.0,74.82,0,Practical,Yes,No,No
+24-10-2026,Saturday,4,12:15 PM,Python,F_101,5,MCA,B,Room 202,60,46,76.67,80.0,0,Theory,No,Yes,No
+25-10-2026,Monday,5,02:00 PM,Python,F_104,3,MCA,B,Room 201,60,44,73.33,75.99,0,Theory,Yes,No,No
+25-10-2026,Monday,6,03:00 PM,Web Development,F_106,5,MCA,B,Lab 2,60,47,78.33,76.96,0,Practical,No,No,No
+25-10-2026,Monday,1,09:00 AM,Python,F_101,5,MCA,B,Room 202,60,23,38.33,34.54,24,Theory,Yes,No,Yes
+25-10-2026,Monday,2,10:00 AM,DBMS,F_102,5,MCA,A,Room 202,60,46,76.67,74.83,0,Theory,No,No,No
+25-10-2026,Monday,3,11:15 AM,Machine Learning,F_101,5,MCA,B,Room 303,60,45,75.0,69.46,0,Theory,No,No,Yes
+25-10-2026,Monday,4,12:15 PM,Data Mining,F_102,3,MCA,B,Lab 2,60,51,85.0,83.11,0,Practical,No,No,No
+25-10-2026,Monday,5,02:00 PM,DBMS,F_102,5,MCA,B,Room 201,60,40,66.67,60.98,0,Theory,Yes,No,No
+25-10-2026,Monday,6,03:00 PM,DBMS,F_102,3,MCA,B,Room 202,60,38,63.33,60.67,0,Theory,No,No,No
+26-10-2026,Monday,1,09:00 AM,Python,F_104,3,MCA,B,Room 201,60,40,66.67,65.43,24,Theory,No,No,No
+26-10-2026,Monday,2,10:00 AM,Web Development,F_102,3,MCA,A,Lab 1,60,51,85.0,86.23,0,Practical,No,No,No
+26-10-2026,Monday,3,11:15 AM,Data Mining,F_105,3,MCA,B,Lab 2,60,53,88.33,85.61,0,Practical,No,No,No
+26-10-2026,Monday,4,12:15 PM,Web Development,F_102,5,MCA,B,Room 201,60,46,76.67,81.64,0,Theory,No,Yes,No
+26-10-2026,Monday,5,02:00 PM,Web Development,F_103,5,MCA,A,Lab 1,60,46,76.67,73.23,0,Practical,Yes,No,No
+26-10-2026,Monday,6,03:00 PM,Machine Learning,F_106,3,MCA,B,Room 303,60,36,60.0,58.57,0,Theory,No,Yes,No
+26-10-2026,Monday,1,09:00 AM,Data Mining,F_103,5,MCA,A,Lab 2,60,41,68.33,67.82,24,Practical,No,No,No
+26-10-2026,Monday,2,10:00 AM,Machine Learning,F_101,5,MCA,A,Room 201,60,36,60.0,58.15,0,Theory,No,Yes,Yes
+27-10-2026,Tuesday,3,11:15 AM,Python,F_105,3,MCA,B,Lab 1,60,51,85.0,82.52,0,Practical,No,No,No
+27-10-2026,Tuesday,4,12:15 PM,Python,F_106,5,MCA,B,Lab 2,60,45,75.0,69.92,0,Practical,No,No,Yes
+27-10-2026,Tuesday,5,02:00 PM,DBMS,F_105,3,MCA,B,Lab 2,60,58,96.67,96.3,0,Practical,No,No,No
+27-10-2026,Tuesday,6,03:00 PM,Machine Learning,F_105,3,MCA,B,Lab 1,60,46,76.67,72.53,0,Practical,No,No,No
+27-10-2026,Tuesday,1,09:00 AM,DBMS,F_105,5,MCA,A,Room 202,60,32,53.33,56.35,24,Theory,Yes,No,No
+27-10-2026,Tuesday,2,10:00 AM,Web Development,F_106,3,MCA,B,Lab 1,60,52,86.67,87.44,0,Practical,No,No,No
+27-10-2026,Tuesday,3,11:15 AM,Cloud Computing,F_103,5,MCA,A,Lab 1,60,51,85.0,88.47,0,Practical,Yes,Yes,No
+27-10-2026,Tuesday,4,12:15 PM,Data Mining,F_106,3,MCA,A,Room 303,60,47,78.33,85.48,0,Theory,No,No,No
+28-10-2026,Wednesday,5,02:00 PM,DBMS,F_101,5,MCA,A,Room 201,60,53,88.33,88.11,0,Theory,No,No,No
+28-10-2026,Wednesday,6,03:00 PM,Machine Learning,F_103,3,MCA,B,Lab 1,60,48,80.0,78.78,0,Practical,No,No,No
+28-10-2026,Wednesday,1,09:00 AM,Cloud Computing,F_102,3,MCA,A,Lab 1,60,49,81.67,81.37,24,Practical,No,No,No
+28-10-2026,Wednesday,2,10:00 AM,Cloud Computing,F_101,3,MCA,B,Room 303,60,49,81.67,81.5,0,Theory,No,No,No
+28-10-2026,Wednesday,3,11:15 AM,Cloud Computing,F_104,3,MCA,A,Room 202,60,45,75.0,75.31,0,Theory,No,No,Yes
+28-10-2026,Wednesday,4,12:15 PM,DBMS,F_103,3,MCA,B,Room 202,60,46,76.67,77.01,0,Theory,No,Yes,No
+28-10-2026,Wednesday,5,02:00 PM,Cloud Computing,F_104,3,MCA,B,Room 303,60,45,75.0,74.29,0,Theory,No,No,No
+28-10-2026,Wednesday,6,03:00 PM,Cloud Computing,F_102,5,MCA,A,Room 202,60,38,63.33,55.2,0,Theory,No,No,Yes
+29-10-2026,Thursday,1,09:00 AM,Cloud Computing,F_106,3,MCA,A,Lab 2,60,48,80.0,79.04,24,Practical,Yes,No,No
+29-10-2026,Thursday,2,10:00 AM,Data Mining,F_105,5,MCA,A,Lab 2,60,53,88.33,84.38,0,Practical,No,No,No
+29-10-2026,Thursday,3,11:15 AM,Cloud Computing,F_101,5,MCA,A,Lab 1,60,40,66.67,68.21,0,Practical,Yes,Yes,Yes
+29-10-2026,Thursday,4,12:15 PM,DBMS,F_104,3,MCA,B,Room 303,60,49,81.67,85.73,0,Theory,No,No,No
+29-10-2026,Thursday,5,02:00 PM,Python,F_105,3,MCA,B,Room 303,60,50,83.33,77.16,0,Theory,No,No,No
+29-10-2026,Thursday,6,03:00 PM,Cloud Computing,F_104,5,MCA,B,Room 201,60,45,75.0,70.29,0,Theory,No,No,No
+29-10-2026,Thursday,1,09:00 AM,Data Mining,F_101,3,MCA,B,Room 303,60,42,70.0,70.0,24,Theory,No,No,No
+29-10-2026,Thursday,2,10:00 AM,Web Development,F_102,3,MCA,A,Room 303,60,47,78.33,82.43,0,Theory,Yes,No,No
+30-10-2026,Friday,3,11:15 AM,Cloud Computing,F_101,5,MCA,A,Lab 2,60,50,83.33,87.18,0,Practical,Yes,No,No
+30-10-2026,Friday,4,12:15 PM,Data Mining,F_103,3,MCA,B,Lab 2,60,48,80.0,87.52,0,Practical,No,No,No
+30-10-2026,Friday,5,02:00 PM,Machine Learning,F_106,3,MCA,A,Lab 2,60,50,83.33,86.39,0,Practical,Yes,Yes,No
+30-10-2026,Friday,6,03:00 PM,DBMS,F_104,3,MCA,B,Room 303,60,43,71.67,68.68,0,Theory,No,Yes,No
+30-10-2026,Friday,1,09:00 AM,Data Mining,F_103,5,MCA,B,Room 303,60,38,63.33,62.95,24,Theory,No,Yes,No
+30-10-2026,Friday,2,10:00 AM,Cloud Computing,F_103,5,MCA,B,Room 303,60,51,85.0,82.39,0,Theory,No,Yes,No
+30-10-2026,Friday,3,11:15 AM,DBMS,F_105,5,MCA,B,Room 201,60,52,86.67,91.01,0,Theory,No,No,No
+30-10-2026,Friday,4,12:15 PM,Python,F_103,3,MCA,A,Room 201,60,49,81.67,83.56,0,Theory,No,No,No
+31-10-2026,Saturday,5,02:00 PM,Cloud Computing,F_105,3,MCA,B,Room 201,60,47,78.33,75.8,0,Theory,No,No,No
+31-10-2026,Saturday,6,03:00 PM,Web Development,F_106,3,MCA,A,Lab 1,60,48,80.0,82.81,0,Practical,No,No,No
+31-10-2026,Saturday,1,09:00 AM,DBMS,F_106,3,MCA,B,Lab 2,60,46,76.67,72.92,24,Practical,No,No,No
+31-10-2026,Saturday,2,10:00 AM,Machine Learning,F_105,3,MCA,B,Lab 2,60,46,76.67,74.71,0,Practical,Yes,No,No
+31-10-2026,Saturday,3,11:15 AM,Python,F_105,3,MCA,B,Room 303,60,48,80.0,84.28,0,Theory,No,No,No
+31-10-2026,Saturday,4,12:15 PM,Data Mining,F_102,5,MCA,A,Room 303,60,47,78.33,80.2,0,Theory,No,Yes,No
+31-10-2026,Saturday,5,02:00 PM,Cloud Computing,F_103,5,MCA,A,Room 202,60,35,58.33,57.85,0,Theory,Yes,Yes,No
+31-10-2026,Saturday,6,03:00 PM,Cloud Computing,F_105,3,MCA,B,Lab 2,60,48,80.0,87.57,0,Practical,No,Yes,No
+01-11-2026,Monday,1,09:00 AM,Cloud Computing,F_105,5,MCA,A,Lab 2,60,46,76.67,75.34,24,Practical,No,No,No
+01-11-2026,Monday,2,10:00 AM,Data Mining,F_104,3,MCA,B,Room 202,60,49,81.67,86.02,0,Theory,No,No,No
+01-11-2026,Monday,3,11:15 AM,Machine Learning,F_106,5,MCA,B,Lab 1,60,43,71.67,70.92,0,Practical,Yes,No,No
+01-11-2026,Monday,4,12:15 PM,Data Mining,F_102,5,MCA,B,Room 202,60,50,83.33,84.66,0,Theory,No,No,No
+01-11-2026,Monday,5,02:00 PM,Web Development,F_103,3,MCA,A,Room 202,60,47,78.33,80.74,0,Theory,No,No,No
+01-11-2026,Monday,6,03:00 PM,Data Mining,F_104,3,MCA,B,Room 303,60,39,65.0,68.95,0,Theory,No,No,No
+01-11-2026,Monday,1,09:00 AM,Machine Learning,F_102,5,MCA,A,Room 303,60,46,76.67,76.33,24,Theory,No,No,No
+01-11-2026,Monday,2,10:00 AM,Python,F_101,3,MCA,A,Room 303,60,48,80.0,81.63,0,Theory,No,Yes,No
+02-11-2026,Monday,3,11:15 AM,Web Development,F_103,3,MCA,A,Room 201,60,43,71.67,71.59,0,Theory,No,No,Yes
+02-11-2026,Monday,4,12:15 PM,Data Mining,F_102,5,MCA,B,Room 201,60,50,83.33,84.63,0,Theory,No,No,No
+02-11-2026,Monday,5,02:00 PM,Cloud Computing,F_105,3,MCA,B,Room 202,60,48,80.0,86.48,0,Theory,No,No,No
+02-11-2026,Monday,6,03:00 PM,Data Mining,F_105,3,MCA,A,Lab 1,60,47,78.33,77.27,0,Practical,No,No,No
+02-11-2026,Monday,1,09:00 AM,Cloud Computing,F_101,5,MCA,B,Room 303,60,44,73.33,73.47,24,Theory,No,No,No
+02-11-2026,Monday,2,10:00 AM,Web Development,F_103,5,MCA,A,Room 303,60,47,78.33,83.25,0,Theory,No,No,No
+02-11-2026,Monday,3,11:15 AM,Cloud Computing,F_104,3,MCA,A,Room 201,60,42,70.0,76.47,0,Theory,No,No,No
+02-11-2026,Monday,4,12:15 PM,Cloud Computing,F_103,5,MCA,A,Room 202,60,53,88.33,79.03,0,Theory,No,No,No
