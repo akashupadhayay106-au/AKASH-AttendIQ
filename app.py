@@ -1,6 +1,6 @@
 """
 🎓 AKASH AttendIQ — Smart College Attendance Prediction
-Mobile-First, Explainable, Fast & Transparent Web Application
+Premium Desktop-First Machine Learning Analytics Dashboard
 """
 
 import os
@@ -20,611 +20,601 @@ if BASE_DIR not in sys.path:
 from src.config import (
     PRODUCT_NAME,
     PRODUCT_TAGLINE,
-    PRODUCT_VERSION,
     CLEANED_DATA_FILE,
-    RAW_DATA_FILE,
-    MODEL_FILE,
     SLOT_TIMINGS,
     ATTENDANCE_BANDS,
     HUMAN_FEATURE_NAMES,
-    THEME_COLORS
+    THEME_COLORS,
+    ALL_MODEL_FEATURES
 )
 from src.predictor import AttendancePredictor
 
 # ==============================================================================
-# 1. STREAMLIT PAGE CONFIG & MOBILE-FIRST CLEAN CSS
+# 1. PAGE CONFIG & PREMIUM CSS
 # ==============================================================================
 
 st.set_page_config(
     page_title=f"{PRODUCT_NAME} — {PRODUCT_TAGLINE}",
     page_icon="🎓",
-    layout="centered",  # Centered layout looks exceptional on mobile and tablet!
-    initial_sidebar_state="collapsed"  # Collapsed by default for clean mobile UX
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
-# Custom Clean & Mobile-Optimized CSS
+# Sophisticated Dashboard CSS
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap');
 
     html, body, [class*="css"] {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    h1, h2, h3, h4 {
+        font-family: 'Outfit', sans-serif;
     }
 
-    /* Clean Hero Container */
-    .app-hero {
-        background: linear-gradient(135deg, #1E1B4B 0%, #0F172A 100%);
+    /* Premium Header */
+    .dashboard-header {
+        background: linear-gradient(90deg, #1E1B4B 0%, #0F172A 100%);
+        padding: 24px 32px;
+        border-radius: 12px;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 16px;
-        padding: 20px 24px;
-        margin-bottom: 20px;
-        text-align: center;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
-    .app-title {
-        font-family: 'Outfit', sans-serif;
-        font-size: 1.85rem;
+    .dashboard-title {
+        font-size: 2.2rem;
         font-weight: 800;
         background: linear-gradient(90deg, #818CF8, #38BDF8);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-bottom: 4px;
+        margin: 0 0 8px 0;
     }
-    .app-subtitle {
-        font-size: 0.95rem;
+    .dashboard-subtitle {
         color: #94A3B8;
+        font-size: 1.1rem;
         margin: 0;
-        font-weight: 400;
     }
 
-    /* Feature Cards on Home */
-    .home-card {
+    /* KPI Cards */
+    .kpi-card {
         background: #1E293B;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 14px;
-        padding: 16px 18px;
-        margin-bottom: 12px;
-        transition: transform 0.15s ease;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
     }
-    .home-card:hover {
-        border-color: #6366F1;
+    .kpi-card:hover {
+        transform: translateY(-2px);
+        border-color: rgba(99, 102, 241, 0.5);
     }
-    .home-card-title {
-        font-size: 1.05rem;
-        font-weight: 700;
-        color: #F8FAFC;
-        margin-bottom: 4px;
-    }
-    .home-card-desc {
-        font-size: 0.85rem;
+    .kpi-label {
         color: #94A3B8;
-        line-height: 1.4;
-    }
-
-    /* Result Card */
-    .result-card {
-        background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 16px;
-        padding: 22px 20px;
-        text-align: center;
-        margin: 18px 0;
-    }
-    .result-label {
-        font-size: 0.82rem;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: #94A3B8;
+        font-size: 0.9rem;
         font-weight: 600;
-    }
-    .result-pct {
-        font-family: 'Outfit', sans-serif;
-        font-size: 2.8rem;
-        font-weight: 800;
-        line-height: 1.1;
-        margin: 6px 0;
-    }
-    .result-range {
-        font-size: 0.9rem;
-        color: #38BDF8;
-        font-weight: 500;
-    }
-    .result-status {
-        display: inline-block;
-        padding: 6px 16px;
-        border-radius: 20px;
-        font-size: 0.92rem;
-        font-weight: 700;
-        margin-top: 10px;
-    }
-    .status-safe {
-        background: rgba(16, 185, 129, 0.2);
-        color: #34D399;
-        border: 1px solid #10B981;
-    }
-    .status-warning {
-        background: rgba(245, 158, 11, 0.2);
-        color: #FCD34D;
-        border: 1px solid #F59E0B;
-    }
-    .status-critical {
-        background: rgba(239, 68, 68, 0.2);
-        color: #F87171;
-        border: 1px solid #EF4444;
-    }
-
-    /* Explanation Items */
-    .factor-item {
-        border-radius: 10px;
-        padding: 10px 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
         margin-bottom: 8px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 0.9rem;
     }
-    .factor-pos {
-        background: rgba(16, 185, 129, 0.12);
-        border: 1px solid rgba(16, 185, 129, 0.3);
-        color: #6EE7B7;
-    }
-    .factor-neg {
-        background: rgba(239, 68, 68, 0.12);
-        border: 1px solid rgba(239, 68, 68, 0.3);
-        color: #FCA5A5;
-    }
-
-    /* Insight Takeaway Box */
-    .insight-box {
-        background: rgba(30, 41, 59, 0.6);
-        border-left: 4px solid #6366F1;
-        padding: 10px 14px;
-        border-radius: 4px 10px 10px 4px;
-        font-size: 0.88rem;
-        color: #CBD5E1;
-        margin-top: 6px;
-        margin-bottom: 20px;
-    }
-
-    /* Responsive Buttons */
-    .stButton > button {
-        width: 100%;
-        border-radius: 12px;
+    .kpi-value {
+        color: #F8FAFC;
+        font-size: 1.8rem;
         font-weight: 700;
-        padding: 0.75rem 1.25rem;
-        font-size: 1.05rem;
+        font-family: 'Outfit', sans-serif;
     }
 
-    /* Mobile Nav */
-    div[data-testid="stRadio"] > div {
-        flex-direction: row;
-        justify-content: center;
-        gap: 6px;
-        background: #1E293B;
-        padding: 6px;
-        border-radius: 12px;
+    /* Prediction Result Card */
+    .pred-card {
+        background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+        padding: 32px;
+        border-radius: 16px;
+        text-align: center;
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
     }
+    
+    .status-safe { color: #10B981; }
+    .status-warning { color: #F59E0B; }
+    .status-critical { color: #EF4444; }
 </style>
 """, unsafe_allow_html=True)
 
-
 # ==============================================================================
-# 2. FAST RESOURCE & DATA LOADERS
-# ==============================================================================
-
-@st.cache_resource
-def get_predictor():
-    """Initializes and caches the lightweight predictor engine."""
-    try:
-        return AttendancePredictor(MODEL_FILE)
-    except Exception as e:
-        from src.data_processor import process_and_save_data
-        from src.model_trainer import train_complete_system
-        df_feat = process_and_save_data(RAW_DATA_FILE, CLEANED_DATA_FILE)
-        train_complete_system(df_feat, MODEL_FILE)
-        return AttendancePredictor(MODEL_FILE)
-
-
-@st.cache_data
-def get_data():
-    """Loads and caches attendance dataset."""
-    target_path = CLEANED_DATA_FILE if os.path.exists(CLEANED_DATA_FILE) else RAW_DATA_FILE
-    if not os.path.exists(target_path):
-        from src.data_processor import process_and_save_data
-        return process_and_save_data(RAW_DATA_FILE, CLEANED_DATA_FILE)
-    df = pd.read_csv(target_path)
-    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-    return df
-
-
-predictor = get_predictor()
-history_df = get_data()
-
-
-# ==============================================================================
-# 3. TOP HERO HEADER & NAVIGATION (ONLY 4 MAIN SECTIONS)
+# 2. STATE & DATA CACHING
 # ==============================================================================
 
-st.markdown(f"""
-<div class="app-hero">
-    <div class="app-title">🎓 {PRODUCT_NAME}</div>
-    <div class="app-subtitle">{PRODUCT_TAGLINE}</div>
-</div>
-""", unsafe_allow_html=True)
+@st.cache_resource(show_spinner="Loading ML Pipeline...")
+def load_predictor():
+    return AttendancePredictor()
 
-# Clean, Mobile-Friendly Navigation Tabs
-nav_option = st.radio(
-    "Navigation",
-    ["🏠 Home", "🎯 Predict", "🔍 Why This Prediction?", "📊 Insights"],
-    label_visibility="collapsed"
-)
+@st.cache_data(show_spinner="Loading Analytical Data...")
+def load_analytical_data():
+    if os.path.exists(CLEANED_DATA_FILE):
+        return pd.read_csv(CLEANED_DATA_FILE)
+    return pd.DataFrame()
 
+predictor = load_predictor()
+df_analytics = load_analytical_data()
 
 # ==============================================================================
-# SECTION 1: 🏠 HOME
+# 3. SIDEBAR NAVIGATION
 # ==============================================================================
-if nav_option == "🏠 Home":
-    st.markdown("### Welcome to AKASH AttendIQ")
-    st.markdown(
-        "Predict expected college classroom attendance using historical patterns, "
-        "lecture timings, and academic context."
-    )
 
-    st.markdown("""
-    <div class="home-card">
-        <div class="home-card-title">🎯 1. Predict Attendance</div>
-        <div class="home-card-desc">Estimate expected attendance percentage and risk status before a lecture starts.</div>
-    </div>
-    <div class="home-card">
-        <div class="home-card-title">🔍 2. Understand Why</div>
-        <div class="home-card-desc">See the exact positive and negative factors that influenced the model's estimate.</div>
-    </div>
-    <div class="home-card">
-        <div class="home-card-title">📊 3. Explore Insights</div>
-        <div class="home-card-desc">Analyze attendance trends by day, subject, lecture slot, and exam weeks.</div>
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown("<br>", unsafe_allow_html=True)
-
-    # Fast CTA to go directly to Predict tab
-    st.info("💡 **How it works:** Select your session details (subject, date, slot) in the **🎯 Predict** section to get an instant forecast and explanation.")
-
+with st.sidebar:
+    st.markdown(f"<h2 style='font-family: Outfit; font-weight: 800; background: linear-gradient(90deg, #818CF8, #38BDF8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;'>🎓 {PRODUCT_NAME}</h2>", unsafe_allow_html=True)
+    st.markdown(f"<p style='color: #94A3B8; font-size: 0.9rem; margin-top: -15px;'>{PRODUCT_TAGLINE}</p>", unsafe_allow_html=True)
     st.markdown("---")
-    st.caption("🔒 *Disclaimer: Predictions are estimates based on historical patterns and available inputs. They are designed to support academic planning, not replace official attendance records.*")
-
-
-# ==============================================================================
-# SECTION 2: 🎯 PREDICT ATTENDANCE
-# ==============================================================================
-elif nav_option == "🎯 Predict":
-    st.markdown("### 🎯 Predict Attendance")
-    st.caption("What is predicted? **Expected attendance percentage & risk status** for the selected session.")
-
-    # 1. Inputs (Clean, 2-column on tablet/desktop, cleanly stacked on mobile)
-    branches = sorted(history_df["Branch"].dropna().unique()) if not history_df.empty else ["MCA", "MBA"]
-    col_i1, col_i2 = st.columns(2)
     
-    with col_i1:
-        sel_branch = st.selectbox("Academic Branch", branches, index=0)
-        branch_mask = history_df["Branch"] == sel_branch if not history_df.empty else pd.Series([True])
-        subjects = sorted(history_df[branch_mask]["Subject"].dropna().unique()) if not history_df.empty else ["Python Programming"]
-        sel_subject = st.selectbox("Subject", subjects, index=0)
-        sel_date = st.date_input("Lecture Date", date.today())
+    page = st.radio("Navigation", [
+        "🏠 Overview Dashboard",
+        "🎯 Prediction Studio",
+        "🔮 What-If Simulator",
+        "📊 Attendance Analytics",
+        "🤖 Model Intelligence",
+        "📁 Batch Prediction"
+    ])
+    
+    st.markdown("---")
+    st.markdown("### Model Status")
+    st.success("● Pipeline Active")
+    if predictor.package:
+        metrics = predictor.metadata.get("metrics", {})
+        acc = metrics.get("classification", {}).get("Accuracy", 0)
+        st.caption(f"**Engine:** Gradient Boosting")
+        st.caption(f"**Version:** Production Ready")
+        st.caption(f"**Global Accuracy:** {acc*100:.1f}%")
 
-    with col_i2:
-        sections = sorted(history_df[branch_mask]["Section"].dropna().unique()) if not history_df.empty else ["A", "B", "C"]
-        sel_section = st.selectbox("Section", sections, index=0)
-        sel_slot = st.selectbox("Lecture Time / Slot", [1, 2, 3, 4, 5, 6], format_func=lambda s: f"Slot {s} ({SLOT_TIMINGS.get(s, '')})", index=0)
-        def_enrolled = 180 if sel_branch == "MCA" else 120
-        total_enrolled = st.number_input("Enrolled Students", min_value=10, max_value=500, value=def_enrolled, step=5)
-
-    # Academic Context Toggles
-    col_c1, col_c2 = st.columns(2)
-    with col_c1:
-        is_test_week = st.checkbox("📝 Internal Test Week", value=False)
-    with col_c2:
-        is_holiday_near = st.checkbox("🏖️ Near Long Weekend / Holiday", value=False)
-
-    # Auto-calculate historical context from data
-    if not history_df.empty:
-        hist_f = history_df[
-            (history_df["Branch"] == sel_branch) &
-            (history_df["Section"] == sel_section) &
-            (history_df["Subject"] == sel_subject) &
-            (history_df["Date"] < pd.Timestamp(sel_date))
-        ].sort_values(["Date", "Lecture_Number"])
-    else:
-        hist_f = pd.DataFrame()
-
-    if not hist_f.empty:
-        prev_att = float(hist_f["Attendance_Pct"].iloc[-1])
-        roll3 = float(hist_f["Attendance_Pct"].tail(3).mean())
-        roll7 = float(hist_f["Attendance_Pct"].tail(7).mean())
-        monthly_avg = float(hist_f["Attendance_Pct"].mean())
-        day_sem = max(1, (pd.Timestamp(sel_date) - history_df["Date"].min()).days + 1)
-        week_num = max(1, (day_sem - 1) // 7 + 1)
-    else:
-        prev_att, roll3, roll7, monthly_avg, day_sem, week_num = 80.0, 80.0, 80.0, 80.0, 35, 5
-
-    start_time_str = SLOT_TIMINGS.get(sel_slot, "09:00 AM")
-    time_of_day_str = "Morning" if "AM" in start_time_str else "Afternoon"
-    day_name_str = pd.Timestamp(sel_date).day_name()
-
-    input_payload = {
-        "Lecture_Number": int(sel_slot),
-        "Total_Enrolled": int(total_enrolled),
-        "Test_Week": int(is_test_week),
-        "Assignment_Due": 0,
-        "Holiday_Near": int(is_holiday_near),
-        "Prev_Lecture_Pct": float(prev_att),
-        "Rolling_3_Avg": float(roll3),
-        "Rolling_7_Avg": float(roll7),
-        "Gap_Hours": 24.0,
-        "Day_of_Semester": int(day_sem),
-        "Week_Number": int(week_num),
-        "Consecutive_Lecture_Count": int(sel_slot),
-        "Monthly_Avg_Attendance": float(monthly_avg),
-        "Day": str(day_name_str),
-        "Subject": str(sel_subject),
-        "Faculty_ID": "FAC_01",
-        "Branch": str(sel_branch),
-        "Session_Type": "Theory",
-        "Time_of_Day": str(time_of_day_str),
-        "Classroom": "Room 201"
-    }
-
-    # Save to session_state so other tabs can reference it
-    st.session_state["current_input"] = input_payload
-
-    st.caption("📌 *Prediction is based on: Recent 3-lecture attendance, previous turnout, lecture slot timing, course subject, and calendar progression.*")
-
-    # Generate Prediction
-    res = predictor.predict_single(input_payload)
-    st.session_state["current_prediction"] = res
-
-    # 2. Visually Dominant Result Card
-    pred_pct = res["predicted_attendance"]
-    risk_band = res["risk_band"]
-    exp_stud = res["expected_students"]
-    est_range = res["estimated_range"]
-
-    if risk_band == "SAFE":
-        status_class = "status-safe"
-        status_icon = "🟢 SAFE"
-        pct_color = "#34D399"
-    elif risk_band == "WARNING":
-        status_class = "status-warning"
-        status_icon = "🟡 WARNING"
-        pct_color = "#FCD34D"
-    else:
-        status_class = "status-critical"
-        status_icon = "🔴 CRITICAL"
-        pct_color = "#F87171"
-
+# Helper for Header
+def render_header(title, subtitle):
     st.markdown(f"""
-    <div class="result-card">
-        <div class="result-label">Expected Attendance</div>
-        <div class="result-pct" style="color: {pct_color};">{pred_pct:.1f}%</div>
-        <div class="result-range">Estimated Range: {est_range}</div>
-        <div class="result-status {status_class}">{status_icon} — {exp_stud} of {total_enrolled} Students Expected</div>
+    <div class="dashboard-header">
+        <h1 class="dashboard-title">{title}</h1>
+        <p class="dashboard-subtitle">{subtitle}</p>
     </div>
     """, unsafe_allow_html=True)
 
-    # 3. Model Probabilities
-    probs = res["probabilities"]
-    col_p1, col_p2, col_p3 = st.columns(3)
-    with col_p1:
-        st.metric("🟢 SAFE (≥75%)", f"{probs.get('SAFE', 0.0)}%")
-    with col_p2:
-        st.metric("🟡 WARNING (50-75%)", f"{probs.get('WARNING', 0.0)}%")
-    with col_p3:
-        st.metric("🔴 CRITICAL (<50%)", f"{probs.get('CRITICAL', 0.0)}%")
-
-    # 4. Quick What-If Scenario (Try another scenario)
-    with st.expander("🧪 Try Another Scenario (What-If)", expanded=False):
-        st.markdown("**Test how changing conditions changes the prediction:**")
-        col_w1, col_w2 = st.columns(2)
-        with col_w1:
-            alt_slot = st.selectbox("Change Time Slot", [1, 2, 3, 4, 5, 6], index=sel_slot-1, format_func=lambda s: f"Slot {s} ({SLOT_TIMINGS.get(s, '')})")
-        with col_w2:
-            alt_test = st.selectbox("Change Test Week", [0, 1], index=int(is_test_week), format_func=lambda x: "Internal Test Week" if x == 1 else "Normal Week")
-
-        alt_overrides = {
-            "Lecture_Number": int(alt_slot),
-            "Test_Week": int(alt_test),
-            "Time_of_Day": "Morning" if "AM" in SLOT_TIMINGS.get(alt_slot, "09:00 AM") else "Afternoon"
-        }
-        alt_res = predictor.simulate_what_if(input_payload, alt_overrides)
-        delta_p = alt_res["diff_attendance_pct"]
-        sign = "+" if delta_p >= 0 else ""
-        delta_color = "#34D399" if delta_p >= 0 else "#F87171"
-
-        st.markdown(f"""
-        <div style="background: #0F172A; padding: 12px; border-radius: 10px; text-align: center; margin-top: 6px;">
-            <span style="color: #94A3B8;">Current: <b>{pred_pct:.1f}%</b> → New Scenario: <b>{alt_res['scenario']['predicted_attendance']:.1f}%</b></span><br>
-            <span style="font-size: 1.1rem; font-weight: 800; color: {delta_color};">Net Change: {sign}{delta_p:.1f}% ({sign}{alt_res['diff_students']} students)</span>
-        </div>
-        """, unsafe_allow_html=True)
-
-
-# ==============================================================================
-# SECTION 3: 🔍 WHY THIS PREDICTION? (EXPLAINABILITY)
-# ==============================================================================
-elif nav_option == "🔍 Why This Prediction?":
-    st.markdown("### 🔍 Why Did AKASH AttendIQ Predict This?")
-    
-    # Load current prediction or fallback to default
-    if "current_input" in st.session_state:
-        input_data = st.session_state["current_input"]
-    else:
-        input_data = {
-            "Lecture_Number": 1, "Total_Enrolled": 180, "Test_Week": 0, "Assignment_Due": 0, "Holiday_Near": 0,
-            "Prev_Lecture_Pct": 85.0, "Rolling_3_Avg": 82.5, "Rolling_7_Avg": 81.0, "Gap_Hours": 24.0,
-            "Day_of_Semester": 35, "Week_Number": 5, "Consecutive_Lecture_Count": 1, "Monthly_Avg_Attendance": 80.0,
-            "Day": "Monday", "Subject": "Python Programming", "Faculty_ID": "FAC_01", "Branch": "MCA",
-            "Session_Type": "Theory", "Time_of_Day": "Morning", "Classroom": "Room 201"
-        }
-
-    res = predictor.predict_single(input_data)
-    pos_factors = res["top_positive_factors"]
-    neg_factors = res["top_negative_factors"]
-
-    st.markdown(f"**Predicted Attendance:** `{res['predicted_attendance']:.1f}%` | **Status:** `{res['risk_band']}`")
-
-    # 1. Natural Language Positive Factors
-    st.markdown("#### 🟢 Factors Raising Attendance (Positive)")
-    if pos_factors:
-        for f in pos_factors:
-            st.markdown(f"""
-            <div class="factor-item factor-pos">
-                <span><b>↑ {f['factor']}</b></span>
-                <span><b>+{f['impact']}%</b></span>
-            </div>
-            """, unsafe_allow_html=True)
-    else:
-        st.info("No significant positive factors identified for this session.")
-
-    # 2. Natural Language Negative Factors
-    st.markdown("#### 🔴 Factors Lowering Attendance (Negative)")
-    if neg_factors:
-        for f in neg_factors:
-            st.markdown(f"""
-            <div class="factor-item factor-neg">
-                <span><b>↓ {f['factor']}</b></span>
-                <span><b>{f['impact']}%</b></span>
-            </div>
-            """, unsafe_allow_html=True)
-    else:
-        st.info("No significant negative factors identified for this session.")
-
-    # 3. Compact Horizontal Contribution Chart
-    all_factors = []
-    for f in pos_factors:
-        all_factors.append({"Factor": f["factor"], "Impact (%)": f["impact"], "Type": "Positive"})
-    for f in neg_factors:
-        all_factors.append({"Factor": f["factor"], "Impact (%)": f["impact"], "Type": "Negative"})
-
-    if all_factors:
-        df_factors = pd.DataFrame(all_factors).sort_values("Impact (%)")
-        fig_feat = px.bar(
-            df_factors,
-            x="Impact (%)",
-            y="Factor",
-            orientation="h",
-            color="Type",
-            color_discrete_map={"Positive": "#10B981", "Negative": "#EF4444"},
-            title="Relative Feature Influence on Attendance"
-        )
-        fig_feat.update_layout(
-            template="plotly_dark",
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
-            height=250,
-            showlegend=False,
-            margin=dict(l=10, r=10, t=30, b=10)
-        )
-        st.plotly_chart(fig_feat, use_container_width=True)
-
-    # 4. Action Recommendation
-    advisory = res["advisory"]
+# Helper for KPI
+def render_kpi(label, value, color_hex="#F8FAFC"):
     st.markdown(f"""
-    <div style="background: #1E293B; border-radius: 12px; padding: 14px; margin-top: 10px;">
-        <div style="font-weight: 700; color: #F8FAFC; margin-bottom: 4px;">📋 Recommended Action</div>
-        <div style="font-size: 0.9rem; color: #CBD5E1;">{advisory['executive_summary']}</div>
+    <div class="kpi-card">
+        <div class="kpi-label">{label}</div>
+        <div class="kpi-value" style="color: {color_hex}">{value}</div>
     </div>
     """, unsafe_allow_html=True)
 
-    # 5. Expandable Technical Details
-    with st.expander("⚙️ Technical Model Details (For Faculty / Data Teams)", expanded=False):
-        meta = predictor.metadata
-        st.markdown(f"- **Champion Regression Model:** `{meta.get('best_regression_model', 'Gradient Boosting')}`")
-        st.markdown(f"- **Champion Classifier:** `{meta.get('best_classification_model', 'Gradient Boosting')}`")
-        st.markdown(f"- **Validation Strategy:** `Chronological 80/20 Time-Aware Hold-Out Test`")
-        reg_m = meta.get("regression_metrics", {})
-        cls_m = meta.get("classification_metrics", {})
-        st.markdown(f"- **Test Performance:** MAE: `{reg_m.get('MAE (%)', 6.70)}%` | RMSE: `{reg_m.get('RMSE (%)', 8.96)}%` | Accuracy: `{cls_m.get('Accuracy (%)', 78.89)}%` | ROC-AUC: `{cls_m.get('ROC-AUC', 0.853)}`")
-
-
 # ==============================================================================
-# SECTION 4: 📊 INSIGHTS (5-6 MEANINGFUL CHARTS ONLY)
+# 4. OVERVIEW DASHBOARD
 # ==============================================================================
-elif nav_option == "📊 Insights":
-    st.markdown("### 📊 College Attendance Insights")
-    st.caption("Key empirical patterns discovered from 3,600 historical lecture sessions.")
+if page == "🏠 Overview Dashboard":
+    render_header("Attendance Intelligence", "Monitor attendance patterns, predict upcoming session attendance, and identify risk signals.")
+    
+    if not df_analytics.empty:
+        # Top KPI Row
+        k1, k2, k3, k4, k5 = st.columns(5)
+        
+        metrics = predictor.metadata.get("metrics", {})
+        cls_metrics = metrics.get("classification", {})
+        reg_metrics = metrics.get("regression", {})
+        
+        with k1: render_kpi("📚 Total Sessions", f"{len(df_analytics):,}")
+        with k2: render_kpi("📈 Avg Attendance", f"{df_analytics['Attendance_Pct'].mean():.1f}%", THEME_COLORS["primary"])
+        with k3: render_kpi("🎯 Model Accuracy", f"{cls_metrics.get('Accuracy', 0.7889)*100:.1f}%", THEME_COLORS["safe"])
+        with k4: render_kpi("⭐ ROC-AUC", f"{cls_metrics.get('ROC_AUC', 0.853):.3f}", THEME_COLORS["secondary"])
+        with k5: render_kpi("📊 Prediction MAE", f"{reg_metrics.get('MAE', 6.7)}%", THEME_COLORS["warning"])
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        # Chart Grid
+        c1, c2 = st.columns([2, 1])
+        
+        with c1:
+            st.markdown("### 📈 Attendance Trend (Moving Average)")
+            if "Day_of_Semester" in df_analytics.columns:
+                trend_df = df_analytics.groupby("Day_of_Semester")["Attendance_Pct"].mean().reset_index()
+                trend_df["Rolling"] = trend_df["Attendance_Pct"].rolling(7, min_periods=1).mean()
+                
+                fig = px.line(trend_df, x="Day_of_Semester", y="Rolling", 
+                              color_discrete_sequence=[THEME_COLORS["primary"]])
+                fig.update_layout(plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
+                                  margin=dict(l=0, r=0, t=20, b=0), xaxis_title="Semester Progression", yaxis_title="Attendance %")
+                st.plotly_chart(fig, use_container_width=True)
+                st.caption("Insight: Displays the overall 7-day smoothed attendance pattern across the semester timeline.")
+                
+        with c2:
+            st.markdown("### 🎯 Risk Distribution")
+            if "Attendance_Risk" in df_analytics.columns:
+                risk_counts = df_analytics["Attendance_Risk"].value_counts().reset_index()
+                risk_counts.columns = ["Risk", "Count"]
+                color_map = {"SAFE": THEME_COLORS["safe"], "WARNING": THEME_COLORS["warning"], "CRITICAL": THEME_COLORS["critical"]}
+                
+                fig2 = px.pie(risk_counts, values="Count", names="Risk", hole=0.6,
+                              color="Risk", color_discrete_map=color_map)
+                fig2.update_layout(plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
+                                   margin=dict(l=0, r=0, t=20, b=0), showlegend=False)
+                fig2.update_traces(textposition='inside', textinfo='percent+label')
+                st.plotly_chart(fig2, use_container_width=True)
+                st.caption("Insight: Actual historical distribution of safe vs at-risk lecture sessions.")
 
-    if history_df.empty:
-        st.info("Dataset not available.")
+        st.markdown("---")
+        st.markdown("### ⚡ Quick Prediction")
+        st.caption("Experience the ML inference engine instantly with common inputs.")
+        
+        qc1, qc2, qc3, qc4 = st.columns(4)
+        q_prev = qc1.slider("Previous Attendance %", 0, 100, 75, key="q1")
+        q_rec = qc2.slider("Recent 3-Lec Avg", 0, 100, 78, key="q2")
+        q_day = qc3.selectbox("Day", ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], key="q3")
+        q_slot = qc4.selectbox("Timing", list(SLOT_TIMINGS.values()), index=2, key="q4")
+        
+        if st.button("Predict Attendance →", use_container_width=True, type="primary"):
+            slot_id = [k for k, v in SLOT_TIMINGS.items() if v == q_slot][0]
+            base_input = predictor.baseline_medians.copy() if predictor.baseline_medians else {}
+            base_input.update({
+                "Prev_Lecture_Pct": q_prev,
+                "Rolling_3_Avg": q_rec,
+                "Day": q_day,
+                "Lecture_Number": slot_id
+            })
+            
+            res = predictor.predict_single(base_input)
+            
+            st.markdown(f"""
+            <div style="background: #1E293B; padding: 20px; border-radius: 12px; border-left: 4px solid {THEME_COLORS['primary']}; margin-top: 10px;">
+                <h3 style="margin: 0; color: #F8FAFC;">Expected: {res['predicted_attendance']:.1f}%</h3>
+                <p style="margin: 5px 0 0 0; color: #94A3B8;">Risk Status: <strong class="status-{res['risk_band'].lower()}">{res['risk_band']}</strong> | Probability: {res['confidence_pct']:.1f}%</p>
+            </div>
+            """, unsafe_allow_html=True)
+            
     else:
-        # 1. Attendance Distribution
-        fig_dist = px.histogram(
-            history_df,
-            x="Attendance_Pct",
-            nbins=25,
-            color_discrete_sequence=["#6366F1"],
-            title="1. Overall Attendance Distribution"
-        )
-        fig_dist.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", height=240, margin=dict(l=10, r=10, t=30, b=10))
-        st.plotly_chart(fig_dist, use_container_width=True)
-        st.markdown('<div class="insight-box">💡 <b>Takeaway:</b> Most lectures record attendance between 70% and 90%, with an institutional average of <b>78.6%</b>.</div>', unsafe_allow_html=True)
+        st.warning("Analytical dataset not found. Model inference is still available.")
 
-        # 2. Lecture Slot Fatigue Curve
-        slot_s = history_df.groupby("Lecture_Number", as_index=False)["Attendance_Pct"].mean()
-        fig_slot = px.line(
-            slot_s,
-            x="Lecture_Number",
-            y="Attendance_Pct",
-            markers=True,
-            title="2. Attendance by Lecture Slot (Fatigue Drop-off)"
-        )
-        fig_slot.update_traces(line_color="#06B6D4", line_width=3, marker_size=7)
-        fig_slot.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", height=240, margin=dict(l=10, r=10, t=30, b=10), yaxis=dict(range=[50, 95]))
-        st.plotly_chart(fig_slot, use_container_width=True)
-        st.markdown('<div class="insight-box">💡 <b>Takeaway:</b> Attendance peaks in mid-day slots (Slots 2 & 3: 10:00–11:15 AM) and drops by <b>~12%</b> in late afternoon slots (Slots 5 & 6).</div>', unsafe_allow_html=True)
+# ==============================================================================
+# 5. PREDICTION STUDIO
+# ==============================================================================
+elif page == "🎯 Prediction Studio":
+    render_header("Prediction Studio", "Estimate expected attendance for an upcoming class using historical and session-level patterns.")
+    
+    c1, c2 = st.columns([1.2, 1])
+    
+    with c1:
+        st.markdown("### Input Features")
+        with st.container(border=True):
+            st.markdown("#### 📅 Session Context")
+            col_a, col_b = st.columns(2)
+            day_val = col_a.selectbox("Day of Week", ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"])
+            slot_name = col_b.selectbox("Lecture Timing", list(SLOT_TIMINGS.values()))
+            slot_val = [k for k, v in SLOT_TIMINGS.items() if v == slot_name][0]
+            subj_val = st.selectbox("Subject", df_analytics["Subject"].unique() if not df_analytics.empty else ["Database Management", "Data Structures", "Operating Systems"])
+            
+            st.markdown("#### 📈 Attendance History")
+            col_c, col_d = st.columns(2)
+            prev_val = col_c.number_input("Previous Lecture Attendance %", 0, 100, 75)
+            roll3_val = col_d.number_input("Recent 3-Lecture Avg %", 0, 100, 78)
+            roll7_val = col_c.number_input("Recent 7-Lecture Avg %", 0, 100, 76)
+            
+            st.markdown("#### 🎓 Academic Context")
+            test_val = st.toggle("Internal Test Week", False)
+            hol_val = st.toggle("Holiday Proximity", False)
+            
+        st.markdown("---")
+        predict_btn = st.button("🎯 Generate Full Prediction", use_container_width=True, type="primary")
 
-        # 3. Subject-wise Ranking
-        sub_s = history_df.groupby("Subject", as_index=False)["Attendance_Pct"].mean().sort_values("Attendance_Pct")
-        fig_sub = px.bar(
-            sub_s,
-            x="Attendance_Pct",
-            y="Subject",
-            orientation="h",
-            color="Attendance_Pct",
-            color_continuous_scale="Tealgrn",
-            title="3. Average Attendance by Subject"
-        )
-        fig_sub.add_vline(x=75.0, line_dash="dash", line_color="#EF4444", annotation_text="75% Cutoff")
-        fig_sub.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", height=280, margin=dict(l=10, r=10, t=30, b=10), xaxis=dict(range=[0, 100]))
-        st.plotly_chart(fig_sub, use_container_width=True)
-        st.markdown('<div class="insight-box">💡 <b>Takeaway:</b> Practical and programming subjects maintain stronger attendance than heavy theoretical courses.</div>', unsafe_allow_html=True)
+    with c2:
+        if predict_btn:
+            # Build input dictionary padding with baselines
+            inp = predictor.baseline_medians.copy() if predictor.baseline_medians else {}
+            inp.update({
+                "Day": day_val,
+                "Lecture_Number": slot_val,
+                "Subject": subj_val,
+                "Prev_Lecture_Pct": prev_val,
+                "Rolling_3_Avg": roll3_val,
+                "Rolling_7_Avg": roll7_val,
+                "Test_Week": int(test_val),
+                "Holiday_Near": int(hol_val)
+            })
+            
+            res = predictor.predict_single(inp)
+            
+            status_color = THEME_COLORS.get(res['risk_band'].lower(), "#fff")
+            
+            st.markdown(f"""
+            <div class="pred-card">
+                <p style="color: #94A3B8; font-weight: 600; text-transform: uppercase; margin: 0;">Predicted Attendance</p>
+                <h1 style="font-size: 4rem; color: #F8FAFC; margin: 10px 0; font-family: Outfit;">{res['predicted_attendance']:.1f}%</h1>
+                <h2 class="status-{res['risk_band'].lower()}" style="margin: 0; font-weight: 800;">{res['risk_band']}</h2>
+                <p style="color: #94A3B8; font-size: 0.9rem; margin-top: 15px;">Typical prediction error: ±6.7 percentage points</p>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            st.markdown("<br>", unsafe_allow_html=True)
+            
+            # Gauge Chart
+            fig_g = go.Figure(go.Indicator(
+                mode="gauge+number",
+                value=res['predicted_attendance'],
+                domain={'x': [0, 1], 'y': [0, 1]},
+                gauge={
+                    'axis': {'range': [0, 100], 'tickwidth': 1, 'tickcolor': "white"},
+                    'bar': {'color': status_color},
+                    'bgcolor': "#1E293B",
+                    'borderwidth': 2,
+                    'bordercolor': "#334155",
+                    'steps': [
+                        {'range': [0, 50], 'color': "rgba(239, 68, 68, 0.2)"},
+                        {'range': [50, 75], 'color': "rgba(245, 158, 11, 0.2)"},
+                        {'range': [75, 100], 'color': "rgba(16, 185, 129, 0.2)"}
+                    ]
+                }
+            ))
+            fig_g.update_layout(height=250, margin=dict(l=20, r=20, t=30, b=20), paper_bgcolor="rgba(0,0,0,0)", font={'color': "#F8FAFC"})
+            st.plotly_chart(fig_g, use_container_width=True)
+            
+            # Probabilities
+            st.markdown("### Risk Probability")
+            probs = res['probabilities']
+            for b_name in ["SAFE", "WARNING", "CRITICAL"]:
+                val = probs.get(b_name, 0.0)
+                col_c = THEME_COLORS.get(b_name.lower())
+                st.markdown(f"**{b_name}**: &nbsp;&nbsp; {val:.1f}%")
+                st.progress(val / 100.0)
+                
+    # Explainability Section
+    if predict_btn:
+        st.markdown("---")
+        st.markdown("## 🔍 Why This Prediction?")
+        
+        e1, e2 = st.columns([1.5, 1])
+        
+        with e1:
+            st.markdown("### Feature Impact")
+            impacts = []
+            for f in res['top_positive_factors']:
+                impacts.append({"Feature": HUMAN_FEATURE_NAMES.get(f['feature'], f['feature']), "Impact": f['impact'], "Type": "Positive"})
+            for f in res['top_negative_factors']:
+                impacts.append({"Feature": HUMAN_FEATURE_NAMES.get(f['feature'], f['feature']), "Impact": f['impact'], "Type": "Negative"})
+                
+            if impacts:
+                df_imp = pd.DataFrame(impacts)
+                df_imp = df_imp.sort_values("Impact", ascending=True)
+                
+                fig_imp = px.bar(df_imp, x="Impact", y="Feature", color="Type", orientation='h',
+                                 color_discrete_map={"Positive": THEME_COLORS["safe"], "Negative": THEME_COLORS["critical"]})
+                fig_imp.update_layout(plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
+                                      margin=dict(l=0, r=0, t=10, b=0), showlegend=False)
+                st.plotly_chart(fig_imp, use_container_width=True)
+        
+        with e2:
+            st.markdown("### Interpretation")
+            if res['top_positive_factors']:
+                top_p = res['top_positive_factors'][0]
+                fname = HUMAN_FEATURE_NAMES.get(top_p['feature'], top_p['feature'])
+                st.success(f"**Strongest Positive Factor:**\n\n{fname} ({top_p['impact']:+.1f}%) is strongly supporting attendance.")
+            
+            if res['top_negative_factors']:
+                top_n = res['top_negative_factors'][0]
+                fname = HUMAN_FEATURE_NAMES.get(top_n['feature'], top_n['feature'])
+                st.error(f"**Strongest Negative Factor:**\n\n{fname} ({top_n['impact']:+.1f}%) is reducing the expected attendance.")
+            
+            st.info("**What this means:**\nThe model estimates attendance based strictly on the provided historical and session information compared to the institutional average. It does not track individual students.")
 
-        # 4. Day of Week Attendance
-        day_order = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-        day_s = history_df.groupby("Day", as_index=False)["Attendance_Pct"].mean()
-        day_s["Order"] = day_s["Day"].map(lambda d: day_order.index(d) if d in day_order else 99)
-        day_s = day_s.sort_values("Order")
-        fig_day = px.bar(
-            day_s,
-            x="Day",
-            y="Attendance_Pct",
-            color="Attendance_Pct",
-            color_continuous_scale="Blues",
-            title="4. Attendance Patterns Across Weekdays"
-        )
-        fig_day.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", height=240, margin=dict(l=10, r=10, t=30, b=10), yaxis=dict(range=[0, 100]))
-        st.plotly_chart(fig_day, use_container_width=True)
-        st.markdown('<div class="insight-box">💡 <b>Takeaway:</b> Tuesdays and Wednesdays record the highest turnout, with a minor dip observed on Fridays.</div>', unsafe_allow_html=True)
+# ==============================================================================
+# 6. WHAT-IF SIMULATOR
+# ==============================================================================
+elif page == "🔮 What-If Simulator":
+    render_header("What-If Scenario Lab", "Compare a baseline prediction with an alternative scenario to see exactly how operational changes influence attendance.")
+    
+    c1, c2 = st.columns(2)
+    
+    with c1:
+        st.markdown("### 1. Set Current Scenario")
+        with st.container(border=True):
+            b_prev = st.slider("Current Previous Attendance", 0, 100, 75)
+            b_rec = st.slider("Current Recent Avg", 0, 100, 75)
+            b_time = st.selectbox("Current Timing", list(SLOT_TIMINGS.values()), index=2)
+            b_slot_val = [k for k, v in SLOT_TIMINGS.items() if v == b_time][0]
+            
+    with c2:
+        st.markdown("### 2. Set Modified Scenario")
+        with st.container(border=True):
+            s_prev = st.slider("Scenario Previous Attendance", 0, 100, 85)
+            s_rec = st.slider("Scenario Recent Avg", 0, 100, 85)
+            s_time = st.selectbox("Scenario Timing", list(SLOT_TIMINGS.values()), index=0)
+            s_slot_val = [k for k, v in SLOT_TIMINGS.items() if v == s_time][0]
+            
+    if st.button("⚡ Simulate Impact", type="primary", use_container_width=True):
+        b_input = predictor.baseline_medians.copy()
+        b_input.update({"Prev_Lecture_Pct": b_prev, "Rolling_3_Avg": b_rec, "Lecture_Number": b_slot_val})
+        
+        s_input = b_input.copy()
+        s_input.update({"Prev_Lecture_Pct": s_prev, "Rolling_3_Avg": s_rec, "Lecture_Number": s_slot_val})
+        
+        res = predictor.simulate_what_if(b_input, s_input)
+        
+        st.markdown("---")
+        st.markdown("### Simulation Result")
+        
+        r1, r2, r3 = st.columns(3)
+        
+        b_val = res['baseline_prediction']
+        s_val = res['scenario_prediction']
+        delta = res['delta_pct']
+        
+        d_color = THEME_COLORS['safe'] if delta > 0 else THEME_COLORS['critical'] if delta < 0 else THEME_COLORS['text_muted']
+        
+        with r1: render_kpi("CURRENT", f"{b_val:.1f}%")
+        with r2: render_kpi("SCENARIO", f"{s_val:.1f}%")
+        with r3: render_kpi("IMPACT", f"{delta:+.1f}%", d_color)
+        
+        # Plotly comparison
+        fig = go.Figure()
+        fig.add_trace(go.Bar(x=['Current', 'Scenario'], y=[b_val, s_val], 
+                             marker_color=[THEME_COLORS['background_card'], THEME_COLORS['primary']],
+                             text=[f"{b_val:.1f}%", f"{s_val:.1f}%"], textposition='auto'))
+        fig.update_layout(plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)", yaxis_range=[0, 100], height=300)
+        st.plotly_chart(fig, use_container_width=True)
 
-        # 5. Internal Test Week Impact
-        test_s = history_df.groupby("Test_Week", as_index=False)["Attendance_Pct"].mean()
-        test_s["Period"] = test_s["Test_Week"].map({0: "Normal Lecture Week", 1: "Internal Test Week"})
-        fig_test = px.bar(
-            test_s,
-            x="Period",
-            y="Attendance_Pct",
-            color="Period",
-            color_discrete_map={"Normal Lecture Week": "#10B981", "Internal Test Week": "#F59E0B"},
-            title="5. Academic Stress: Internal Test Week Impact"
-        )
-        fig_test.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", height=240, margin=dict(l=10, r=10, t=30, b=10), yaxis=dict(range=[0, 100]), showlegend=False)
-        st.plotly_chart(fig_test, use_container_width=True)
-        st.markdown('<div class="insight-box">💡 <b>Takeaway:</b> Internal test weeks observe a <b>5.2%</b> drop in lecture attendance as students prioritize exam prep.</div>', unsafe_allow_html=True)
+# ==============================================================================
+# 7. ATTENDANCE ANALYTICS
+# ==============================================================================
+elif page == "📊 Attendance Analytics":
+    render_header("Attendance Analytics", "Deep institutional exploratory data analysis across historical records.")
+    
+    if df_analytics.empty:
+        st.warning("No analytics dataset found.")
+    else:
+        c1, c2 = st.columns(2)
+        
+        with c1:
+            st.markdown("### Attendance Distribution")
+            fig = px.histogram(df_analytics, x="Attendance_Pct", nbins=40, color_discrete_sequence=[THEME_COLORS['primary']])
+            fig.update_layout(plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)", margin=dict(l=0, r=0, t=10, b=0))
+            st.plotly_chart(fig, use_container_width=True)
+            st.caption("Insight: Displays the overall historical frequency of attendance rates, revealing institutional baselines.")
+            
+            st.markdown("### Day-wise Attendance")
+            if "Day" in df_analytics.columns:
+                day_order = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+                fig3 = px.box(df_analytics, x="Day", y="Attendance_Pct", category_orders={"Day": day_order}, color_discrete_sequence=[THEME_COLORS['secondary']])
+                fig3.update_layout(plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)", margin=dict(l=0, r=0, t=10, b=0))
+                st.plotly_chart(fig3, use_container_width=True)
+                st.caption("Insight: Weekend proximity generally causes wider variance in Friday/Saturday attendance.")
+                
+        with c2:
+            st.markdown("### Lecture Slot Analysis (Fatigue)")
+            if "Lecture_Number" in df_analytics.columns:
+                slot_avg = df_analytics.groupby("Lecture_Number")["Attendance_Pct"].mean().reset_index()
+                slot_avg["Timing"] = slot_avg["Lecture_Number"].map(SLOT_TIMINGS)
+                fig2 = px.bar(slot_avg, x="Timing", y="Attendance_Pct", color_discrete_sequence=[THEME_COLORS['safe']])
+                fig2.update_layout(plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)", yaxis_range=[50, 100], margin=dict(l=0, r=0, t=10, b=0))
+                st.plotly_chart(fig2, use_container_width=True)
+                st.caption("Insight: Mid-day sessions typically hold maximum momentum, while early morning and late afternoon suffer from slot fatigue.")
+
+            st.markdown("### Subject Performance")
+            if "Subject" in df_analytics.columns:
+                subj_avg = df_analytics.groupby("Subject")["Attendance_Pct"].mean().sort_values(ascending=False).reset_index()
+                fig4 = px.bar(subj_avg, x="Attendance_Pct", y="Subject", orientation='h', color_discrete_sequence=[THEME_COLORS['warning']])
+                fig4.update_layout(plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)", xaxis_range=[50, 100], margin=dict(l=0, r=0, t=10, b=0))
+                st.plotly_chart(fig4, use_container_width=True)
+                st.caption("Insight: Shows inherent subject interest and mandatory vs elective attendance disparities.")
+
+# ==============================================================================
+# 8. MODEL INTELLIGENCE
+# ==============================================================================
+elif page == "🤖 Model Intelligence":
+    render_header("Model Intelligence", "Transparency into model metrics, feature importance, and classification boundaries.")
+    
+    metrics = predictor.metadata.get("metrics", {})
+    cls_metrics = metrics.get("classification", {})
+    reg_metrics = metrics.get("regression", {})
+    
+    c1, c2 = st.columns(2)
+    
+    with c1:
+        st.markdown("### 🏆 Final Regression Model")
+        st.info("**Gradient Boosting Regressor**")
+        rm1, rm2, rm3 = st.columns(3)
+        with rm1: render_kpi("MAE", f"{reg_metrics.get('MAE', 6.7)}%")
+        with rm2: render_kpi("RMSE", f"{reg_metrics.get('RMSE', 8.9)}%")
+        with rm3: render_kpi("R²", f"{reg_metrics.get('R2', 0.46):.3f}")
+        
+    with c2:
+        st.markdown("### 🏆 Final Classification Model")
+        st.info("**Gradient Boosting Classifier**")
+        cm1, cm2, cm3 = st.columns(3)
+        with cm1: render_kpi("Accuracy", f"{cls_metrics.get('Accuracy', 0.78)*100:.1f}%")
+        with cm2: render_kpi("F1-Score", f"{cls_metrics.get('F1_Score', 0.77):.3f}")
+        with cm3: render_kpi("ROC-AUC", f"{cls_metrics.get('ROC_AUC', 0.85):.3f}")
+        
+    st.markdown("---")
+    
+    e1, e2 = st.columns([1.5, 1])
+    
+    with e1:
+        st.markdown("### 🌍 Global Feature Importance")
+        st.caption("What generally matters most to the model across the entire dataset?")
+        feat_imp = predictor.metadata.get("feature_importance", [])
+        if feat_imp:
+            df_imp = pd.DataFrame(feat_imp).sort_values("importance", ascending=True).tail(10)
+            df_imp["Human_Name"] = df_imp["feature"].map(lambda x: HUMAN_FEATURE_NAMES.get(x, x))
+            fig = px.bar(df_imp, x="importance", y="Human_Name", orientation='h', color_discrete_sequence=[THEME_COLORS['primary']])
+            fig.update_layout(plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)", margin=dict(l=0, r=0, t=0, b=0))
+            st.plotly_chart(fig, use_container_width=True)
+            
+    with e2:
+        st.markdown("### 🧪 Confusion Matrix")
+        st.caption("Real classification performance on hold-out test set.")
+        cm = cls_metrics.get("Confusion_Matrix")
+        if cm is not None:
+            import plotly.figure_factory as ff
+            z = cm
+            x = ["CRITICAL", "SAFE", "WARNING"]
+            y = ["CRITICAL", "SAFE", "WARNING"]
+            fig_cm = ff.create_annotated_heatmap(z, x=x, y=y, colorscale='Blues')
+            fig_cm.update_layout(margin=dict(l=0, r=0, t=30, b=0), paper_bgcolor="rgba(0,0,0,0)")
+            st.plotly_chart(fig_cm, use_container_width=True)
+        else:
+            st.info("Confusion matrix data unavailable in package.")
+
+# ==============================================================================
+# 9. BATCH PREDICTION
+# ==============================================================================
+elif page == "📁 Batch Prediction":
+    render_header("Batch Prediction", "Process multiple sessions from a CSV file to identify institutional risk instantly.")
+    
+    st.markdown("Upload a CSV with session features. The system will predict attendance and risk for every row.")
+    
+    uploaded_file = st.file_uploader("Upload CSV File", type=["csv"])
+    
+    if uploaded_file is not None:
+        with st.spinner("Processing batch..."):
+            try:
+                df_batch = pd.read_csv(uploaded_file)
+                st.success(f"Successfully loaded {len(df_batch)} rows.")
+                
+                # We expect the CSV to have the necessary features
+                # Missing features will trigger imputation or errors in pipeline, so wrap carefully
+                results = []
+                for _, row in df_batch.iterrows():
+                    inp = row.to_dict()
+                    try:
+                        res = predictor.predict_single(inp)
+                        results.append({
+                            "Expected_Attendance_%": round(res['predicted_attendance'], 1),
+                            "Risk_Level": res['risk_band']
+                        })
+                    except Exception as e:
+                        results.append({
+                            "Expected_Attendance_%": np.nan,
+                            "Risk_Level": "ERROR"
+                        })
+                
+                df_res = pd.DataFrame(results)
+                df_final = pd.concat([df_batch, df_res], axis=1)
+                
+                st.markdown("### Batch Results")
+                st.dataframe(df_final.head(50), use_container_width=True)
+                
+                # Dashboard
+                st.markdown("### Batch Risk Summary")
+                bc1, bc2, bc3 = st.columns(3)
+                sc = len(df_res[df_res["Risk_Level"] == "SAFE"])
+                wc = len(df_res[df_res["Risk_Level"] == "WARNING"])
+                cc = len(df_res[df_res["Risk_Level"] == "CRITICAL"])
+                
+                with bc1: render_kpi("SAFE", sc, THEME_COLORS['safe'])
+                with bc2: render_kpi("WARNING", wc, THEME_COLORS['warning'])
+                with bc3: render_kpi("CRITICAL", cc, THEME_COLORS['critical'])
+                
+                csv_out = df_final.to_csv(index=False).encode('utf-8')
+                st.download_button(
+                    label="📥 Download Annotated CSV",
+                    data=csv_out,
+                    file_name="akash_batch_predictions.csv",
+                    mime="text/csv",
+                    type="primary"
+                )
+                
+            except Exception as e:
+                st.error(f"Batch processing failed: {str(e)}")
+
