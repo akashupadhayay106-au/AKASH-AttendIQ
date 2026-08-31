@@ -1,6 +1,7 @@
 """
 AKASH AttendIQ — Prediction, Simulation & Explainable Inference Engine
 Provides single-session forecasting with local feature attribution, scenario simulation, and batch CSV processing.
+Includes automated self-healing pipeline generation for cloud deployment resilience.
 """
 
 import os
@@ -12,6 +13,8 @@ from typing import Dict, Any, Tuple, List, Optional
 from src.config import (
     MODEL_FILE,
     ROOT_MODEL_FILE,
+    RAW_DATA_FILE,
+    CLEANED_DATA_FILE,
     ALL_MODEL_FEATURES,
     ATTENDANCE_BANDS,
     HUMAN_FEATURE_NAMES,
@@ -35,19 +38,40 @@ class AttendancePredictor:
         self._load()
 
     def _load(self):
-        """Loads serialized pipeline package with robust path resolution."""
+        """Loads serialized pipeline package with automated self-healing fallback."""
         path_to_load = self.model_path
-        if not os.path.exists(path_to_load):
-            if os.path.exists(ROOT_MODEL_FILE):
-                path_to_load = ROOT_MODEL_FILE
-            else:
-                raise FileNotFoundError(
-                    f"Model pipeline artifact not found at {self.model_path}. Please execute train.py first."
-                )
+        loaded_successfully = False
 
-        self.package = joblib.load(path_to_load)
-        self.reg_model = self.package["regression_model"]
-        self.cls_model = self.package["classification_model"]
+        if os.path.exists(path_to_load):
+            try:
+                self.package = joblib.load(path_to_load)
+                self.reg_model = self.package["regression_model"]
+                self.cls_model = self.package["classification_model"]
+                loaded_successfully = True
+            except Exception as load_err:
+                print(f"[WARN] Pickled model incompatible with current environment ({load_err}). Triggering self-healing training...")
+
+        if not loaded_successfully and os.path.exists(ROOT_MODEL_FILE):
+            try:
+                self.package = joblib.load(ROOT_MODEL_FILE)
+                self.reg_model = self.package["regression_model"]
+                self.cls_model = self.package["classification_model"]
+                loaded_successfully = True
+            except Exception as load_err:
+                print(f"[WARN] Root pickled model incompatible ({load_err}). Triggering self-healing training...")
+
+        # Self-Healing: If model is missing or cannot be unpickled in cloud container, train on-the-fly
+        if not loaded_successfully:
+            print("[INFO] Initiating self-healing pipeline training...")
+            from src.data_processor import process_and_save_data
+            from src.model_trainer import train_complete_system
+
+            df_featured = process_and_save_data(RAW_DATA_FILE, CLEANED_DATA_FILE)
+            self.package, _, _ = train_complete_system(df_featured, self.model_path)
+            self.reg_model = self.package["regression_model"]
+            self.cls_model = self.package["classification_model"]
+            print("[SUCCESS] Self-healing training completed successfully!")
+
         self.band_labels = self.package.get("band_labels", ATTENDANCE_BANDS)
         self.baseline_medians = self.package.get("baseline_medians", {})
         self.metadata = self.package.get("metadata", {})

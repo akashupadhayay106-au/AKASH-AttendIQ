@@ -182,12 +182,16 @@ st.markdown("""
 
 @st.cache_resource
 def get_predictor_engine():
-    """Initializes and caches the AKASH AttendIQ inference engine."""
+    """Initializes and caches the AKASH AttendIQ inference engine with automated self-healing."""
     try:
         return AttendancePredictor(MODEL_FILE)
     except Exception as e:
-        st.error(f"Error loading model pipeline: {e}")
-        return None
+        with st.spinner("⚡ Initializing & compiling ML models for cloud environment..."):
+            from src.data_processor import process_and_save_data
+            from src.model_trainer import train_complete_system
+            df_featured = process_and_save_data(RAW_DATA_FILE, CLEANED_DATA_FILE)
+            train_complete_system(df_featured, MODEL_FILE)
+            return AttendancePredictor(MODEL_FILE)
 
 
 @st.cache_data
@@ -195,7 +199,8 @@ def get_dataset():
     """Loads and caches cleaned institutional attendance data."""
     target_path = CLEANED_DATA_FILE if os.path.exists(CLEANED_DATA_FILE) else RAW_DATA_FILE
     if not os.path.exists(target_path):
-        return pd.DataFrame()
+        from src.data_processor import process_and_save_data
+        return process_and_save_data(RAW_DATA_FILE, CLEANED_DATA_FILE)
     df = pd.read_csv(target_path)
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
     return df
@@ -203,10 +208,6 @@ def get_dataset():
 
 predictor = get_predictor_engine()
 history_df = get_dataset()
-
-if predictor is None:
-    st.error("⚠️ Model pipeline not found! Please run `python train.py` in your terminal to train and serialize the model.")
-    st.stop()
 
 
 # ==============================================================================
