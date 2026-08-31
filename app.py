@@ -441,9 +441,9 @@ elif page == "🔮 What-If Simulator":
         
         r1, r2, r3 = st.columns(3)
         
-        b_val = res['baseline_prediction']
-        s_val = res['scenario_prediction']
-        delta = res['delta_pct']
+        b_val = res['baseline']['predicted_attendance']
+        s_val = res['scenario']['predicted_attendance']
+        delta = res['diff_attendance_pct']
         
         d_color = THEME_COLORS['safe'] if delta > 0 else THEME_COLORS['critical'] if delta < 0 else THEME_COLORS['text_muted']
         
