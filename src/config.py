@@ -1,6 +1,6 @@
 """
 AKASH AttendIQ — System Configuration & Constants
-AI-Powered College Attendance Prediction, Risk Intelligence & Analytics
+Smart College Attendance Prediction
 """
 
 import os
@@ -8,8 +8,8 @@ from pathlib import Path
 
 # Product Branding
 PRODUCT_NAME = "AKASH AttendIQ"
-PRODUCT_TAGLINE = "AI-Powered College Attendance Prediction, Risk Intelligence & Analytics"
-PRODUCT_VERSION = "2.5.0"
+PRODUCT_TAGLINE = "Smart College Attendance Prediction"
+PRODUCT_VERSION = "3.0.0"
 
 # Base Directory Resolution
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -66,8 +66,7 @@ TARGET_REGRESSION = "Attendance_Pct"
 TARGET_CLASSIFICATION = "Attendance_Risk"
 TARGET_CLASSIFICATION_CODE = "Attendance_Risk_Code"
 
-# Attendance Risk Bands
-# Ordered from 0 (CRITICAL) to 1 (WARNING) to 2 (SAFE)
+# Attendance Risk Bands: CRITICAL (<50%), WARNING (50-75%), SAFE (>75%)
 ATTENDANCE_BANDS = ["CRITICAL", "WARNING", "SAFE"]
 BAND_BINS = [-float("inf"), 50.0, 75.0, float("inf")]
 
@@ -105,15 +104,13 @@ SLOT_TIMINGS = {
     6: "03:00 PM"
 }
 
-# Theme Styling Tokens
+# Modern, clean color tokens
 THEME_COLORS = {
     "primary": "#4F46E5",       # Indigo
     "secondary": "#06B6D4",     # Cyan
-    "accent": "#8B5CF6",        # Purple
-    "safe": "#10B981",          # Emerald Green
-    "warning": "#F59E0B",       # Amber Orange
-    "critical": "#EF4444",      # Crimson Red
-    "background_dark": "#0F172A",
-    "card_dark": "#1E293B",
+    "safe": "#10B981",          # Green
+    "warning": "#F59E0B",       # Amber
+    "critical": "#EF4444",      # Red
+    "background_card": "#1E293B",
     "text_muted": "#94A3B8"
 }
