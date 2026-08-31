@@ -177,7 +177,7 @@ AKASH-AttendIQ/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/AKASH-AttendIQ.git
+git clone https://github.com/akashupadhayay106-au/AKASH-AttendIQ.git
 cd AKASH-AttendIQ
 
 # Create a virtual environment
@@ -203,7 +203,8 @@ python train.py
 ### 4. Launch the Web Application
 
 ```bash
-streamlit run app.py
+# Direct Python execution
+python -m streamlit run app.py
 ```
 
 Open your browser at `http://localhost:8501`.
@@ -212,23 +213,13 @@ Open your browser at `http://localhost:8501`.
 
 ## ☁️ Deployment Instructions
 
-### GitHub Repository Setup
-
-```bash
-git init
-git add .
-git commit -m "feat: complete AKASH AttendIQ platform with explainable ML pipeline and Streamlit dashboard"
-git branch -M main
-git remote add origin https://github.com/your-username/AKASH-AttendIQ.git
-git push -u origin main
-```
-
 ### Streamlit Community Cloud Deployment
 
 1. Go to [share.streamlit.io](https://share.streamlit.io/).
-2. Select your repository `your-username/AKASH-AttendIQ`.
-3. Set **Main file path** to `app.py`.
-4. Deploy!
+2. Select your repository: `akashupadhayay106-au/AKASH-AttendIQ`.
+3. Set **Branch**: `main`.
+4. Set **Main file path**: `app.py`.
+5. Click **Deploy!** 🚀
 
 ---
 
