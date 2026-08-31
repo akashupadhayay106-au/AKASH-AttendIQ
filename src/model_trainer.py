@@ -14,6 +14,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
+from sklearn.calibration import CalibratedClassifierCV
 
 from sklearn.linear_model import Ridge, LogisticRegression
 from sklearn.ensemble import (
@@ -79,6 +80,11 @@ def benchmark_regression_models(X_train, y_train, X_test, y_test, preprocessor):
             min_samples_split=4,
             random_state=42
         ),
+        "HistGradient Boosting Regressor": HistGradientBoostingRegressor(
+            max_iter=200,
+            learning_rate=0.06,
+            random_state=42
+        ),
         "Random Forest Regressor": RandomForestRegressor(
             n_estimators=200,
             max_depth=14,
@@ -128,6 +134,11 @@ def benchmark_classification_models(X_train, y_train, X_test, y_test, preprocess
             max_depth=4,
             random_state=42
         ),
+        "HistGradient Boosting Classifier": HistGradientBoostingClassifier(
+            max_iter=180,
+            learning_rate=0.07,
+            random_state=42
+        ),
         "Random Forest Classifier": RandomForestClassifier(
             n_estimators=200,
             max_depth=12,
@@ -158,7 +169,14 @@ def benchmark_classification_models(X_train, y_train, X_test, y_test, preprocess
     results = []
     pipelines = {}
 
-    for name, model in candidates.items():
+    for name, base_model in candidates.items():
+        # Wrap the model in CalibratedClassifierCV to ensure output probabilities are genuine 
+        # and reliable for Risk estimation (except for LogisticRegression which is naturally calibrated).
+        if name != "Logistic Regression":
+            model = CalibratedClassifierCV(base_model, cv=3, method="sigmoid")
+        else:
+            model = base_model
+
         pipe = Pipeline([
             ("preprocessor", preprocessor),
             ("model", model)
@@ -193,13 +211,19 @@ def benchmark_classification_models(X_train, y_train, X_test, y_test, preprocess
 def extract_feature_importance_table(trained_model, preprocessor):
     """Extracts tree feature importances mapped to human-readable names."""
     try:
+        # Check if wrapped in CalibratedClassifierCV
         model = trained_model.named_steps["model"]
-        if hasattr(model, "feature_importances_"):
+        if hasattr(model, "estimator"):
+            base_model = model.estimator
+        else:
+            base_model = model
+
+        if hasattr(base_model, "feature_importances_"):
             cat_encoder = preprocessor.named_transformers_["cat"].named_steps["onehot"]
             encoded_cat = list(cat_encoder.get_feature_names_out(CATEGORICAL_FEATURES))
             all_feature_names = NUMERICAL_FEATURES + encoded_cat
 
-            importances = model.feature_importances_
+            importances = base_model.feature_importances_
             feat_df = pd.DataFrame({
                 "Feature_Raw": all_feature_names[:len(importances)],
                 "Importance": importances

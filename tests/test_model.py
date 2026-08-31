@@ -10,6 +10,7 @@ import pandas as pd
 
 from src.config import MODEL_FILE, ROOT_MODEL_FILE, ALL_MODEL_FEATURES, ATTENDANCE_BANDS
 from src.evaluation import calculate_regression_metrics, calculate_classification_metrics
+from src.predictor import AttendancePredictor
 
 
 def test_model_pipeline_artifact_exists():
@@ -46,3 +47,23 @@ def test_classification_metrics_calculation():
     assert "F1-Score" in metrics
     assert "Confusion_Matrix" in metrics
     assert metrics["Accuracy (%)"] > 0
+
+
+def test_probability_calibration_sum():
+    """Verify that output probabilities always sum perfectly to 1.0."""
+    predictor = AttendancePredictor()
+    dummy_input = {f: 50.0 for f in ALL_MODEL_FEATURES}
+    res = predictor.predict_single(dummy_input)
+    
+    probs = res["probabilities"]
+    # Check that SAFE + WARNING + CRITICAL sum to approximately 100.0%
+    total_prob = sum(probs.values())
+    assert abs(total_prob - 100.0) < 0.2, f"Probabilities do not sum to 100%, instead got {total_prob}%"
+
+def test_leakage_protection_no_future_features():
+    """Verify that no feature names contain 'Target', 'Future', or 'Actual' hinting at data leakage."""
+    for feat in ALL_MODEL_FEATURES:
+        feat_lower = feat.lower()
+        assert "target" not in feat_lower, f"LEAKAGE DETECTED: {feat}"
+        assert "future" not in feat_lower, f"LEAKAGE DETECTED: {feat}"
+        assert "actual" not in feat_lower, f"LEAKAGE DETECTED: {feat}"

@@ -21,6 +21,7 @@ from src.config import (
     THEME_COLORS
 )
 from src.explainability import ExplainabilityEngine
+from src.guidance_engine import generate_smart_guidance
 
 
 class AttendancePredictor:
@@ -142,12 +143,21 @@ class AttendancePredictor:
         else:
             risk_color = THEME_COLORS["safe"]
 
+        # 6. Smart Guidance Engine
+        guidance = generate_smart_guidance(
+            predicted_attendance=pred_reg,
+            risk_band=pred_band,
+            top_positives=explanation["top_positive_factors"],
+            top_negatives=explanation["top_negative_factors"]
+        )
+
         return {
             "predicted_attendance": pred_reg,
             "estimated_range": explanation["estimated_range"],
             "lower_bound": explanation["lower_bound"],
             "upper_bound": explanation["upper_bound"],
             "margin_of_error": explanation["margin_of_error"],
+            "guidance": guidance,
             "risk_band": pred_band,
             "risk_color": risk_color,
             "probabilities": prob_dict,

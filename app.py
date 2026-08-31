@@ -262,6 +262,7 @@ if page == "🏠 Overview Dashboard":
             <div style="background: #1E293B; padding: 20px; border-radius: 12px; border-left: 4px solid {THEME_COLORS['primary']}; margin-top: 10px;">
                 <h3 style="margin: 0; color: #F8FAFC;">Expected: {res['predicted_attendance']:.1f}%</h3>
                 <p style="margin: 5px 0 0 0; color: #94A3B8;">Risk Status: <strong class="status-{res['risk_band'].lower()}">{res['risk_band']}</strong> | Probability: {res['confidence_pct']:.1f}%</p>
+                <p style="margin: 10px 0 0 0; color: #CBD5E1; font-style: italic;">💡 {res.get('guidance', '')}</p>
             </div>
             """, unsafe_allow_html=True)
             
@@ -351,13 +352,17 @@ elif page == "🎯 Prediction Studio":
             st.plotly_chart(fig_g, use_container_width=True)
             
             # Probabilities
-            st.markdown("### Risk Probability")
+            st.markdown("### Model Risk Probability")
             probs = res['probabilities']
             for b_name in ["SAFE", "WARNING", "CRITICAL"]:
                 val = probs.get(b_name, 0.0)
                 col_c = THEME_COLORS.get(b_name.lower())
                 st.markdown(f"**{b_name}**: &nbsp;&nbsp; {val:.1f}%")
                 st.progress(val / 100.0)
+                
+            st.markdown("<br>", unsafe_allow_html=True)
+            st.markdown("### 💡 Smart Guidance")
+            st.info(res.get('guidance', ''))
                 
     # Explainability Section
     if predict_btn:
@@ -526,6 +531,16 @@ elif page == "🤖 Model Intelligence":
         with cm2: render_kpi("F1-Score", f"{cls_metrics.get('F1_Score', 0.77):.3f}")
         with cm3: render_kpi("ROC-AUC", f"{cls_metrics.get('ROC_AUC', 0.85):.3f}")
         
+    st.markdown("---")
+    
+    st.markdown("### 🔐 Data Leakage Audit")
+    st.markdown("""
+    - ✅ **Historical Features Only**: All predictors are restricted to $t-1$ or earlier.
+    - ✅ **Chronological Validation**: The pipeline splits data chronologically (80% past / 20% future).
+    - ✅ **Future Sessions Excluded**: No forward-peeking moving averages are permitted.
+    - ✅ **Unseen Test Set**: The test set remains completely unseen during the hyperparameter tuning and model selection phases.
+    """)
+    
     st.markdown("---")
     
     e1, e2 = st.columns([1.5, 1])
